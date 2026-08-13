@@ -429,6 +429,28 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; line-height: 1
 .feature-item b { display: block; font-size: 0.94rem; margin-bottom: 2px; }
 .feature-item span { font-size: 0.82rem; color: var(--muted); }
 
+/* ---------- Kültür fotoğrafları & künyeler ---------- */
+.hero-photo { aspect-ratio: 4 / 5; object-fit: cover; object-position: 42% 22%; width: 100%; }
+.figure-credit {
+  display: block;
+  font-size: 0.74rem; color: var(--muted);
+  margin-top: 7px; line-height: 1.45;
+}
+.figure-credit a { color: var(--muted); text-decoration: underline; }
+.culture-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.culture-item img {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  border-radius: var(--radius); box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+.credits-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 30px; }
+.credit-item img {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  border-radius: var(--radius); border: 1px solid var(--border);
+}
+.credit-item figcaption { font-size: 0.82rem; color: var(--ink-soft); margin-top: 8px; line-height: 1.5; }
+.credit-item figcaption a { text-decoration: underline; }
+
 /* ---------- Blog ---------- */
 .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .blog-card {
@@ -557,6 +579,8 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; line-height: 1
   .product-grid, .product-grid.grid-3 { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .category-grid { grid-template-columns: repeat(2, 1fr); }
   .blog-grid { grid-template-columns: 1fr; }
+  .culture-grid { grid-template-columns: 1fr; }
+  .credits-list { grid-template-columns: 1fr 1fr; }
   .product-detail { grid-template-columns: 1fr; gap: 26px; }
   .pd-media { position: static; }
   .section { padding: 40px 0; }

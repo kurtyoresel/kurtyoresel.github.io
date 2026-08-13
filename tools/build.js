@@ -609,6 +609,7 @@ ${content}
           <li><a href="${root}/blog/">Blog</a></li>
           <li><a href="${root}/sss/">Sıkça Sorulan Sorular</a></li>
           <li><a href="${root}/iletisim/">İletişim</a></li>
+          <li><a href="${root}/gorsel-kaynaklari/">Görsel Kaynakları</a></li>
         </ul>
       </div>
       <div>
@@ -683,6 +684,21 @@ function demandSection(root, compact) {
 /* ============================================================
    VERİ YÜKLEME + DOĞRULAMA
    ============================================================ */
+/* Kültür fotoğrafları (Wikimedia Commons, serbest lisanslı) */
+const PHOTOS = JSON.parse(fs.readFileSync(path.join(DATA, "photos.json"), "utf8"));
+const photoByFile = Object.fromEntries(PHOTOS.map(p => [p.file, p]));
+function photoCredit(file) {
+  const p = photoByFile[file];
+  return p ? `Fotoğraf: ${p.author} · ${p.license}` : "";
+}
+/* Blog kapak fotoğrafı eşlemesi (yoksa üretilen SVG kapak kullanılır) */
+const BLOG_COVERS = {
+  "kirasfistan-nedir": "kultur-kadin-dans.jpg",
+  "kurt-dugun-kiyafetleri": "dugun-vintage.jpg",
+  "sal-u-sepik-rehberi": "sal-sepik-ikili.jpg",
+  "pusi-nasil-baglanir": "sal-sepik-mavi-pusi.jpg"
+};
+
 function loadData() {
   const products = JSON.parse(fs.readFileSync(path.join(DATA, "products.json"), "utf8"));
   const blog = JSON.parse(fs.readFileSync(path.join(DATA, "blog.json"), "utf8"));
@@ -740,6 +756,7 @@ function build() {
   writeFile(".nojekyll", "");
   copyDir(path.join(ASSETS_SRC, "css"), path.join(OUT, "assets", "css"));
   copyDir(path.join(ASSETS_SRC, "js"), path.join(OUT, "assets", "js"));
+  copyDir(path.join(ASSETS_SRC, "img"), path.join(OUT, "assets", "img"));
   writeFile("favicon.svg", faviconSvg());
   writeFile("images/og/og-default.svg", ogDefaultSvg());
   const ogJpg = path.join(ASSETS_SRC, "og", "og-default.jpg");
@@ -794,8 +811,12 @@ function build() {
   </a>`;
   }).join("\n");
 
+  const blogCover = (b, root) => BLOG_COVERS[b.slug]
+    ? `${root}/assets/img/${BLOG_COVERS[b.slug]}`
+    : `${root}/images/blog/${b.slug}.svg`;
+
   const blogCards = blog.slice(0, 3).map(b => `<article class="blog-card">
-    <a href="./blog/${b.slug}/" aria-label="${esc(b.title)}"><div class="blog-art"><img src="./images/blog/${b.slug}.svg" alt="${esc(b.title)}" loading="lazy" width="1200" height="675" style="width:100%;height:100%;object-fit:cover;"></div></a>
+    <a href="./blog/${b.slug}/" aria-label="${esc(b.title)}"><div class="blog-art"><img src="${blogCover(b, ".")}" alt="${esc(b.title)}" loading="lazy" width="1200" height="675" style="width:100%;height:100%;object-fit:cover;"></div></a>
     <div class="blog-body"><h3><a href="./blog/${b.slug}/">${esc(b.title)}</a></h3><p>${esc(b.excerpt)}</p></div>
   </article>`).join("\n");
 
@@ -817,7 +838,10 @@ function build() {
       </div>
     </div>
     <div class="hero-visual">
-      <img src="./images/products/${heroProduct.slug}.${heroProduct._imgExt}" alt="${esc(heroProduct.alt)}" width="800" height="1000" fetchpriority="high">
+      <figure>
+        <img class="hero-photo" src="./assets/img/kultur-kadin-dans.jpg" alt="${esc(photoByFile["kultur-kadin-dans.jpg"].alt)}" width="1280" height="853" fetchpriority="high">
+        <figcaption class="figure-credit">${photoCredit("kultur-kadin-dans.jpg")} · <a href="./gorsel-kaynaklari/">Kaynaklar</a></figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -849,6 +873,23 @@ ${demandSection(".", false)}
       <div class="feature-item"><div class="f-icon">🗺️</div><div><b>Yöreye Sadık Desenler</b><span>Botan, Serhat, Mêrdîn… Her modelde yöresinin otantik motifleri.</span></div></div>
       <div class="feature-item"><div class="f-icon">⭐</div><div><b>Ön Sipariş Önceliği</b><span>Talep bırakanlar satış başladığında ilk haber alan ve öncelik tanınan kişiler olacak.</span></div></div>
       <div class="feature-item"><div class="f-icon">📦</div><div><b>Türkiye'ye Kargo (Yakında)</b><span>Satış başladığında tüm Türkiye'ye özenli paketlemeyle gönderim planlıyoruz.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="kultur-baslik">
+  <div class="container">
+    <div class="section-head">
+      <div><h2 id="kultur-baslik">Kültürden Kareler</h2><p>Bu kıyafetler vitrinlerde değil, hayatın içinde yaşıyor</p></div>
+    </div>
+    <div class="culture-grid">
+      ${["kultur-mesale-ritueli.jpg", "kultur-tef-gosterisi.jpg", "sal-sepik-halay.jpg"].map(f => {
+        const ph = photoByFile[f];
+        return `<figure class="culture-item">
+        <img src="./assets/img/${f}" alt="${esc(ph.alt)}" loading="lazy" width="1280" height="853">
+        <figcaption class="figure-credit">${esc(ph.title)} — ${photoCredit(f)}</figcaption>
+      </figure>`;
+      }).join("\n      ")}
     </div>
   </div>
 </section>
@@ -1042,7 +1083,7 @@ ${demandSection("..", true)}`;
   </div>
   <div class="blog-grid">
   ${blog.map(b => `<article class="blog-card">
-    <a href="./${b.slug}/" aria-label="${esc(b.title)}"><div class="blog-art"><img src="../images/blog/${b.slug}.svg" alt="${esc(b.title)}" loading="lazy" width="1200" height="675" style="width:100%;height:100%;object-fit:cover;"></div></a>
+    <a href="./${b.slug}/" aria-label="${esc(b.title)}"><div class="blog-art"><img src="${blogCover(b, "..")}" alt="${esc(b.title)}" loading="lazy" width="1200" height="675" style="width:100%;height:100%;object-fit:cover;"></div></a>
     <div class="blog-body"><h3><a href="./${b.slug}/">${esc(b.title)}</a></h3><p>${esc(b.excerpt)}</p></div>
   </article>`).join("\n")}
   </div>
@@ -1058,7 +1099,11 @@ ${demandSection("..", true)}`;
   }));
 
   for (const b of blog) {
-    const cover = `../../images/blog/${b.slug}.svg`;
+    const cover = blogCover(b, "../..");
+    const coverFile = BLOG_COVERS[b.slug];
+    const coverCredit = coverFile
+      ? `<span class="figure-credit">Kapak — ${photoCredit(coverFile)} · <a href="../../gorsel-kaynaklari/">Kaynaklar</a></span>`
+      : "";
     const html = b.html
       .split("{{root}}").join("../..");
     const content = `
@@ -1069,7 +1114,7 @@ ${demandSection("..", true)}`;
     <p class="article-meta">Kürt Yöresel · Kültür &amp; Rehber</p>
   </div>
   <div class="article-body">
-    <p><img src="${cover}" alt="${esc(b.title)}" width="1200" height="675" style="border-radius:14px;"></p>
+    <p><img src="${cover}" alt="${esc(coverFile ? photoByFile[coverFile].alt : b.title)}" width="1200" height="675" style="border-radius:14px;">${coverCredit}</p>
     ${html}
     <div class="notice" style="margin-top:26px;">Bu yazıyı beğendiyseniz <a href="../../kirasfistan/">kirasfistan koleksiyonumuza</a> göz atabilir, <a href="../../#talep">buradan talep bırakarak</a> sitenin açılmasına destek olabilirsiniz.</div>
   </div>
@@ -1079,7 +1124,7 @@ ${demandSection("..", true)}`;
       title: `${b.metaTitle} | ${SITE_NAME}`,
       desc: b.metaDesc,
       canonicalPath: `/blog/${b.slug}/`,
-      ogImage: SITE_URL + "/images/og/og-default.jpg",
+      ogImage: BLOG_COVERS[b.slug] ? `${SITE_URL}/assets/img/${BLOG_COVERS[b.slug]}` : SITE_URL + "/images/og/og-default.jpg",
       ogType: "article",
       current: "blog/",
       jsonld: [
@@ -1087,7 +1132,7 @@ ${demandSection("..", true)}`;
         {
           "@context": "https://schema.org", "@type": "BlogPosting",
           "headline": b.title, "description": b.metaDesc,
-          "image": `${SITE_URL}/images/blog/${b.slug}.svg`,
+          "image": BLOG_COVERS[b.slug] ? `${SITE_URL}/assets/img/${BLOG_COVERS[b.slug]}` : `${SITE_URL}/images/blog/${b.slug}.svg`,
           "author": { "@type": "Organization", "name": SITE_NAME },
           "publisher": { "@type": "Organization", "name": SITE_NAME, "logo": { "@type": "ImageObject", "url": SITE_URL + "/favicon.svg" } },
           "mainEntityOfPage": SITE_URL + `/blog/${b.slug}/`,
@@ -1114,6 +1159,10 @@ ${demandSection("..", true)}`;
   </div>
   <div class="article-body">
     <p>Kürt Yöresel, basit bir sorudan doğdu: <em>"Neden bir kirasfistan almak bu kadar zor?"</em> Düğüne davetli bir genç kadın, yöresine uygun bir kirasfistan bulmak için ya şehir şehir terzi gezmek ya da gördüğü fotoğrafa güvenip sonucu şansa bırakmak zorunda kalıyor. Şal û şepik diktirmek isteyen biri için de durum farklı değil.</p>
+    <figure style="margin:20px 0;">
+      <img src="../assets/img/sal-sepik-grup.jpg" alt="${esc(photoByFile["sal-sepik-grup.jpg"].alt)}" width="1280" height="722" loading="lazy" style="border-radius:14px;">
+      <figcaption class="figure-credit">${photoCredit("sal-sepik-grup.jpg")} · <a href="../gorsel-kaynaklari/">Kaynaklar</a></figcaption>
+    </figure>
     <p>Biz bu dağınıklığı tek bir adreste toplamak istiyoruz: yöresine sadık desenler, aslına uygun kumaşlar, el emeği işçilik ve standart beden seçenekleriyle güvenilir bir yöresel kıyafet mağazası.</p>
     <h2>Şu An Hangi Aşamadayız?</h2>
     <p>Dürüst olalım: henüz satışta değiliz. Bu site, böyle bir mağazaya gerçekten ihtiyaç olup olmadığını anlamak için kurduğumuz bir <strong>ön talep vitrini</strong>. Koleksiyondaki her ürün, satışa başladığımızda üretmeyi planladığımız modelleri temsil ediyor.</p>
@@ -1165,7 +1214,7 @@ ${demandSection("..", true)}`
     ["Beden seçenekleri neler olacak?", "Kirasfistan ve şal û şepik takımlarında S, M, L, XL ve XXL standart bedenlerinin yanı sıra ölçüye özel dikim seçeneği sunmayı planlıyoruz."],
     ["Kargo ve teslimat nasıl olacak?", "Satış dönemine geçtiğimizde tüm Türkiye'ye kargo göndermeyi planlıyoruz. El işçiliği ürünlerde üretim süresi modele göre 2-4 hafta olacaktır."],
     ["Talep butonuna neden günde bir kez basabiliyorum?", "Talep sayılarının gerçek ilgiyi yansıtması için her ziyaretçi günde bir kez talep bırakabilir. Ertesi gün tekrar talep bırakarak desteğinizi sürdürebilirsiniz."],
-    ["Ürün görselleri gerçek mi?", "Koleksiyondaki görseller, üretmeyi planladığımız modelleri temsil eden özel hazırlanmış tasarım çizimleridir. Satış dönemine geçtiğimizde her modelin gerçek ürün fotoğrafları eklenecektir."]
+    ["Ürün görselleri gerçek mi?", "Ürün kartlarındaki görseller, üretmeyi planladığımız modelleri temsil eden özel hazırlanmış tasarım çizimleridir; satış dönemine geçtiğimizde her modelin gerçek ürün fotoğrafları eklenecektir. Sitedeki kültür fotoğrafları ise serbest lisanslı (Creative Commons) gerçek karelerdir ve kaynakları Görsel Kaynakları sayfasında listelenir."]
   ];
   writeFile("sss/index.html", layout({
     root: "..",
@@ -1194,6 +1243,34 @@ ${demandSection("..", true)}`
   </div>
 </div>
 ${demandSection("..", true)}`
+  }));
+
+  /* ---------- Görsel Kaynakları ---------- */
+  writeFile("gorsel-kaynaklari/index.html", layout({
+    root: "..",
+    title: `Görsel Kaynakları ve Lisanslar | ${SITE_NAME}`,
+    desc: "Kürt Yöresel sitesinde kullanılan kültür fotoğraflarının kaynakları, fotoğrafçıları ve Creative Commons lisans bilgileri.",
+    canonicalPath: "/gorsel-kaynaklari/",
+    current: "",
+    jsonld: [breadcrumbJsonld([["Anasayfa", SITE_URL + "/"], ["Görsel Kaynakları", SITE_URL + "/gorsel-kaynaklari/"]])],
+    content: `
+<div class="container">
+  <div class="page-head">
+    ${breadcrumb("..", [["Anasayfa", "../"], ["Görsel Kaynakları", null]])}
+    <h1>Görsel Kaynakları</h1>
+    <p class="page-intro">Sitedeki kültür fotoğrafları Wikimedia Commons üzerinden, aşağıda belirtilen serbest lisanslarla kullanılmaktadır. Emeği geçen tüm fotoğrafçılara teşekkür ederiz. Ürün kartlarındaki görseller ise sitemize özel hazırlanmış temsili tasarım çizimleridir.</p>
+  </div>
+  <div class="credits-list">
+    ${PHOTOS.map(p => `<figure class="credit-item">
+      <img src="../assets/img/${p.file}" alt="${esc(p.alt)}" loading="lazy" width="640" height="427">
+      <figcaption>
+        <b>${esc(p.title)}</b><br>
+        Fotoğraf: ${esc(p.author)} · <a href="${p.licenseUrl}" rel="license nofollow">${esc(p.license)}</a> ·
+        <a href="${p.sourceUrl}" rel="nofollow">Wikimedia Commons kaynağı</a>
+      </figcaption>
+    </figure>`).join("\n    ")}
+  </div>
+</div>`
   }));
 
   /* ---------- Favoriler ---------- */
@@ -1269,6 +1346,7 @@ ${demandSection("..", true)}`
     ["/hakkimizda/", "0.5", "monthly"],
     ["/iletisim/", "0.4", "monthly"],
     ["/sss/", "0.6", "monthly"],
+    ["/gorsel-kaynaklari/", "0.3", "monthly"],
     ...products.map(p => [`/urun/${p.slug}/`, "0.8", "weekly"])
   ];
   writeFile("sitemap.xml",
