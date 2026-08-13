@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Lacivert zeminli, altın sarısı zikzak desenli el örgüsü yün yöresel çorap çifti">
+  
+  <defs>
+    <linearGradient id="bgg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff1f4"/>
+      <stop offset="1" stop-color="#e4e7ec"/>
+    </linearGradient>
+    <g id="bgm"><path d="M-9 3L-4.5-3 0 3 4.5-3 9 3" fill="none" stroke="#ced4dc" stroke-width="2.4" stroke-linecap="round"/></g>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bgg)"/>
+  <use href="#bgm" transform="translate(298 366) scale(1.06)" opacity="0.35"/><use href="#bgm" transform="translate(126 678) scale(1.76)" opacity="0.35"/><use href="#bgm" transform="translate(531 83) scale(1.75)" opacity="0.35"/><use href="#bgm" transform="translate(591 754) scale(1.22)" opacity="0.35"/><use href="#bgm" transform="translate(416 250) scale(1.61)" opacity="0.35"/><use href="#bgm" transform="translate(645 957) scale(1.30)" opacity="0.35"/><use href="#bgm" transform="translate(192 41) scale(1.03)" opacity="0.35"/><use href="#bgm" transform="translate(151 847) scale(1.55)" opacity="0.35"/><use href="#bgm" transform="translate(303 411) scale(1.55)" opacity="0.35"/><use href="#bgm" transform="translate(577 654) scale(1.54)" opacity="0.35"/>
+  <path d="M 136 920 V 300 Q 136 130 400 130 Q 664 130 664 300 V 920"
+        fill="none" stroke="#dcbf83" stroke-width="3" opacity="0.5"/>
+  <defs><g id="am"><path d="M-9 3L-4.5-3 0 3 4.5-3 9 3" fill="none" stroke="#d3ad61" stroke-width="2.4" stroke-linecap="round"/></g></defs>
+  <ellipse cx="400" cy="908" rx="200" ry="24" fill="#26190f" opacity="0.12"/>
+  
+    <g transform="translate(-70 0) rotate(-6 400 560)">
+      <path d="M352 300 L448 300 L448 560 C448 600 470 620 510 626 C544 632 560 652 556 684 C552 716 520 736 478 730 C420 722 380 690 368 640 C356 600 352 560 352 520 Z" fill="#1f3a5f"/>
+      <rect x="352" y="300" width="96" height="42" rx="8" fill="#182d4a"/>
+      <path d="M352 380 H448 M352 410 H448" stroke="#c08a1d" stroke-width="7"/>
+      <path d="M356 448 L376 430 396 448 416 430 436 448" stroke="#7f94af" stroke-width="5" fill="none"/>
+      <use href="#am" transform="translate(400 510) scale(0.9)"/>
+      <path d="M480 726 C 500 730 520 726 540 712" stroke="#162943" stroke-width="4" fill="none" opacity="0.5"/>
+    </g>
+    <g transform="translate(70 0) rotate(6 400 560)">
+      <path d="M352 300 L448 300 L448 560 C448 600 470 620 510 626 C544 632 560 652 556 684 C552 716 520 736 478 730 C420 722 380 690 368 640 C356 600 352 560 352 520 Z" fill="#1f3a5f"/>
+      <rect x="352" y="300" width="96" height="42" rx="8" fill="#182d4a"/>
+      <path d="M352 380 H448 M352 410 H448" stroke="#c08a1d" stroke-width="7"/>
+      <path d="M356 448 L376 430 396 448 416 430 436 448" stroke="#7f94af" stroke-width="5" fill="none"/>
+      <use href="#am" transform="translate(400 510) scale(0.9)"/>
+      <path d="M480 726 C 500 730 520 726 540 712" stroke="#162943" stroke-width="4" fill="none" opacity="0.5"/>
+    </g>
+</svg>

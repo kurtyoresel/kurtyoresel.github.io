@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Kirasfistan Nedir? Parçaları, Yöreye Göre Farkları ve Seçim Rehberi">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6e1522"/><stop offset="0.6" stop-color="#8e1f2e"/><stop offset="1" stop-color="#a63042"/>
+    </linearGradient>
+    <g id="bm"><path d="M2-8C7-6 8 0 5 4 2 8-4 8-6 4-7 1-5-1-3-1-1-1 0 1-1 3" fill="none" stroke="#f6e3c8" stroke-width="2.2" stroke-linecap="round"/></g>
+    <g id="bigm"><path d="M2-8C7-6 8 0 5 4 2 8-4 8-6 4-7 1-5-1-3-1-1-1 0 1-1 3" fill="none" stroke="#f2c66d" stroke-width="2.2" stroke-linecap="round"/></g>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <use href="#bm" transform="translate(552 341) scale(2.06)" opacity="0.11"/><use href="#bm" transform="translate(700 249) scale(1.38)" opacity="0.15"/><use href="#bm" transform="translate(607 461) scale(2.07)" opacity="0.10"/><use href="#bm" transform="translate(468 601) scale(1.77)" opacity="0.24"/><use href="#bm" transform="translate(704 134) scale(1.22)" opacity="0.13"/><use href="#bm" transform="translate(650 347) scale(1.35)" opacity="0.16"/><use href="#bm" transform="translate(225 249) scale(1.13)" opacity="0.13"/><use href="#bm" transform="translate(401 609) scale(1.66)" opacity="0.20"/><use href="#bm" transform="translate(684 343) scale(1.87)" opacity="0.14"/><use href="#bm" transform="translate(606 197) scale(2.26)" opacity="0.11"/><use href="#bm" transform="translate(696 111) scale(2.25)" opacity="0.13"/><use href="#bm" transform="translate(635 181) scale(1.97)" opacity="0.20"/><use href="#bm" transform="translate(547 489) scale(1.32)" opacity="0.22"/><use href="#bm" transform="translate(670 49) scale(2.17)" opacity="0.24"/><use href="#bm" transform="translate(978 583) scale(1.12)" opacity="0.12"/><use href="#bm" transform="translate(691 352) scale(1.13)" opacity="0.23"/>
+  <use href="#bigm" transform="translate(600 315) scale(9)" opacity="0.9"/>
+  <use href="#bigm" transform="translate(600 315) scale(14)" opacity="0.25"/>
+  <rect y="655" width="1200" height="20" fill="#c08a1d"/>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Koyu çini mavisi saten Cizîr kirasfistanı, yıldız motifli bakır sim işlemeli, dar kollu">
+  
+  <defs>
+    <linearGradient id="bgg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff3f6"/>
+      <stop offset="1" stop-color="#e3eaef"/>
+    </linearGradient>
+    <g id="bgm"><path d="M0-9L2.2-2.9 8.6-2.8 3.5 1.1 5.3 7.3 0 3.6-5.3 7.3-3.5 1.1-8.6-2.8-2.2-2.9Z" fill="#ccd8e2"/></g>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bgg)"/>
+  <use href="#bgm" transform="translate(210 620) scale(1.63)" opacity="0.35"/><use href="#bgm" transform="translate(445 379) scale(1.54)" opacity="0.35"/><use href="#bgm" transform="translate(331 59) scale(1.61)" opacity="0.35"/><use href="#bgm" transform="translate(279 227) scale(1.42)" opacity="0.35"/><use href="#bgm" transform="translate(145 433) scale(1.09)" opacity="0.35"/><use href="#bgm" transform="translate(382 50) scale(1.65)" opacity="0.35"/><use href="#bgm" transform="translate(131 453) scale(1.08)" opacity="0.35"/><use href="#bgm" transform="translate(366 333) scale(1.19)" opacity="0.35"/><use href="#bgm" transform="translate(349 279) scale(0.94)" opacity="0.35"/><use href="#bgm" transform="translate(517 251) scale(1.02)" opacity="0.35"/>
+  <path d="M 136 920 V 300 Q 136 130 400 130 Q 664 130 664 300 V 920"
+        fill="none" stroke="#d4ae8c" stroke-width="3" opacity="0.5"/>
+  <defs>
+    <linearGradient id="skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a7596"/>
+      <stop offset="0.55" stop-color="#174e79"/>
+      <stop offset="1" stop-color="#123d5e"/>
+    </linearGradient>
+    <linearGradient id="bodice" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4a7596"/>
+      <stop offset="1" stop-color="#174e79"/>
+    </linearGradient>
+    <linearGradient id="slv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3e79a8"/>
+      <stop offset="1" stop-color="#19517e"/>
+    </linearGradient>
+    <linearGradient id="belt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c08958"/>
+      <stop offset="0.5" stop-color="#b06c2e"/>
+      <stop offset="1" stop-color="#905926"/>
+    </linearGradient>
+    <g id="hm"><path d="M0-9L2.2-2.9 8.6-2.8 3.5 1.1 5.3 7.3 0 3.6-5.3 7.3-3.5 1.1-8.6-2.8-2.2-2.9Z" fill="#a5662b"/></g>
+    <g id="cm"><path d="M0-9L2.2-2.9 8.6-2.8 3.5 1.1 5.3 7.3 0 3.6-5.3 7.3-3.5 1.1-8.6-2.8-2.2-2.9Z" fill="#c08958"/></g>
+  </defs>
+  <ellipse cx="400" cy="912" rx="215" ry="26" fill="#26190f" opacity="0.13"/>
+  <!-- Etek -->
+  <path d="M345 392 C322 520 246 700 168 870 Q 400 912 632 870 C554 700 478 520 455 392 Z" fill="url(#skirt)"/>
+  <path d="M345 392 C322 520 246 700 168 870 Q 260 886 320 890 C 300 700 320 520 352 392 Z" fill="#123d5e" opacity="0.35"/>
+  <path d="M455 392 C478 520 554 700 632 870 Q 540 886 480 890 C 500 700 480 520 448 392 Z" fill="#123d5e" opacity="0.35"/>
+  <path d="M330 400 C 296.75 540, 300.25 700, 267 862" stroke="#7495af" stroke-width="3" fill="none" opacity="0.38"/><path d="M362 400 C 343.95 540, 345.85 700, 327.8 862" stroke="#7495af" stroke-width="3" fill="none" opacity="0.38"/><path d="M400 400 C 400 540, 400 700, 400 862" stroke="#7495af" stroke-width="3" fill="none" opacity="0.5"/><path d="M438 400 C 456.05 540, 454.15 700, 472.2 862" stroke="#7495af" stroke-width="3" fill="none" opacity="0.38"/><path d="M470 400 C 503.25 540, 499.75 700, 533 862" stroke="#7495af" stroke-width="3" fill="none" opacity="0.38"/>
+  <path d="M190 838 Q 400 878 610 838" fill="none" stroke="#b06c2e" stroke-width="6" opacity="0.9"/>
+  <use href="#hm" transform="translate(190 838) scale(0.95)"/><use href="#hm" transform="translate(232 844) scale(0.95)"/><use href="#hm" transform="translate(274 849) scale(0.95)"/><use href="#hm" transform="translate(316 852) scale(0.95)"/><use href="#hm" transform="translate(358 854) scale(0.95)"/><use href="#hm" transform="translate(400 855) scale(0.95)"/><use href="#hm" transform="translate(442 854) scale(0.95)"/><use href="#hm" transform="translate(484 852) scale(0.95)"/><use href="#hm" transform="translate(526 849) scale(0.95)"/><use href="#hm" transform="translate(568 844) scale(0.95)"/><use href="#hm" transform="translate(610 838) scale(0.95)"/>
+  <!-- Kollar -->
+  <path d="M340 214 C312 246 296 300 290 360 C286 402 286 434 290 462 C306 458 320 448 330 434 C338 402 342 356 344 314 C344 280 342 244 340 214 Z" fill="url(#slv)"/>
+  <path d="M340 214 C312 246 296 300 290 360 C286 402 286 434 290 462 C306 458 320 448 330 434 C338 402 342 356 344 314 C344 280 342 244 340 214 Z" fill="url(#slv)" transform="translate(800 0) scale(-1 1)"/>
+  <!-- Beden -->
+  <path d="M338 206 C330 280 336 340 346 392 L454 392 C464 340 470 280 462 206 C438 194 416 190 400 190 C384 190 362 194 338 206 Z" fill="url(#bodice)"/>
+  <path d="M368 204 C378 236 390 258 400 268 C410 258 422 236 432 204 C420 198 410 196 400 196 C390 196 380 198 368 204 Z" fill="#0c293f"/>
+  <path d="M368 204 C378 236 390 258 400 268 C410 258 422 236 432 204" fill="none" stroke="#b06c2e" stroke-width="3.4"/>
+  <circle cx="368" cy="246" r="4.2" fill="#b06c2e"/><circle cx="384" cy="250" r="4.2" fill="#b06c2e"/><circle cx="400" cy="254" r="4.2" fill="#b06c2e"/><circle cx="416" cy="250" r="4.2" fill="#b06c2e"/><circle cx="432" cy="246" r="4.2" fill="#b06c2e"/>
+  <use href="#cm" transform="translate(400 322) scale(1.5)"/>
+  <!-- Şûtik kuşak -->
+  <rect x="332" y="374" width="136" height="32" rx="9" fill="url(#belt)"/>
+  <path d="M340 382 H 462 M340 396 H 462" stroke="#7b4c20" stroke-width="1.6" opacity="0.6"/>
+  <path d="M394-9 402 0 394 9 386 0Z" transform="translate(6 390)" fill="#72461e"/>
+  <path d="M370 404 C 364 440, 368 460, 362 486" stroke="#c08958" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M379 404 C 373 440, 377 460, 371 486" stroke="#c08958" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M388 404 C 382 440, 386 460, 380 486" stroke="#c08958" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M397 404 C 391 440, 395 460, 389 486" stroke="#c08958" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M343 773L343.5 774.8 345 776 343.5 776.4 343 778 341.9 776.4 340 776 341.9 774.8Z" fill="#fff" opacity="0.55"/><path d="M409 796L410.5 798.6 413 800 410.5 801.1 409 804 407.9 801.1 405 800 407.9 798.6Z" fill="#fff" opacity="0.76"/><path d="M424 548L424.9 549.6 427 551 424.9 551.4 424 553 423.2 551.4 421 551 423.2 549.6Z" fill="#fff" opacity="0.79"/><path d="M490 394L491.1 396.4 493 398 491.1 398.7 490 401 488.8 398.7 486 398 488.8 396.4Z" fill="#fff" opacity="0.45"/><path d="M366 755L367.8 759.0 372 761 367.8 762.5 366 766 364.2 762.5 360 761 364.2 759.0Z" fill="#fff" opacity="0.72"/><path d="M259 512L260.4 516.3 264 518 260.4 520.0 259 524 256.7 520.0 253 518 256.7 516.3Z" fill="#fff" opacity="0.39"/><path d="M439 479L440.0 481.2 442 482 440.0 483.1 439 485 438.2 483.1 436 482 438.2 481.2Z" fill="#fff" opacity="0.38"/><path d="M446 445L447.5 448.5 451 450 447.5 451.5 446 455 444.5 451.5 441 450 444.5 448.5Z" fill="#fff" opacity="0.36"/><path d="M366 567L367.6 571.0 371 573 367.6 574.5 366 578 364.1 574.5 360 573 364.1 571.0Z" fill="#fff" opacity="0.52"/><path d="M506 670L506.9 671.9 509 673 506.9 673.9 506 676 504.9 673.9 503 673 504.9 671.9Z" fill="#fff" opacity="0.83"/><path d="M373 687L374.2 690.8 378 692 374.2 694.1 373 698 370.9 694.1 367 692 370.9 690.8Z" fill="#fff" opacity="0.52"/><path d="M521 366L522.1 368.3 524 369 522.1 370.5 521 373 519.8 370.5 517 369 519.8 368.3Z" fill="#fff" opacity="0.82"/><path d="M520 528L520.8 529.9 523 531 520.8 532.0 520 534 518.7 532.0 516 531 518.7 529.9Z" fill="#fff" opacity="0.64"/><path d="M347 447L348.2 449.1 350 450 348.2 451.2 347 453 346.2 451.2 344 450 346.2 449.1Z" fill="#fff" opacity="0.67"/><path d="M430 741L431.6 743.4 434 744 431.6 745.5 430 748 429.4 745.5 427 744 429.4 743.4Z" fill="#fff" opacity="0.56"/><path d="M384 458L384.9 460.6 388 462 384.9 463.4 384 466 382.1 463.4 379 462 382.1 460.6Z" fill="#fff" opacity="0.85"/><path d="M406 739L408.2 742.6 412 744 408.2 746.2 406 750 404.6 746.2 401 744 404.6 742.6Z" fill="#fff" opacity="0.51"/><path d="M530 569L531.3 571.2 534 573 531.3 573.8 530 577 528.8 573.8 526 573 528.8 571.2Z" fill="#fff" opacity="0.44"/><path d="M392 595L393.7 598.4 397 600 393.7 601.5 392 605 390.6 601.5 387 600 390.6 598.4Z" fill="#fff" opacity="0.60"/><path d="M253 391L254.8 394.1 258 396 254.8 397.0 253 400 252.0 397.0 249 396 252.0 394.1Z" fill="#fff" opacity="0.70"/><path d="M286 345L287.8 348.1 291 350 287.8 351.2 286 354 284.7 351.2 282 350 284.7 348.1Z" fill="#fff" opacity="0.46"/><path d="M318 494L319.1 496.7 322 498 319.1 499.6 318 503 316.2 499.6 313 498 316.2 496.7Z" fill="#fff" opacity="0.83"/><path d="M461 511L462.1 512.6 464 514 462.1 514.6 461 517 460.1 514.6 458 514 460.1 512.6Z" fill="#fff" opacity="0.71"/><path d="M268 738L269.0 741.0 272 742 269.0 743.7 268 746 266.3 743.7 263 742 266.3 741.0Z" fill="#fff" opacity="0.50"/><path d="M278 344L279.2 345.7 281 346 279.2 347.3 278 349 277.6 347.3 276 346 277.6 345.7Z" fill="#fff" opacity="0.49"/><path d="M371 494L371.6 496.2 374 497 371.6 498.1 371 500 369.6 498.1 368 497 369.6 496.2Z" fill="#fff" opacity="0.80"/><path d="M525 775L526.2 778.1 529 779 526.2 780.7 525 783 523.6 780.7 521 779 523.6 778.1Z" fill="#fff" opacity="0.45"/><path d="M537 673L537.8 674.6 540 675 537.8 676.2 537 678 536.2 676.2 535 675 536.2 674.6Z" fill="#fff" opacity="0.67"/><path d="M427 600L428.5 603.5 431 605 428.5 606.3 427 609 425.7 606.3 423 605 425.7 603.5Z" fill="#fff" opacity="0.63"/><path d="M381 597L382.1 598.8 384 600 382.1 600.7 381 603 380.3 600.7 378 600 380.3 598.8Z" fill="#fff" opacity="0.58"/>
+</svg>

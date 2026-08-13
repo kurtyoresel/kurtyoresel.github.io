@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Şal û Şepik Nedir? Geleneksel Kürt Erkek Takımının Rehberi">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6e1522"/><stop offset="0.6" stop-color="#8e1f2e"/><stop offset="1" stop-color="#a63042"/>
+    </linearGradient>
+    <g id="bm"><path d="M-8-2L0-8 8-2" fill="none" stroke="#f6e3c8" stroke-width="2.4" stroke-linecap="round"/><path d="M-8 5L0-1 8 5" fill="none" stroke="#f6e3c8" stroke-width="2.4" stroke-linecap="round"/></g>
+    <g id="bigm"><path d="M-8-2L0-8 8-2" fill="none" stroke="#f2c66d" stroke-width="2.4" stroke-linecap="round"/><path d="M-8 5L0-1 8 5" fill="none" stroke="#f2c66d" stroke-width="2.4" stroke-linecap="round"/></g>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <use href="#bm" transform="translate(821 465) scale(1.94)" opacity="0.18"/><use href="#bm" transform="translate(72 495) scale(1.74)" opacity="0.24"/><use href="#bm" transform="translate(987 365) scale(2.11)" opacity="0.24"/><use href="#bm" transform="translate(927 467) scale(2.34)" opacity="0.12"/><use href="#bm" transform="translate(761 55) scale(2.01)" opacity="0.17"/><use href="#bm" transform="translate(190 508) scale(2.21)" opacity="0.26"/><use href="#bm" transform="translate(790 535) scale(1.95)" opacity="0.13"/><use href="#bm" transform="translate(1047 404) scale(1.63)" opacity="0.16"/><use href="#bm" transform="translate(490 335) scale(1.69)" opacity="0.20"/><use href="#bm" transform="translate(427 129) scale(1.55)" opacity="0.23"/><use href="#bm" transform="translate(564 127) scale(1.60)" opacity="0.23"/><use href="#bm" transform="translate(907 342) scale(0.86)" opacity="0.15"/><use href="#bm" transform="translate(460 50) scale(1.86)" opacity="0.18"/><use href="#bm" transform="translate(736 260) scale(2.01)" opacity="0.19"/><use href="#bm" transform="translate(753 562) scale(1.42)" opacity="0.13"/><use href="#bm" transform="translate(841 140) scale(2.11)" opacity="0.13"/>
+  <use href="#bigm" transform="translate(600 315) scale(9)" opacity="0.9"/>
+  <use href="#bigm" transform="translate(600 315) scale(14)" opacity="0.25"/>
+  <rect y="655" width="1200" height="20" fill="#c08a1d"/>
+</svg>

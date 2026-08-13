@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /arama/
+Disallow: /favoriler/
+
+Sitemap: https://ahmethttp.github.io/kurt-yoresel/sitemap.xml

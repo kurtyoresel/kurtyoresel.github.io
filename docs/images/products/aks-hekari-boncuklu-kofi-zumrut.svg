@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Zümrüt yeşili cam boncuk işlemeli Hekarî kofisi, gümüş pullu ve güneş motifli geleneksel başlık">
+  
+  <defs>
+    <linearGradient id="bgg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff4f2"/>
+      <stop offset="1" stop-color="#e3ece9"/>
+    </linearGradient>
+    <g id="bgm"><circle r="4" fill="#cbdcd7"/><g stroke="#cbdcd7" stroke-width="1.8" stroke-linecap="round"><path d="M0-9V-6"/><path d="M0 9V6"/><path d="M-9 0H-6"/><path d="M9 0H6"/><path d="M-6.4-6.4-4.2-4.2"/><path d="M6.4 6.4 4.2 4.2"/><path d="M-6.4 6.4-4.2 4.2"/><path d="M6.4-6.4 4.2-4.2"/></g></g>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bgg)"/>
+  <use href="#bgm" transform="translate(481 51) scale(1.70)" opacity="0.35"/><use href="#bgm" transform="translate(228 139) scale(1.00)" opacity="0.35"/><use href="#bgm" transform="translate(633 892) scale(1.22)" opacity="0.35"/><use href="#bgm" transform="translate(114 614) scale(1.15)" opacity="0.35"/><use href="#bgm" transform="translate(290 57) scale(1.76)" opacity="0.35"/><use href="#bgm" transform="translate(657 959) scale(1.64)" opacity="0.35"/><use href="#bgm" transform="translate(627 581) scale(1.76)" opacity="0.35"/><use href="#bgm" transform="translate(199 927) scale(1.47)" opacity="0.35"/><use href="#bgm" transform="translate(41 872) scale(1.25)" opacity="0.35"/><use href="#bgm" transform="translate(223 54) scale(1.02)" opacity="0.35"/>
+  <path d="M 136 920 V 300 Q 136 130 400 130 Q 664 130 664 300 V 920"
+        fill="none" stroke="#c7ccd2" stroke-width="3" opacity="0.5"/>
+  <defs><g id="am"><circle r="4" fill="#b8bec6"/><g stroke="#b8bec6" stroke-width="1.8" stroke-linecap="round"><path d="M0-9V-6"/><path d="M0 9V6"/><path d="M-9 0H-6"/><path d="M9 0H6"/><path d="M-6.4-6.4-4.2-4.2"/><path d="M6.4 6.4 4.2 4.2"/><path d="M-6.4 6.4-4.2 4.2"/><path d="M6.4-6.4 4.2-4.2"/></g></g></defs>
+  <ellipse cx="400" cy="908" rx="200" ry="24" fill="#26190f" opacity="0.12"/>
+  
+    <path d="M400 940 V 640" stroke="#8a6a48" stroke-width="10"/>
+    <ellipse cx="400" cy="940" rx="90" ry="14" fill="#8a6a48"/>
+    <path d="M262 420 C262 360 320 320 400 320 C480 320 538 360 538 420 L538 540 C538 560 520 570 500 570 L300 570 C280 570 262 560 262 540 Z" fill="#14624a"/>
+    <ellipse cx="400" cy="420" rx="138" ry="46" fill="#3e7e6b" opacity="0.5"/>
+    <rect x="262" y="500" width="276" height="44" fill="#104c3a"/>
+    <use href="#am" transform="translate(320 522)"/><use href="#am" transform="translate(400 522)"/><use href="#am" transform="translate(480 522)"/>
+    <path d="M268 560 V 596" stroke="#9aa2ad" stroke-width="2.4"/><circle cx="268" cy="604" r="7" fill="#9aa2ad"/><path d="M301 560 V 596" stroke="#9aa2ad" stroke-width="2.4"/><circle cx="301" cy="604" r="7" fill="#9aa2ad"/><path d="M334 560 V 596" stroke="#9aa2ad" stroke-width="2.4"/><circle cx="334" cy="604" r="7" fill="#9aa2ad"/><path d="M367 560 V 596" stroke="#9aa2ad" stroke-width="2.4"/><circle cx="367" cy="604" r="7" fill="#9aa2ad"/><path d="M400 560 V 596" stroke="#9aa2ad" stroke-width="2.4"/><circle cx="400" cy="604" r="7" fill="#9aa2ad"/><path d="M433 560 V 596" stroke="#9aa2ad" stroke-width="2.4"/><circle cx="433" cy="604" r="7" fill="#9aa2ad"/><path d="M466 560 V 596" stroke="#9aa2ad" stroke-width="2.4"/><circle cx="466" cy="604" r="7" fill="#9aa2ad"/><path d="M499 560 V 596" stroke="#9aa2ad" stroke-width="2.4"/><circle cx="499" cy="604" r="7" fill="#9aa2ad"/><path d="M532 560 V 596" stroke="#9aa2ad" stroke-width="2.4"/><circle cx="532" cy="604" r="7" fill="#9aa2ad"/>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Fuşya pul payet Wan kirasfistanı, altın pullu, dökümlü kollu, düğünlük">
+  
+  <defs>
+    <linearGradient id="bgg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8eff3"/>
+      <stop offset="1" stop-color="#f4e3eb"/>
+    </linearGradient>
+    <g id="bgm"><circle r="4" fill="#eaccdb"/><g stroke="#eaccdb" stroke-width="1.8" stroke-linecap="round"><path d="M0-9V-6"/><path d="M0 9V6"/><path d="M-9 0H-6"/><path d="M9 0H6"/><path d="M-6.4-6.4-4.2-4.2"/><path d="M6.4 6.4 4.2 4.2"/><path d="M-6.4 6.4-4.2 4.2"/><path d="M6.4-6.4 4.2-4.2"/></g></g>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bgg)"/>
+  <use href="#bgm" transform="translate(268 588) scale(0.93)" opacity="0.35"/><use href="#bgm" transform="translate(298 256) scale(1.25)" opacity="0.35"/><use href="#bgm" transform="translate(695 790) scale(0.98)" opacity="0.35"/><use href="#bgm" transform="translate(708 721) scale(1.29)" opacity="0.35"/><use href="#bgm" transform="translate(436 708) scale(0.95)" opacity="0.35"/><use href="#bgm" transform="translate(525 406) scale(1.52)" opacity="0.35"/><use href="#bgm" transform="translate(508 293) scale(1.15)" opacity="0.35"/><use href="#bgm" transform="translate(711 862) scale(0.96)" opacity="0.35"/><use href="#bgm" transform="translate(759 459) scale(1.51)" opacity="0.35"/><use href="#bgm" transform="translate(246 180) scale(1.02)" opacity="0.35"/>
+  <path d="M 136 920 V 300 Q 136 130 400 130 Q 664 130 664 300 V 920"
+        fill="none" stroke="#e7ce91" stroke-width="3" opacity="0.5"/>
+  <defs>
+    <linearGradient id="skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b64c7e"/>
+      <stop offset="0.55" stop-color="#a1195a"/>
+      <stop offset="1" stop-color="#7e1446"/>
+    </linearGradient>
+    <linearGradient id="bodice" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b64c7e"/>
+      <stop offset="1" stop-color="#a1195a"/>
+    </linearGradient>
+    <linearGradient id="slv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cb5790"/>
+      <stop offset="1" stop-color="#9f3167"/>
+    </linearGradient>
+    <linearGradient id="belt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ddb75f"/>
+      <stop offset="0.5" stop-color="#d4a537"/>
+      <stop offset="1" stop-color="#ae872d"/>
+    </linearGradient>
+    <g id="hm"><circle r="4" fill="#c79b34"/><g stroke="#c79b34" stroke-width="1.8" stroke-linecap="round"><path d="M0-9V-6"/><path d="M0 9V6"/><path d="M-9 0H-6"/><path d="M9 0H6"/><path d="M-6.4-6.4-4.2-4.2"/><path d="M6.4 6.4 4.2 4.2"/><path d="M-6.4 6.4-4.2 4.2"/><path d="M6.4-6.4 4.2-4.2"/></g></g>
+    <g id="cm"><circle r="4" fill="#ddb75f"/><g stroke="#ddb75f" stroke-width="1.8" stroke-linecap="round"><path d="M0-9V-6"/><path d="M0 9V6"/><path d="M-9 0H-6"/><path d="M9 0H6"/><path d="M-6.4-6.4-4.2-4.2"/><path d="M6.4 6.4 4.2 4.2"/><path d="M-6.4 6.4-4.2 4.2"/><path d="M6.4-6.4 4.2-4.2"/></g></g>
+  </defs>
+  <ellipse cx="400" cy="912" rx="215" ry="26" fill="#26190f" opacity="0.13"/>
+  <!-- Etek -->
+  <path d="M345 392 C322 520 246 700 168 870 Q 400 912 632 870 C554 700 478 520 455 392 Z" fill="url(#skirt)"/>
+  <path d="M345 392 C322 520 246 700 168 870 Q 260 886 320 890 C 300 700 320 520 352 392 Z" fill="#7e1446" opacity="0.35"/>
+  <path d="M455 392 C478 520 554 700 632 870 Q 540 886 480 890 C 500 700 480 520 448 392 Z" fill="#7e1446" opacity="0.35"/>
+  <path d="M330 400 C 296.75 540, 300.25 700, 267 862" stroke="#c7759c" stroke-width="3" fill="none" opacity="0.38"/><path d="M362 400 C 343.95 540, 345.85 700, 327.8 862" stroke="#c7759c" stroke-width="3" fill="none" opacity="0.38"/><path d="M400 400 C 400 540, 400 700, 400 862" stroke="#c7759c" stroke-width="3" fill="none" opacity="0.5"/><path d="M438 400 C 456.05 540, 454.15 700, 472.2 862" stroke="#c7759c" stroke-width="3" fill="none" opacity="0.38"/><path d="M470 400 C 503.25 540, 499.75 700, 533 862" stroke="#c7759c" stroke-width="3" fill="none" opacity="0.38"/>
+  <path d="M190 838 Q 400 878 610 838" fill="none" stroke="#d4a537" stroke-width="6" opacity="0.9"/>
+  <use href="#hm" transform="translate(190 838) scale(0.95)"/><use href="#hm" transform="translate(232 844) scale(0.95)"/><use href="#hm" transform="translate(274 849) scale(0.95)"/><use href="#hm" transform="translate(316 852) scale(0.95)"/><use href="#hm" transform="translate(358 854) scale(0.95)"/><use href="#hm" transform="translate(400 855) scale(0.95)"/><use href="#hm" transform="translate(442 854) scale(0.95)"/><use href="#hm" transform="translate(484 852) scale(0.95)"/><use href="#hm" transform="translate(526 849) scale(0.95)"/><use href="#hm" transform="translate(568 844) scale(0.95)"/><use href="#hm" transform="translate(610 838) scale(0.95)"/>
+  <!-- Kollar -->
+  <path d="M340 214 C270 240 200 330 168 432 C150 486 138 520 126 556 C162 544 198 520 226 488 C264 444 298 378 324 318 C332 288 338 248 340 214 Z" fill="url(#slv)"/>
+  <path d="M340 214 C270 240 200 330 168 432 C150 486 138 520 126 556 C162 544 198 520 226 488 C264 444 298 378 324 318 C332 288 338 248 340 214 Z" fill="url(#slv)" transform="translate(800 0) scale(-1 1)"/>
+  <!-- Beden -->
+  <path d="M338 206 C330 280 336 340 346 392 L454 392 C464 340 470 280 462 206 C438 194 416 190 400 190 C384 190 362 194 338 206 Z" fill="url(#bodice)"/>
+  <path d="M368 204 C378 236 390 258 400 268 C410 258 422 236 432 204 C420 198 410 196 400 196 C390 196 380 198 368 204 Z" fill="#540d2f"/>
+  <path d="M368 204 C378 236 390 258 400 268 C410 258 422 236 432 204" fill="none" stroke="#d4a537" stroke-width="3.4"/>
+  <circle cx="368" cy="246" r="4.2" fill="#d4a537"/><circle cx="384" cy="250" r="4.2" fill="#d4a537"/><circle cx="400" cy="254" r="4.2" fill="#d4a537"/><circle cx="416" cy="250" r="4.2" fill="#d4a537"/><circle cx="432" cy="246" r="4.2" fill="#d4a537"/>
+  <use href="#cm" transform="translate(400 322) scale(1.5)"/>
+  <!-- Şûtik kuşak -->
+  <rect x="332" y="374" width="136" height="32" rx="9" fill="url(#belt)"/>
+  <path d="M340 382 H 462 M340 396 H 462" stroke="#947327" stroke-width="1.6" opacity="0.6"/>
+  <path d="M394-9 402 0 394 9 386 0Z" transform="translate(6 390)" fill="#8a6b24"/>
+  <path d="M370 404 C 364 440, 368 460, 362 486" stroke="#ddb75f" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M379 404 C 373 440, 377 460, 371 486" stroke="#ddb75f" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M388 404 C 382 440, 386 460, 380 486" stroke="#ddb75f" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M397 404 C 391 440, 395 460, 389 486" stroke="#ddb75f" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M421 808L421.9 809.3 424 810 421.9 810.9 421 813 420.2 810.9 418 810 420.2 809.3Z" fill="#fff" opacity="0.59"/><path d="M482 793L483.1 795.9 486 797 483.1 799.0 482 802 480.1 799.0 477 797 480.1 795.9Z" fill="#fff" opacity="0.56"/><path d="M385 646L386.3 648.4 389 650 386.3 650.9 385 653 383.8 650.9 381 650 383.8 648.4Z" fill="#fff" opacity="0.56"/><path d="M284 770L285.5 773.5 289 775 285.5 777.2 284 781 281.8 777.2 278 775 281.8 773.5Z" fill="#fff" opacity="0.61"/><path d="M398 559L399.6 562.5 403 564 399.6 565.6 398 569 396.4 565.6 393 564 396.4 562.5Z" fill="#fff" opacity="0.62"/><path d="M280 665L281.8 667.9 285 669 281.8 671.0 280 674 278.8 671.0 276 669 278.8 667.9Z" fill="#fff" opacity="0.75"/><path d="M448 661L450.1 664.4 454 666 450.1 667.8 448 672 446.7 667.8 443 666 446.7 664.4Z" fill="#fff" opacity="0.68"/><path d="M314 412L314.5 413.5 316 414 314.5 415.2 314 417 312.9 415.2 311 414 312.9 413.5Z" fill="#fff" opacity="0.41"/><path d="M266 715L266.5 717.5 269 718 266.5 719.4 266 721 264.5 719.4 262 718 264.5 717.5Z" fill="#fff" opacity="0.76"/><path d="M284 794L286.2 797.4 290 799 286.2 800.9 284 805 282.6 800.9 279 799 282.6 797.4Z" fill="#fff" opacity="0.61"/><path d="M536 328L537.8 330.7 541 332 537.8 333.4 536 336 535.1 333.4 532 332 535.1 330.7Z" fill="#fff" opacity="0.67"/><path d="M406 759L407.1 761.7 410 763 407.1 764.7 406 768 404.1 764.7 401 763 404.1 761.7Z" fill="#fff" opacity="0.80"/><path d="M508 742L508.9 744.4 511 745 508.9 746.3 508 748 507.0 746.3 505 745 507.0 744.4Z" fill="#fff" opacity="0.49"/><path d="M285 301L286.9 304.0 290 305 286.9 306.9 285 310 284.0 306.9 281 305 284.0 304.0Z" fill="#fff" opacity="0.77"/><path d="M494 457L495.2 459.7 498 461 495.2 462.1 494 465 492.9 462.1 490 461 492.9 459.7Z" fill="#fff" opacity="0.73"/><path d="M308 650L309.5 652.9 312 654 309.5 655.6 308 659 306.8 655.6 304 654 306.8 652.9Z" fill="#fff" opacity="0.83"/><path d="M261 710L261.9 712.7 265 714 261.9 715.2 261 718 259.4 715.2 257 714 259.4 712.7Z" fill="#fff" opacity="0.53"/><path d="M493 611L494.0 612.7 496 614 494.0 614.4 493 616 492.4 614.4 491 614 492.4 612.7Z" fill="#fff" opacity="0.74"/><path d="M337 364L338.7 366.5 342 368 338.7 369.2 337 372 336.0 369.2 333 368 336.0 366.5Z" fill="#fff" opacity="0.42"/><path d="M316 453L317.6 455.5 320 457 317.6 458.0 316 461 315.1 458.0 312 457 315.1 455.5Z" fill="#fff" opacity="0.68"/><path d="M523 450L524.6 453.1 528 455 524.6 456.4 523 460 521.3 456.4 518 455 521.3 453.1Z" fill="#fff" opacity="0.82"/><path d="M322 553L323.4 556.4 327 558 323.4 559.7 322 563 320.2 559.7 317 558 320.2 556.4Z" fill="#fff" opacity="0.35"/><path d="M365 770L366.5 773.1 369 774 366.5 775.6 365 778 364.0 775.6 361 774 364.0 773.1Z" fill="#fff" opacity="0.85"/><path d="M470 803L471.3 805.5 474 807 471.3 808.0 470 811 468.8 808.0 466 807 468.8 805.5Z" fill="#fff" opacity="0.42"/><path d="M485 711L486.9 714.5 490 716 486.9 717.5 485 721 484.0 717.5 481 716 484.0 714.5Z" fill="#fff" opacity="0.70"/><path d="M261 357L261.5 359.2 264 360 261.5 361.2 261 363 259.6 361.2 258 360 259.6 359.2Z" fill="#fff" opacity="0.58"/><path d="M476 484L477.0 487.0 480 488 477.0 489.6 476 492 474.3 489.6 471 488 474.3 487.0Z" fill="#fff" opacity="0.82"/><path d="M256 685L257.0 688.6 260 690 257.0 691.7 256 695 254.0 691.7 251 690 254.0 688.6Z" fill="#fff" opacity="0.35"/><path d="M434 464L435.6 467.4 439 469 435.6 470.9 434 475 432.1 470.9 428 469 432.1 467.4Z" fill="#fff" opacity="0.56"/><path d="M382 743L383.4 745.4 385 746 383.4 747.4 382 749 381.3 747.4 379 746 381.3 745.4Z" fill="#fff" opacity="0.80"/>
+</svg>
