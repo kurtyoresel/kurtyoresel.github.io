@@ -5,7 +5,9 @@
 (function () {
   "use strict";
 
-  var ROOT = document.documentElement.getAttribute("data-root") || ".";
+  var ROOT = document.documentElement.hasAttribute("data-root")
+    ? document.documentElement.getAttribute("data-root")
+    : ".";
 
   /* ---------- Google Analytics (GA4) ---------- */
   var GA_ID = (window.KY_CONFIG && window.KY_CONFIG.gaId) || "";

@@ -7,7 +7,7 @@
 3. Mülk (property) adı: `Kurt Yoresel Site` → saat dilimi **Türkiye**, para birimi **TRY** → İleri.
 4. Sektör ve boyut sorularını istediğin gibi geç → **Oluştur** → sözleşmeyi kabul et.
 5. Platform olarak **Web**'i seç.
-6. Site adresi: `https://ahmethttp.github.io` — akış adı: `Kurt Yoresel` → **Oluştur**.
+6. Site adresi: `https://kurtyoresel.github.io` — akış adı: `Kurt Yoresel` → **Oluştur**.
 7. Ekranda **"G-" ile başlayan Ölçüm Kimliği** göreceksin (örn `G-AB12CD34EF`). **Bunu kopyala.**
 
 Sonra iki seçenek:
@@ -39,7 +39,7 @@ Not: Aynı ziyaretçi aynı gün içinde tekrar talep bırakamaz (tarayıcı baz
 ## 4) Google'da çıkmak için (önemli, 5 dakika)
 
 1. https://search.google.com/search-console adresine git.
-2. **"URL öneki"** seç, `https://ahmethttp.github.io/kurt-yoresel/` yaz.
+2. **"URL öneki"** seç, `https://kurtyoresel.github.io/` yaz.
 3. Doğrulama için **Google Analytics** seçeneğini kullan (GA'yı kurduysan otomatik doğrular).
 4. Soldan **Site Haritaları** → `sitemap.xml` yaz → Gönder.
 

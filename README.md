@@ -2,7 +2,7 @@
 
 Kirasfistan, Şal û Şepik, Puşi ve yöresel aksesuarlar için **ön talep toplama** amaçlı e-ticaret vitrini.
 
-🌐 **Canlı site:** https://ahmethttp.github.io/kurt-yoresel/
+🌐 **Canlı site:** https://kurtyoresel.github.io/
 
 ## Nasıl çalışır?
 

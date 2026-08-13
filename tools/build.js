@@ -10,7 +10,7 @@ const fs = require("fs");
 const path = require("path");
 
 /* ---------------- Yapılandırma ---------------- */
-const SITE_URL = "https://ahmethttp.github.io/kurt-yoresel"; // özel alan adı alınınca burayı değiştir
+const SITE_URL = "https://kurtyoresel.github.io"; // özel alan adı alınınca burayı değiştir
 const SITE_NAME = "Kürt Yöresel";
 const SITE_TAGLINE = "Kirasfistan, Şal û Şepik ve Yöresel Kürt Kıyafetleri";
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
@@ -1317,7 +1317,7 @@ ${demandSection("..", true)}`
 
   /* ---------- 404 ---------- */
   writeFile("404.html", layout({
-    root: "/kurt-yoresel",
+    root: "",
     title: `Sayfa Bulunamadı | ${SITE_NAME}`,
     desc: "Aradığınız sayfa bulunamadı.",
     canonicalPath: "/404.html",
@@ -1328,15 +1328,13 @@ ${demandSection("..", true)}`
   <div class="err-code">404</div>
   <h1>Aradığınız sayfa bulunamadı</h1>
   <p style="color:var(--muted);margin:10px 0 24px;">Sayfa taşınmış ya da hiç var olmamış olabilir.</p>
-  <a class="btn btn-primary" href="/kurt-yoresel/">Anasayfaya Dön</a>
+  <a class="btn btn-primary" href="/">Anasayfaya Dön</a>
 </div>`
   }));
 
   /* ---------- robots.txt & sitemap.xml ---------- */
-  /* Not: GitHub Pages proje sitelerinde robots.txt alan kökünden okunmadığı için etkisizdir;
-     arama/ ve favoriler/ sayfaları meta robots "noindex" ile korunur. Sitemap, Search Console'a elle gönderilir.
-     Dosya, özel alan adına geçilince işlevsel olacağı için yine de üretiliyor. */
-  writeFile("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+  /* Site alan kökünden yayınlandığı için robots.txt geçerlidir (kurtyoresel.github.io). */
+  writeFile("robots.txt", `User-agent: *\nAllow: /\nDisallow: /arama/\nDisallow: /favoriler/\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
   const urls = [
     ["/", "1.0", "weekly"],
