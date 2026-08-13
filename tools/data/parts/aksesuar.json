@@ -1,146 +1,212 @@
 [
-  {
-    "slug": "aks-serhat-pullu-kofi-bordo",
-    "name": "Serhat Yöresi Pullu Kofi – Bordo Boncuk İşlemeli",
-    "category": "aksesuar",
-    "region": "Serhat",
-    "fabric": "Pul Payet",
-    "colorName": "Bordo",
-    "price": 780,
-    "oldPrice": null,
-    "featured": true,
-    "shortDesc": "Serhat yöresine özgü pullu kofi; bordo kadife zemin üzerine el dizimi boncuk ve payetlerle işlenir. Düğün, kına ve halay gecelerinde kirasfistanı tamamlar.",
-    "longDescHtml": "<p>Serhat yöresinin yüksek yaylalarında düğün ve kına gecelerinin vazgeçilmezi olan kofi, kadın başlıkları arasında en gösterişli olanıdır. Bu model, bordo kadife zemin üzerine tek tek elle dizilen pul ve cam boncuklarla hazırlanır; yüzeydeki yıldız motifi düzeni, ışığı her açıdan yakalayarak başlığa hareket kazandırır.</p><p>Kofinin kenarını çevreleyen altın sarısı boncuk sıraları, kiras ve fistanla kurulan renk bütünlüğünü güçlendirir. Bele sarılan şûtik ile yakın tonlarda seçildiğinde, halay başında dönen bir gelinin ya da davetlinin silüetini tamamlayan geleneksel takımın son parçası olur.</p><p>İç kısmı pamuklu astarla desteklendiği için uzun eğlencelerde rahatça taşınır; hafif yapısı sayesinde saç aksesuarlarıyla birlikte kullanılabilir.</p><h3>Öne Çıkan Özellikler</h3><ul><li>Bordo kadife zemin üzerine el dizimi pul ve cam boncuk işleme</li><li>Serhat yöresine özgü yıldız motifi yerleşimi</li><li>Kenarlarda altın sarısı boncuk şeritleri</li><li>Pamuklu iç astar ile konforlu kullanım</li><li>Düğün, kına ve nişan törenlerine uygun</li></ul>",
-    "metaTitle": "Serhat Pullu Kofi – Bordo Boncuk İşlemeli Başlık",
-    "metaDesc": "Bordo kadife üzerine el dizimi pul ve boncuk işlemeli Serhat kofisi. Düğün ve kına gecelerinde kirasfistanınızı tamamlayın; şimdi yakından inceleyin.",
-    "alt": "Bordo kadife zemin üzerine pul ve boncuk işlemeli Serhat kofisi, altın sarısı kenarlıklı geleneksel kadın başlığı",
-    "tags": ["kofi", "pullu kofi", "serhat", "geleneksel başlık", "kürt aksesuar", "kına başlığı"],
-    "art": {
-      "palette": { "p1": "#7a1f2b", "p2": "#8f2938", "ac": "#c08a1d" },
-      "motif": "star",
-      "sleeve": "klasik",
-      "sparkle": true,
-      "kind": "kofi"
-    }
-  },
-  {
-    "slug": "aks-hekari-boncuklu-kofi-zumrut",
-    "name": "Hekarî Yöresi Boncuklu Kofi – Zümrüt Yeşili Gümüş Pullu",
-    "category": "aksesuar",
-    "region": "Hekarî",
-    "fabric": "Boncuk İşleme",
-    "colorName": "Zümrüt Yeşili",
-    "price": 640,
-    "oldPrice": null,
-    "featured": false,
-    "shortDesc": "Hekarî ustalarının el dizimi boncuklarla hazırladığı zümrüt yeşili kofi; gümüş pullarla ışıldar, kirasfistan ve halay kıyafetlerine derinlik katar.",
-    "longDescHtml": "<p>Hekarî dağlarının köylerinde kofi, yalnızca bir başlık değil; taşıyanın yöresini ve ailesinin el işi geleneğini anlatan bir kimliktir. Bu model, zümrüt yeşili zemin üzerine sık dokulu cam boncuklarla işlenir ve merkezdeki güneş motifi, Hekarî işlemeciliğinin ayırt edici çizgisini taşır.</p><p>Boncukların arasına serpiştirilen gümüş pullar, mum ve avize ışığında yumuşak bir parıltı verir. Zümrüt tonu; mor, bordo ve lacivert kiras modelleriyle olduğu kadar krem fistanlarla da dengeli bir karşıtlık kurar, bele bağlanan şûtik ile takım tamamlanır.</p><h3>Öne Çıkan Özellikler</h3><ul><li>Zümrüt yeşili zemin üzerine sık dokulu cam boncuk işleme</li><li>Merkezde Hekarî tarzı güneş motifi</li><li>Gümüş pul serpmeleriyle zarif parıltı</li><li>Farklı renklerdeki kiras ve fistanlarla kolay eşleşme</li><li>Nişan, düğün ve halay gecelerinde kullanım</li><li>Hafif ve dengeli oturan form</li></ul>",
-    "metaTitle": "Hekarî Boncuklu Kofi – Zümrüt Yeşili Pullu Başlık",
-    "metaDesc": "Zümrüt yeşili zeminde gümüş pul ve cam boncuk işlemeli Hekarî kofisi. Halay, nişan ve düğün kıyafetinize yöresel bir dokunuş katmak için hemen keşfedin.",
-    "alt": "Zümrüt yeşili cam boncuk işlemeli Hekarî kofisi, gümüş pullu ve güneş motifli geleneksel başlık",
-    "tags": ["kofi", "boncuklu kofi", "hekari", "geleneksel başlık", "zümrüt yeşili", "yöresel aksesuar"],
-    "art": {
-      "palette": { "p1": "#14624a", "p2": "#1b7a5c", "ac": "#9aa2ad" },
-      "motif": "sun",
-      "sleeve": "klasik",
-      "sparkle": true,
-      "kind": "kofi"
-    }
-  },
-  {
-    "slug": "aks-botan-ipek-sutik-hardal",
-    "name": "Botan Yöresi İpek Şûtik – Hardal Şal Desenli Kuşak",
-    "category": "aksesuar",
-    "region": "Botan",
-    "fabric": "İpek",
-    "colorName": "Hardal",
-    "price": 560,
-    "oldPrice": 690,
-    "featured": false,
-    "shortDesc": "Botan yöresinin ipek şûtik geleneğini yaşatan hardal renkli kuşak; şal desenli dokusuyla kiras ve fistanların beline zarif bir vurgu ekler.",
-    "longDescHtml": "<p>Şûtik, Botan yöresinde kıyafetin belkemiğidir: kirasın üzerine sarılır, fistanın dökümünü toplar ve duruşa karakter verir. Bu ipek model, hardal zemin üzerine dokunan şal (paisley) desenleriyle klasik Botan kuşaklarının çizgisini sürdürür.</p><p>İpeğin doğal dökümü sayesinde şûtik bele kat kat sarıldığında kalınlık yapmaz; uçlarındaki bakır sarısı biye, düğüm atıldığında öne düşerek kıyafete hareket katar. Düğünlerde koyu renk kirasların, günlük kullanımda ise sade fistanların üzerinde belirgin bir vurgu oluşturur.</p><p>Yaklaşık üç metre uzunluğundaki kuşak, farklı bel ölçülerine ve sarma tarzlarına uyum sağlar.</p><h3>Öne Çıkan Özellikler</h3><ul><li>Dokuma ipek kumaş, doğal ve hafif döküm</li><li>Botan yöresine özgü şal desenli yüzey</li><li>Uçlarda bakır sarısı biye detayı</li><li>Kat kat sarımda kalınlaşmayan ince yapı</li><li>Düğün ve günlük kullanım için uygun uzunluk</li></ul>",
-    "metaTitle": "İpek Şûtik – Botan Yöresi Hardal Desenli Kuşak",
-    "metaDesc": "Botan dokuması ipek şûtik ile kiras ve fistanınıza zarif bir bel vurgusu ekleyin. Hardal renkli, şal desenli geleneksel kuşağı şimdi yakından inceleyin.",
-    "alt": "Hardal renkli şal desenli ipek şûtik kuşak, bakır sarısı biyeli, katlanmış halde",
-    "tags": ["şutik", "ipek kuşak", "botan", "bel kuşağı", "kürt aksesuar", "şal desen"],
-    "art": {
-      "palette": { "p1": "#a8720f", "p2": "#8a5c0c", "ac": "#b06c2e" },
-      "motif": "paisley",
-      "sleeve": "klasik",
-      "sparkle": false,
-      "kind": "sutik"
-    }
-  },
-  {
-    "slug": "aks-colemerg-yun-sutik-kiremit",
-    "name": "Colemêrg Yöresi Yün Şûtik – Kiremit Balıksırtı Desenli",
-    "category": "aksesuar",
-    "region": "Colemêrg",
-    "fabric": "Yün Dokuma",
-    "colorName": "Kiremit",
-    "price": 380,
-    "oldPrice": null,
-    "featured": false,
-    "shortDesc": "Colemêrg tezgâhlarında dokunan yün şûtik; kiremit zemin üzerinde balıksırtı desen taşır, kış düğünlerinde ve halaylarda beli sıkıca sarar.",
-    "longDescHtml": "<p>Yün şûtik, dağ ikliminin kıyafete yansımasıdır. Colemêrg köylerinde kışın kiras üzerine ipek yerine yün kuşak sarılır; hem beli sıcak tutar hem de kalın fistan kumaşını toparlayarak harekete alan açar. Bu model, el tezgâhında dokunan kiremit renkli yünden üretilmiştir.</p><p>Yüzey boyunca uzanan balıksırtı (chevron) desen, dokumaya yön ve derinlik kazandırır; altın sarısı çizgi araları deseni belirginleştirir. Sıkı bükümlü iplik sayesinde kuşak sarıldığı yerde durur, halay boyunca gevşemez.</p><h3>Öne Çıkan Özellikler</h3><ul><li>El tezgâhında dokunmuş sıkı bükümlü yün</li><li>Kiremit zemin üzerinde balıksırtı desen</li><li>Altın sarısı ara çizgilerle belirgin doku</li><li>Beli sıcak tutan kalın kış dokuması</li><li>Halay ve uzun eğlencelerde gevşemeyen sarım</li><li>Kalın kumaşlı kiras ve fistanlarla uyumlu</li></ul>",
-    "metaTitle": "Yün Şûtik – Colemêrg Dokuma Kiremit Kuşak",
-    "metaDesc": "Colemêrg tezgâhlarında dokunan yün şûtik, beli sıcak tutar ve kıyafete yöresel karakter katar. Kiremit renkli balıksırtı desenli kuşağı hemen keşfedin.",
-    "alt": "Kiremit renkli balıksırtı desenli el dokuması yün şûtik kuşak, altın sarısı çizgili",
-    "tags": ["şutik", "yün kuşak", "colemerg", "bel kuşağı", "el dokuması", "kış aksesuarı"],
-    "art": {
-      "palette": { "p1": "#9c3b22", "p2": "#7d2f1b", "ac": "#c08a1d" },
-      "motif": "chevron",
-      "sleeve": "klasik",
-      "sparkle": false,
-      "kind": "sutik"
-    }
-  },
-  {
-    "slug": "aks-serhat-el-orgusu-yun-corap",
-    "name": "Serhat El Örgüsü Yün Çorap – Lacivert Zikzak Desenli",
-    "category": "aksesuar",
-    "region": "Serhat",
-    "fabric": "Yün Örgü",
-    "colorName": "Lacivert",
-    "price": 280,
-    "oldPrice": null,
-    "featured": false,
-    "shortDesc": "Serhat yaylalarının yününden el örgüsü yöresel çorap; zikzak desenleri nazara karşı koruyucu sayılır, soğuk kış günlerinde ayağı sıcak tutar.",
-    "longDescHtml": "<p>Serhat yaylalarında çorap örmek kuşaktan kuşağa aktarılan bir kış uğraşıdır. Beş şişle örülen bu çorap, koyunyününün doğal sıcaklığını taşır; lacivert zemin üzerine altın sarısı iplikle işlenen zikzak sıraları, yörede nazara karşı koruyucu kabul edilen geleneksel desenlerdendir.</p><p>Konç kısmı bileği kavrayacak biçimde lastik örgüyle biter, topuk ve burun bölgeleri çift katlı örüldüğü için dayanıklıdır. Ev içinde tek başına, dışarıda ise bot ve çarık içinde kullanılabilir; kalın dokusuna rağmen ayağı terletmeyen doğal bir yapısı vardır.</p><h3>Öne Çıkan Özellikler</h3><ul><li>Doğal koyunyünü ipliğiyle beş şişte el örgüsü</li><li>Lacivert zemin üzerine altın sarısı zikzak desen</li><li>Çift katlı örülen dayanıklı topuk ve burun</li><li>Bileği kavrayan lastik örgü konç</li><li>Kışın sıcak tutan, nefes alan doğal doku</li></ul>",
-    "metaTitle": "El Örgüsü Yün Çorap – Serhat Yöresel Desenli",
-    "metaDesc": "Serhat yününden beş şişle örülen yöresel çorap; zikzak desenli, kışın sıcak tutan bir el emeği. Geleneksel örgü çorabı yakından incelemek için tıklayın.",
-    "alt": "Lacivert zeminli, altın sarısı zikzak desenli el örgüsü yün yöresel çorap çifti",
-    "tags": ["yöresel çorap", "el örgüsü", "yün çorap", "serhat", "kışlık çorap", "geleneksel örgü"],
-    "art": {
-      "palette": { "p1": "#1f3a5f", "p2": "#2a4d7a", "ac": "#c08a1d" },
-      "motif": "zigzag",
-      "sleeve": "klasik",
-      "sparkle": false,
-      "kind": "corap"
-    }
-  },
-  {
-    "slug": "aks-mardin-kilim-heybe-kizil-kahve",
-    "name": "Mêrdîn Kilim Desenli Heybe – Kızıl Kahve Omuz Çantası",
-    "category": "aksesuar",
-    "region": "Mêrdîn",
-    "fabric": "Kilim Dokuma",
-    "colorName": "Kızıl Kahve",
-    "price": 840,
-    "oldPrice": 1050,
-    "featured": true,
-    "shortDesc": "Mêrdîn kilim desenleriyle dokunan heybe omuz çantası; kızıl kahve zeminde eşkenar dörtgen motifler taşır, günlük kullanımda yöresel bir imza bırakır.",
-    "longDescHtml": "<p>Heybe, bir zamanlar atın eyerine asılan çift gözlü yol çantasıydı; bugün Mêrdîn tezgâhlarında dokunan kilim yüzeyleriyle omuz çantası olarak yaşamaya devam ediyor. Bu model, kızıl kahve zemin üzerine sıralanan eşkenar dörtgen motifleriyle klasik kilim kompozisyonunu taşır.</p><p>Dokumada kök boya tonlarını andıran kahve, koyu bakır ve altın sarısı iplikler kullanılmıştır. Sık atkılı kilim yüzey, çantaya kendiliğinden form verir; iç kısmı astarlı, ağzı ise dokuma şeritten kapaklıdır. Ayarlanabilir omuz askısı gün boyu taşımada denge sağlar.</p><p>Günlük kıyafetlerin yanında kiras ve fistanla da taşınabilen heybe, düğün ve festival gibi kalabalık günlerde eşyaları güvenle yanınızda tutar.</p><h3>Öne Çıkan Özellikler</h3><ul><li>Mêrdîn tezgâhlarında dokunan sık atkılı kilim yüzey</li><li>Kızıl kahve zemin üzerine eşkenar dörtgen motif dizisi</li><li>Kök boya tonlarında kahve, bakır ve altın sarısı iplikler</li><li>Astarlı iç bölme ve dokuma şerit kapak</li><li>Ayarlanabilir omuz askısı</li><li>Günlük kullanım ve yöresel kıyafetlerle uyum</li></ul>",
-    "metaTitle": "Kilim Desenli Heybe – Mêrdîn Dokuma Omuz Çantası",
-    "metaDesc": "Mêrdîn kilim motifleriyle dokunan heybe omuz çantası; sağlam dokusu ve kızıl kahve renkleriyle günlük kullanıma uygun. Hemen yakından inceleyin.",
-    "alt": "Kızıl kahve kilim desenli heybe omuz çantası, eşkenar dörtgen motifli, dokuma askılı",
-    "tags": ["heybe", "kilim çanta", "mardin", "omuz çantası", "el dokuması", "yöresel çanta"],
-    "art": {
-      "palette": { "p1": "#7a3b24", "p2": "#5c2c1a", "ac": "#d4a537" },
-      "motif": "diamond",
-      "sleeve": "klasik",
-      "sparkle": false,
-      "kind": "heybe"
-    }
+ {
+  "slug": "aks-serhat-pullu-kofi-bordo",
+  "name": "Serhat Yöresi Pullu Kofi – Bordo Boncuk İşlemeli",
+  "category": "aksesuar",
+  "region": "Serhat",
+  "fabric": "Pul Payet",
+  "colorName": "Bordo",
+  "price": 780,
+  "oldPrice": null,
+  "featured": true,
+  "shortDesc": "Serhat yöresine özgü pullu kofi; bordo kadife zemin üzerine el dizimi boncuk ve payetlerle işlenir. Düğün, kına ve halay gecelerinde kirasfistanı tamamlar.",
+  "longDescHtml": "<p>Serhat yöresinin yüksek yaylalarında düğün ve kına gecelerinin vazgeçilmezi olan kofi, kadın başlıkları arasında en gösterişli olanıdır. Bu model, bordo kadife zemin üzerine tek tek elle dizilen pul ve cam boncuklarla hazırlanır; yüzeydeki yıldız motifi düzeni, ışığı her açıdan yakalayarak başlığa hareket kazandırır.</p><p>Kofinin kenarını çevreleyen altın sarısı boncuk sıraları, kiras ve fistanla kurulan renk bütünlüğünü güçlendirir. Bele sarılan şûtik ile yakın tonlarda seçildiğinde, halay başında dönen bir gelinin ya da davetlinin silüetini tamamlayan geleneksel takımın son parçası olur.</p><p>İç kısmı pamuklu astarla desteklendiği için uzun eğlencelerde rahatça taşınır; hafif yapısı sayesinde saç aksesuarlarıyla birlikte kullanılabilir.</p><h3>Öne Çıkan Özellikler</h3><ul><li>Bordo kadife zemin üzerine el dizimi pul ve cam boncuk işleme</li><li>Serhat yöresine özgü yıldız motifi yerleşimi</li><li>Kenarlarda altın sarısı boncuk şeritleri</li><li>Pamuklu iç astar ile konforlu kullanım</li><li>Düğün, kına ve nişan törenlerine uygun</li></ul>",
+  "metaTitle": "Serhat Pullu Kofi – Bordo Boncuk İşlemeli Başlık",
+  "metaDesc": "Bordo kadife üzerine el dizimi pul ve boncuk işlemeli Serhat kofisi. Düğün ve kına gecelerinde kirasfistanınızı tamamlayın; şimdi yakından inceleyin.",
+  "alt": "Bordo kadife zemin üzerine pul ve boncuk işlemeli Serhat kofisi, altın sarısı kenarlıklı geleneksel kadın başlığı",
+  "tags": [
+   "kofi",
+   "pullu kofi",
+   "serhat",
+   "geleneksel başlık",
+   "kürt aksesuar",
+   "kına başlığı"
+  ],
+  "art": {
+   "palette": {
+    "p1": "#7a1f2b",
+    "p2": "#8f2938",
+    "ac": "#c08a1d"
+   },
+   "motif": "star",
+   "sleeve": "klasik",
+   "sparkle": true,
+   "kind": "kofi"
   }
+ },
+ {
+  "slug": "aks-hekari-boncuklu-kofi-zumrut",
+  "name": "Hekarî Yöresi Boncuklu Kofi – Zümrüt Yeşili Gümüş Pullu",
+  "category": "aksesuar",
+  "region": "Hekarî",
+  "fabric": "Boncuk İşleme",
+  "colorName": "Zümrüt Yeşili",
+  "price": 640,
+  "oldPrice": null,
+  "featured": false,
+  "shortDesc": "Hekarî ustalarının el dizimi boncuklarla hazırladığı zümrüt yeşili kofi; gümüş pullarla ışıldar, kirasfistan ve halay kıyafetlerine derinlik katar.",
+  "longDescHtml": "<p>Hekarî dağlarının köylerinde kofi, yalnızca bir başlık değil; taşıyanın yöresini ve ailesinin el işi geleneğini anlatan bir kimliktir. Bu model, zümrüt yeşili zemin üzerine sık dokulu cam boncuklarla işlenir ve merkezdeki güneş motifi, Hekarî işlemeciliğinin ayırt edici çizgisini taşır.</p><p>Boncukların arasına serpiştirilen gümüş pullar, mum ve avize ışığında yumuşak bir parıltı verir. Zümrüt tonu; mor, bordo ve lacivert kiras modelleriyle olduğu kadar krem fistanlarla da dengeli bir karşıtlık kurar, bele bağlanan şûtik ile takım tamamlanır.</p><h3>Öne Çıkan Özellikler</h3><ul><li>Zümrüt yeşili zemin üzerine sık dokulu cam boncuk işleme</li><li>Merkezde Hekarî tarzı güneş motifi</li><li>Gümüş pul serpmeleriyle zarif parıltı</li><li>Farklı renklerdeki kiras ve fistanlarla kolay eşleşme</li><li>Nişan, düğün ve halay gecelerinde kullanım</li><li>Hafif ve dengeli oturan form</li></ul>",
+  "metaTitle": "Hekarî Boncuklu Kofi – Zümrüt Yeşili Pullu Başlık",
+  "metaDesc": "Zümrüt yeşili zeminde gümüş pul ve cam boncuk işlemeli Hekarî kofisi. Halay, nişan ve düğün kıyafetinize yöresel bir dokunuş katmak için hemen keşfedin.",
+  "alt": "Zümrüt yeşili cam boncuk işlemeli Hekarî kofisi, gümüş pullu ve güneş motifli geleneksel başlık",
+  "tags": [
+   "kofi",
+   "boncuklu kofi",
+   "hekari",
+   "geleneksel başlık",
+   "zümrüt yeşili",
+   "yöresel aksesuar"
+  ],
+  "art": {
+   "palette": {
+    "p1": "#14624a",
+    "p2": "#1b7a5c",
+    "ac": "#9aa2ad"
+   },
+   "motif": "sun",
+   "sleeve": "klasik",
+   "sparkle": true,
+   "kind": "kofi"
+  }
+ },
+ {
+  "slug": "aks-botan-ipek-sutik-hardal",
+  "name": "Botan Yöresi İpek Şûtik – Hardal Şal Desenli Kuşak",
+  "category": "aksesuar",
+  "region": "Botan",
+  "fabric": "İpek",
+  "colorName": "Hardal",
+  "price": 560,
+  "oldPrice": 690,
+  "featured": false,
+  "shortDesc": "Botan yöresinin ipek şûtik geleneğini yaşatan hardal renkli kuşak; şal desenli dokusuyla kiras ve fistanların beline zarif bir vurgu ekler.",
+  "longDescHtml": "<p>Şûtik, Botan yöresinde kıyafetin belkemiğidir: kirasın üzerine sarılır, fistanın dökümünü toplar ve duruşa karakter verir. Bu ipek model, hardal zemin üzerine dokunan şal (paisley) desenleriyle klasik Botan kuşaklarının çizgisini sürdürür.</p><p>İpeğin doğal dökümü sayesinde şûtik bele kat kat sarıldığında kalınlık yapmaz; uçlarındaki bakır sarısı biye, düğüm atıldığında öne düşerek kıyafete hareket katar. Düğünlerde koyu renk kirasların, günlük kullanımda ise sade fistanların üzerinde belirgin bir vurgu oluşturur.</p><p>Yaklaşık üç metre uzunluğundaki kuşak, farklı bel ölçülerine ve sarma tarzlarına uyum sağlar.</p><h3>Öne Çıkan Özellikler</h3><ul><li>Dokuma ipek kumaş, doğal ve hafif döküm</li><li>Botan yöresine özgü şal desenli yüzey</li><li>Uçlarda bakır sarısı biye detayı</li><li>Kat kat sarımda kalınlaşmayan ince yapı</li><li>Düğün ve günlük kullanım için uygun uzunluk</li></ul>",
+  "metaTitle": "İpek Şûtik – Botan Yöresi Hardal Desenli Kuşak",
+  "metaDesc": "Botan dokuması ipek şûtik ile kiras ve fistanınıza zarif bir bel vurgusu ekleyin. Hardal renkli, şal desenli geleneksel kuşağı şimdi yakından inceleyin.",
+  "alt": "Hardal renkli şal desenli ipek şûtik kuşak, bakır sarısı biyeli, katlanmış halde",
+  "tags": [
+   "şutik",
+   "ipek kuşak",
+   "botan",
+   "bel kuşağı",
+   "kürt aksesuar",
+   "şal desen"
+  ],
+  "art": {
+   "palette": {
+    "p1": "#a8720f",
+    "p2": "#8a5c0c",
+    "ac": "#b06c2e"
+   },
+   "motif": "paisley",
+   "sleeve": "klasik",
+   "sparkle": false,
+   "kind": "sutik"
+  }
+ },
+ {
+  "slug": "aks-colemerg-yun-sutik-kiremit",
+  "name": "Colemêrg Yöresi Yün Şûtik – Kiremit Balıksırtı Desenli",
+  "category": "aksesuar",
+  "region": "Colemêrg",
+  "fabric": "Yün Dokuma",
+  "colorName": "Kiremit",
+  "price": 380,
+  "oldPrice": null,
+  "featured": false,
+  "shortDesc": "Colemêrg tezgâhlarında dokunan yün şûtik; kiremit zemin üzerinde balıksırtı desen taşır, kış düğünlerinde ve halaylarda beli sıkıca sarar.",
+  "longDescHtml": "<p>Yün şûtik, dağ ikliminin kıyafete yansımasıdır. Colemêrg köylerinde kışın kiras üzerine ipek yerine yün kuşak sarılır; hem beli sıcak tutar hem de kalın fistan kumaşını toparlayarak harekete alan açar. Bu model, el tezgâhında dokunan kiremit renkli yünden üretilmiştir.</p><p>Yüzey boyunca uzanan balıksırtı (chevron) desen, dokumaya yön ve derinlik kazandırır; altın sarısı çizgi araları deseni belirginleştirir. Sıkı bükümlü iplik sayesinde kuşak sarıldığı yerde durur, halay boyunca gevşemez.</p><h3>Öne Çıkan Özellikler</h3><ul><li>El tezgâhında dokunmuş sıkı bükümlü yün</li><li>Kiremit zemin üzerinde balıksırtı desen</li><li>Altın sarısı ara çizgilerle belirgin doku</li><li>Beli sıcak tutan kalın kış dokuması</li><li>Halay ve uzun eğlencelerde gevşemeyen sarım</li><li>Kalın kumaşlı kiras ve fistanlarla uyumlu</li></ul>",
+  "metaTitle": "Yün Şûtik – Colemêrg Dokuma Kiremit Kuşak",
+  "metaDesc": "Colemêrg tezgâhlarında dokunan yün şûtik, beli sıcak tutar ve kıyafete yöresel karakter katar. Kiremit renkli balıksırtı desenli kuşağı hemen keşfedin.",
+  "alt": "Kiremit renkli balıksırtı desenli el dokuması yün şûtik kuşak, altın sarısı çizgili",
+  "tags": [
+   "şutik",
+   "yün kuşak",
+   "colemerg",
+   "bel kuşağı",
+   "el dokuması",
+   "kış aksesuarı"
+  ],
+  "art": {
+   "palette": {
+    "p1": "#9c3b22",
+    "p2": "#7d2f1b",
+    "ac": "#c08a1d"
+   },
+   "motif": "chevron",
+   "sleeve": "klasik",
+   "sparkle": false,
+   "kind": "sutik"
+  }
+ },
+ {
+  "slug": "aks-serhat-el-orgusu-yun-corap",
+  "name": "Serhat El Örgüsü Yün Çorap – Lacivert Zikzak Desenli",
+  "category": "aksesuar",
+  "region": "Serhat",
+  "fabric": "Yün Örgü",
+  "colorName": "Lacivert",
+  "price": 280,
+  "oldPrice": null,
+  "featured": false,
+  "shortDesc": "Serhat yaylalarının yününden el örgüsü yöresel çorap; zikzak desenleri nazara karşı koruyucu sayılır, soğuk kış günlerinde ayağı sıcak tutar.",
+  "longDescHtml": "<p>Serhat yaylalarında çorap örmek kuşaktan kuşağa aktarılan bir kış uğraşıdır. Beş şişle örülen bu çorap, koyunyününün doğal sıcaklığını taşır; lacivert zemin üzerine altın sarısı iplikle işlenen zikzak sıraları, yörede nazara karşı koruyucu kabul edilen geleneksel desenlerdendir.</p><p>Konç kısmı bileği kavrayacak biçimde lastik örgüyle biter, topuk ve burun bölgeleri çift katlı örüldüğü için dayanıklıdır. Ev içinde tek başına, dışarıda ise bot ve çarık içinde kullanılabilir; kalın dokusuna rağmen ayağı terletmeyen doğal bir yapısı vardır.</p><h3>Öne Çıkan Özellikler</h3><ul><li>Doğal koyunyünü ipliğiyle beş şişte el örgüsü</li><li>Lacivert zemin üzerine altın sarısı zikzak desen</li><li>Çift katlı örülen dayanıklı topuk ve burun</li><li>Bileği kavrayan lastik örgü konç</li><li>Kışın sıcak tutan, nefes alan doğal doku</li></ul>",
+  "metaTitle": "El Örgüsü Yün Çorap – Serhat Yöresel Desenli",
+  "metaDesc": "Serhat yününden beş şişle örülen yöresel çorap; zikzak desenli, kışın sıcak tutan bir el emeği. Geleneksel örgü çorabı yakından incelemek için tıklayın.",
+  "alt": "Lacivert zeminli, altın sarısı zikzak desenli el örgüsü yün yöresel çorap çifti",
+  "tags": [
+   "yöresel çorap",
+   "el örgüsü",
+   "yün çorap",
+   "serhat",
+   "kışlık çorap",
+   "geleneksel örgü"
+  ],
+  "art": {
+   "palette": {
+    "p1": "#1f3a5f",
+    "p2": "#2a4d7a",
+    "ac": "#c08a1d"
+   },
+   "motif": "zigzag",
+   "sleeve": "klasik",
+   "sparkle": false,
+   "kind": "corap"
+  }
+ },
+ {
+  "slug": "aks-merdin-kilim-heybe-kizil-kahve",
+  "name": "Mêrdîn Kilim Desenli Heybe – Kızıl Kahve Omuz Çantası",
+  "category": "aksesuar",
+  "region": "Mêrdîn",
+  "fabric": "Kilim Dokuma",
+  "colorName": "Kızıl Kahve",
+  "price": 840,
+  "oldPrice": 1050,
+  "featured": true,
+  "shortDesc": "Mêrdîn kilim desenleriyle dokunan heybe omuz çantası; kızıl kahve zeminde eşkenar dörtgen motifler taşır, günlük kullanımda yöresel bir imza bırakır.",
+  "longDescHtml": "<p>Heybe, bir zamanlar atın eyerine asılan çift gözlü yol çantasıydı; bugün Mêrdîn tezgâhlarında dokunan kilim yüzeyleriyle omuz çantası olarak yaşamaya devam ediyor. Bu model, kızıl kahve zemin üzerine sıralanan eşkenar dörtgen motifleriyle klasik kilim kompozisyonunu taşır.</p><p>Dokumada kök boya tonlarını andıran kahve, koyu bakır ve altın sarısı iplikler kullanılmıştır. Sık atkılı kilim yüzey, çantaya kendiliğinden form verir; iç kısmı astarlı, ağzı ise dokuma şeritten kapaklıdır. Ayarlanabilir omuz askısı gün boyu taşımada denge sağlar.</p><p>Günlük kıyafetlerin yanında kiras ve fistanla da taşınabilen heybe, düğün ve festival gibi kalabalık günlerde eşyaları güvenle yanınızda tutar.</p><h3>Öne Çıkan Özellikler</h3><ul><li>Mêrdîn tezgâhlarında dokunan sık atkılı kilim yüzey</li><li>Kızıl kahve zemin üzerine eşkenar dörtgen motif dizisi</li><li>Kök boya tonlarında kahve, bakır ve altın sarısı iplikler</li><li>Astarlı iç bölme ve dokuma şerit kapak</li><li>Ayarlanabilir omuz askısı</li><li>Günlük kullanım ve yöresel kıyafetlerle uyum</li></ul>",
+  "metaTitle": "Kilim Desenli Heybe – Mêrdîn Dokuma Omuz Çantası",
+  "metaDesc": "Mêrdîn kilim motifleriyle dokunan heybe omuz çantası; sağlam dokusu ve kızıl kahve renkleriyle günlük kullanıma uygun. Hemen yakından inceleyin.",
+  "alt": "Kızıl kahve kilim desenli heybe omuz çantası, eşkenar dörtgen motifli, dokuma askılı",
+  "tags": [
+   "heybe",
+   "kilim çanta",
+   "mardin",
+   "omuz çantası",
+   "el dokuması",
+   "yöresel çanta"
+  ],
+  "art": {
+   "palette": {
+    "p1": "#7a3b24",
+    "p2": "#5c2c1a",
+    "ac": "#d4a537"
+   },
+   "motif": "diamond",
+   "sleeve": "klasik",
+   "sparkle": false,
+   "kind": "heybe"
+  }
+ }
 ]

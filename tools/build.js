@@ -42,7 +42,7 @@ const CATEGORIES = {
   },
   aksesuar: {
     name: "Aksesuar",
-    title: "Yöresel Aksesuarlar – Kofi, Şûtik, Heybe ve El Örgüsü Çoraplar",
+    title: "Kofi, Şûtik ve Heybe – Yöresel Aksesuarlar",
     desc: "Kofi başlıklar, şûtik kuşaklar, kilim desenli heybeler ve el örgüsü yöresel çoraplar. Kürt yöresel kıyafetlerini tamamlayan aksesuarları keşfedin.",
     intro: "Bir kirasfistanı ya da şal û şepiği tamamlayan şey detaylardır: pullu kofiler, ipek şûtikler, kilim desenli heybeler ve el örgüsü çoraplar. Yöresel aksesuar koleksiyonumuz bu sayfada."
   }
@@ -563,12 +563,13 @@ function layout(opts) {
   ${jsonldTags}
 </head>
 <body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
   <div class="topbar">🧵 <strong>Ön talep dönemi:</strong> Beğendiğiniz ürünlere talep bırakın, site açıldığında öncelikli haber verelim.</div>
   <header class="site-header">
     <div class="header-inner">
       <a class="logo" href="${root}/" aria-label="${SITE_NAME} anasayfa">${logoMarkSvg()}<span>Kürt <em>Yöresel</em></span></a>
-      <button class="nav-toggle icon-btn" aria-label="Menüyü aç/kapat" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-      <nav class="main-nav" aria-label="Ana menü">${navLinks(root, current)}</nav>
+      <button class="nav-toggle icon-btn" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="ana-menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      <nav class="main-nav" id="ana-menu" aria-label="Ana menü">${navLinks(root, current)}</nav>
       <div class="header-actions">
         <form class="search-form" role="search" action="${root}/arama/">
           <label class="visually-hidden" for="q">Ürün ara</label>
@@ -593,7 +594,7 @@ ${content}
         <p>Kirasfistandan şal û şepiğe, puşiden kofiye… Yöresel Kürt kıyafetlerini özenle seçilmiş bir koleksiyonda buluşturuyoruz. Şu an ön talep topluyoruz; yeterli ilgi oluştuğunda satışa başlayacağız.</p>
       </div>
       <div>
-        <h4>Kategoriler</h4>
+        <h2 class="f-head">Kategoriler</h2>
         <ul>
           <li><a href="${root}/kirasfistan/">Kirasfistan</a></li>
           <li><a href="${root}/sal-u-sepik/">Şal û Şepik</a></li>
@@ -602,7 +603,7 @@ ${content}
         </ul>
       </div>
       <div>
-        <h4>Kurumsal</h4>
+        <h2 class="f-head">Kurumsal</h2>
         <ul>
           <li><a href="${root}/hakkimizda/">Hakkımızda</a></li>
           <li><a href="${root}/blog/">Blog</a></li>
@@ -611,7 +612,7 @@ ${content}
         </ul>
       </div>
       <div>
-        <h4>Alışveriş</h4>
+        <h2 class="f-head">Alışveriş</h2>
         <ul>
           <li><a href="${root}/favoriler/">Favorilerim</a></li>
           <li><a href="${root}/#talep">Talep Bırak</a></li>
@@ -636,7 +637,7 @@ function productCard(p, root) {
   const old = p.oldPrice ? `<span class="price-old">${fmtPrice(p.oldPrice)}</span>` : "";
   return `<article class="product-card" data-region="${esc(p.region)}" data-fabric="${esc(p.fabric)}" data-price="${p.price}">
   <div class="product-media">${badge}
-    <button class="wish-btn" type="button" data-slug="${p.slug}" aria-label="${esc(p.name)} ürününü favorilere ekle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+    <button class="wish-btn" type="button" data-slug="${p.slug}" aria-label="${esc(p.name)} ürününü favorilere ekle" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
     <img src="${img}" alt="${esc(p.alt || p.name)}" loading="lazy" width="800" height="1000">
   </div>
   <div class="product-body">
@@ -788,7 +789,7 @@ function build() {
     const img = first ? `images/products/${first.slug}.${first._imgExt}` : "";
     return `<a class="category-card" href="./${key}/">
     <span class="cat-count">${byCat[key].length} ürün</span>
-    <div class="cat-art"><img src="./${img}" alt="${esc(cat.name)} kategorisi" loading="lazy" width="800" height="1000" style="width:100%;height:100%;object-fit:cover;object-position:top;"></div>
+    <div class="cat-art"><img src="./${img}" alt="" loading="lazy" width="800" height="1000" style="width:100%;height:100%;object-fit:cover;object-position:top;"></div>
     <div class="cat-body"><h3>${cat.name}</h3><p>${esc(cat.desc.split(".")[0])}.</p></div>
   </a>`;
   }).join("\n");
@@ -915,8 +916,9 @@ ${demandSection(".", false)}
     <select id="f-fabric"><option value="">Tümü</option>${fabrics.map(f => `<option>${esc(f)}</option>`).join("")}</select>
     <label for="f-sort">Sırala:</label>
     <select id="f-sort"><option value="">Önerilen</option><option value="price-asc">Fiyat (Artan)</option><option value="price-desc">Fiyat (Azalan)</option></select>
-    <span class="filter-count"></span>
+    <span class="filter-count" aria-live="polite"></span>
   </div>
+  <h2 class="visually-hidden">Ürün Listesi</h2>
   <div class="product-grid" data-filterable>${items.map(p => productCard(p, "..")).join("\n")}</div>
 </div>
 ${demandSection("..", true)}`;
@@ -962,6 +964,7 @@ ${demandSection("..", true)}`;
   </div>
   <article class="product-detail" data-product-view data-slug="${p.slug}" data-name="${esc(p.name)}" data-price="${p.price}">
     <div class="pd-media">
+      <button class="wish-btn" type="button" data-slug="${p.slug}" aria-label="${esc(p.name)} ürününü favorilere ekle" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
       <img src="${img}" alt="${esc(p.alt)}" width="800" height="1000" fetchpriority="high">
     </div>
     <div class="pd-info">
@@ -973,10 +976,9 @@ ${demandSection("..", true)}`;
       </div>
       <p class="pd-tax">Ön sipariş tahmini fiyatıdır · KDV dahil</p>
       <p class="pd-short">${esc(p.shortDesc)}</p>
-      ${sizes.length ? `<div class="pd-options"><div class="opt-label">Beden Seçimi</div><div class="size-chips">${sizes.map((s, i) => `<button type="button" class="size-chip${i === 1 ? " selected" : ""}">${s}</button>`).join("")}</div></div>` : ""}
+      ${sizes.length ? `<div class="pd-options"><div class="opt-label" id="beden-label">Beden Seçimi</div><div class="size-chips" role="group" aria-labelledby="beden-label">${sizes.map((s, i) => `<button type="button" class="size-chip${i === 1 ? " selected" : ""}" aria-pressed="${i === 1 ? "true" : "false"}">${s}</button>`).join("")}</div></div>` : ""}
       <div class="pd-actions">
         <button class="btn btn-primary btn-lg" type="button" data-preorder-btn data-slug="${p.slug}" data-name="${esc(p.name)}" data-price="${p.price}">🧵 Ön Sipariş Talebi Bırak</button>
-        <button class="btn btn-outline btn-lg wish-btn-inline" type="button" onclick="document.querySelector('.pd-media ~ * .wish-btn') && null;" hidden></button>
       </div>
       <div class="pd-note">💡 <span>Henüz satış yapılmıyor. Talep bıraktığınızda bu model, satış başladığında <strong>öncelikli olarak üretilecek</strong> ve size özel erken erişim tanınacak.</span></div>
       <table class="spec-table">
@@ -1002,9 +1004,9 @@ ${demandSection("..", true)}`;
       title: p.metaTitle.includes(SITE_NAME) ? p.metaTitle : `${p.metaTitle} | ${SITE_NAME}`,
       desc: p.metaDesc,
       canonicalPath: `/urun/${p.slug}/`,
-      ogImage: imgAbs,
+      ogImage: p._imgExt === "jpg" ? imgAbs : SITE_URL + "/images/og/og-default.jpg",
       ogType: "product",
-      current: `${p.category}/`,
+      current: "",
       jsonld: [
         breadcrumbJsonld([["Anasayfa", SITE_URL + "/"], [cat.name, SITE_URL + `/${p.category}/`], [p.name, SITE_URL + `/urun/${p.slug}/`]]),
         {
@@ -1020,6 +1022,7 @@ ${demandSection("..", true)}`;
             "url": SITE_URL + `/urun/${p.slug}/`,
             "priceCurrency": "TRY",
             "price": String(p.price),
+            "priceValidUntil": `${new Date().getFullYear()}-12-31`,
             "availability": "https://schema.org/PreOrder",
             "itemCondition": "https://schema.org/NewCondition"
           }
@@ -1076,7 +1079,7 @@ ${demandSection("..", true)}`;
       title: `${b.metaTitle} | ${SITE_NAME}`,
       desc: b.metaDesc,
       canonicalPath: `/blog/${b.slug}/`,
-      ogImage: `${SITE_URL}/images/blog/${b.slug}.svg`,
+      ogImage: SITE_URL + "/images/og/og-default.jpg",
       ogType: "article",
       current: "blog/",
       jsonld: [
@@ -1131,7 +1134,7 @@ ${demandSection("..", true)}`
   writeFile("iletisim/index.html", layout({
     root: "..",
     title: `İletişim | ${SITE_NAME}`,
-    desc: "Kürt Yöresel ile iletişime geçin. Ön talep dönemi hakkında sorularınız için bize ulaşın.",
+    desc: "Kürt Yöresel ile iletişime geçin: ön talep dönemi, kirasfistan koleksiyonu ve satış takvimi hakkında merak ettikleriniz ile görüş ve önerileriniz için bu sayfayı ziyaret edin.",
     canonicalPath: "/iletisim/",
     current: "",
     jsonld: [breadcrumbJsonld([["Anasayfa", SITE_URL + "/"], ["İletişim", SITE_URL + "/iletisim/"]])],
@@ -1167,7 +1170,7 @@ ${demandSection("..", true)}`
   writeFile("sss/index.html", layout({
     root: "..",
     title: `Sıkça Sorulan Sorular | ${SITE_NAME}`,
-    desc: "Kirasfistan nedir? Ön sipariş talebi nasıl çalışır? Kargo ne zaman başlayacak? Kürt Yöresel hakkında merak edilenler.",
+    desc: "Kirasfistan nedir? Ön sipariş talebi nasıl çalışır? Kargo ne zaman başlayacak? Beden, fiyat ve talep sistemiyle ilgili tüm soruların yanıtları bu sayfada.",
     canonicalPath: "/sss/",
     current: "sss/",
     jsonld: [
@@ -1253,7 +1256,10 @@ ${demandSection("..", true)}`
   }));
 
   /* ---------- robots.txt & sitemap.xml ---------- */
-  writeFile("robots.txt", `User-agent: *\nAllow: /\nDisallow: /arama/\nDisallow: /favoriler/\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+  /* Not: GitHub Pages proje sitelerinde robots.txt alan kökünden okunmadığı için etkisizdir;
+     arama/ ve favoriler/ sayfaları meta robots "noindex" ile korunur. Sitemap, Search Console'a elle gönderilir.
+     Dosya, özel alan adına geçilince işlevsel olacağı için yine de üretiliyor. */
+  writeFile("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
   const urls = [
     ["/", "1.0", "weekly"],

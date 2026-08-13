@@ -31,12 +31,13 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Puşi Modelleri – Otantik Kürt Şalı ve Poşu","url":"https://ahmethttp.github.io/kurt-yoresel/pusi/","description":"Siyah-beyaz, kırmızı-beyaz ve renkli puşi (poşu) modelleri. Püsküllü, yumuşak dokuma otantik puşileri inceleyin ve ön sipariş talebi bırakın.","isPartOf":{"@type":"WebSite","name":"Kürt Yöresel","url":"https://ahmethttp.github.io/kurt-yoresel/"}}</script>
 </head>
 <body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
   <div class="topbar">🧵 <strong>Ön talep dönemi:</strong> Beğendiğiniz ürünlere talep bırakın, site açıldığında öncelikli haber verelim.</div>
   <header class="site-header">
     <div class="header-inner">
       <a class="logo" href="../" aria-label="Kürt Yöresel anasayfa"><svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="6" width="36" height="36" rx="9" fill="#8e1f2e"/><path d="M24 12l9 12-9 12-9-12z" fill="none" stroke="#f2c66d" stroke-width="2.6"/><path d="M24 19l5.2 5L24 29l-5.2-5z" fill="#f2c66d"/></svg><span>Kürt <em>Yöresel</em></span></a>
-      <button class="nav-toggle icon-btn" aria-label="Menüyü aç/kapat" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-      <nav class="main-nav" aria-label="Ana menü"><a href="../">Anasayfa</a><a href="../kirasfistan/">Kirasfistan</a><a href="../sal-u-sepik/">Şal û Şepik</a><a href="../pusi/" aria-current="page">Puşi</a><a href="../aksesuar/">Aksesuar</a><a href="../blog/">Blog</a><a href="../sss/">SSS</a></nav>
+      <button class="nav-toggle icon-btn" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="ana-menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      <nav class="main-nav" id="ana-menu" aria-label="Ana menü"><a href="../">Anasayfa</a><a href="../kirasfistan/">Kirasfistan</a><a href="../sal-u-sepik/">Şal û Şepik</a><a href="../pusi/" aria-current="page">Puşi</a><a href="../aksesuar/">Aksesuar</a><a href="../blog/">Blog</a><a href="../sss/">SSS</a></nav>
       <div class="header-actions">
         <form class="search-form" role="search" action="../arama/">
           <label class="visually-hidden" for="q">Ürün ara</label>
@@ -65,11 +66,12 @@
     <select id="f-fabric"><option value="">Tümü</option><option>Pamuklu Dokuma</option><option>Viskon Dokuma</option></select>
     <label for="f-sort">Sırala:</label>
     <select id="f-sort"><option value="">Önerilen</option><option value="price-asc">Fiyat (Artan)</option><option value="price-desc">Fiyat (Azalan)</option></select>
-    <span class="filter-count"></span>
+    <span class="filter-count" aria-live="polite"></span>
   </div>
+  <h2 class="visually-hidden">Ürün Listesi</h2>
   <div class="product-grid" data-filterable><article class="product-card" data-region="Mezopotamya" data-fabric="Pamuklu Dokuma" data-price="385">
   <div class="product-media"><span class="p-badge">Ön Sipariş</span>
-    <button class="wish-btn" type="button" data-slug="pusi-siyah-beyaz-puskullu" aria-label="Siyah Beyaz Püsküllü Puşi – Klasik Baklava Desen ürününü favorilere ekle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+    <button class="wish-btn" type="button" data-slug="pusi-siyah-beyaz-puskullu" aria-label="Siyah Beyaz Püsküllü Puşi – Klasik Baklava Desen ürününü favorilere ekle" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
     <img src="../images/products/pusi-siyah-beyaz-puskullu.svg" alt="Siyah beyaz baklava desenli püsküllü puşi, pamuklu dokuma geleneksel Mezopotamya örtüsü" loading="lazy" width="800" height="1000">
   </div>
   <div class="product-body">
@@ -80,7 +82,7 @@
 </article>
 <article class="product-card" data-region="Botan" data-fabric="Pamuklu Dokuma" data-price="350">
   <div class="product-media"><span class="p-badge">Ön Sipariş</span>
-    <button class="wish-btn" type="button" data-slug="pusi-kirmizi-beyaz-puskullu" aria-label="Kırmızı Beyaz Püsküllü Puşi – Geleneksel Botan Örtüsü ürününü favorilere ekle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+    <button class="wish-btn" type="button" data-slug="pusi-kirmizi-beyaz-puskullu" aria-label="Kırmızı Beyaz Püsküllü Puşi – Geleneksel Botan Örtüsü ürününü favorilere ekle" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
     <img src="../images/products/pusi-kirmizi-beyaz-puskullu.svg" alt="Kırmızı beyaz baklava desenli püsküllü puşi, pamuklu dokuma Botan yöresi omuz şalı" loading="lazy" width="800" height="1000">
   </div>
   <div class="product-body">
@@ -91,7 +93,7 @@
 </article>
 <article class="product-card" data-region="Mezopotamya" data-fabric="Viskon Dokuma" data-price="295">
   <div class="product-media"><span class="p-badge">Ön Sipariş</span>
-    <button class="wish-btn" type="button" data-slug="pusi-haki-viskon" aria-label="Haki Püsküllü Puşi – Krem Zeminli Viskon Dokuma ürününü favorilere ekle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+    <button class="wish-btn" type="button" data-slug="pusi-haki-viskon" aria-label="Haki Püsküllü Puşi – Krem Zeminli Viskon Dokuma ürününü favorilere ekle" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
     <img src="../images/products/pusi-haki-viskon.svg" alt="Haki baklava desenli püsküllü puşi, krem zeminli viskon dokuma geleneksel örtü" loading="lazy" width="800" height="1000">
   </div>
   <div class="product-body">
@@ -102,7 +104,7 @@
 </article>
 <article class="product-card" data-region="Botan" data-fabric="Viskon Dokuma" data-price="430">
   <div class="product-media"><span class="p-badge badge-sale">%17 İndirim</span>
-    <button class="wish-btn" type="button" data-slug="pusi-bordo-viskon" aria-label="Bordo Püsküllü Puşi – Botan Yöresi Viskon Dokuma ürününü favorilere ekle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+    <button class="wish-btn" type="button" data-slug="pusi-bordo-viskon" aria-label="Bordo Püsküllü Puşi – Botan Yöresi Viskon Dokuma ürününü favorilere ekle" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
     <img src="../images/products/pusi-bordo-viskon.svg" alt="Bordo baklava desenli püsküllü puşi, krem zeminli viskon dokuma Botan yöresi örtüsü" loading="lazy" width="800" height="1000">
   </div>
   <div class="product-body">
@@ -113,7 +115,7 @@
 </article>
 <article class="product-card" data-region="Mezopotamya" data-fabric="Pamuklu Dokuma" data-price="465">
   <div class="product-media"><span class="p-badge">Ön Sipariş</span>
-    <button class="wish-btn" type="button" data-slug="pusi-lacivert-pamuklu" aria-label="Lacivert Püsküllü Puşi – Pamuklu Dokuma Örtü ürününü favorilere ekle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+    <button class="wish-btn" type="button" data-slug="pusi-lacivert-pamuklu" aria-label="Lacivert Püsküllü Puşi – Pamuklu Dokuma Örtü ürününü favorilere ekle" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
     <img src="../images/products/pusi-lacivert-pamuklu.svg" alt="Lacivert baklava desenli püsküllü puşi, krem zeminli pamuklu dokuma geleneksel örtü" loading="lazy" width="800" height="1000">
   </div>
   <div class="product-body">
@@ -124,7 +126,7 @@
 </article>
 <article class="product-card" data-region="Botan" data-fabric="Viskon Dokuma" data-price="320">
   <div class="product-media"><span class="p-badge">Ön Sipariş</span>
-    <button class="wish-btn" type="button" data-slug="pusi-fume-viskon" aria-label="Füme Püsküllü Puşi – Krem Zeminli Viskon Dokuma ürününü favorilere ekle"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+    <button class="wish-btn" type="button" data-slug="pusi-fume-viskon" aria-label="Füme Püsküllü Puşi – Krem Zeminli Viskon Dokuma ürününü favorilere ekle" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
     <img src="../images/products/pusi-fume-viskon.svg" alt="Füme baklava desenli püsküllü puşi, krem zeminli viskon dokuma sade geleneksel örtü" loading="lazy" width="800" height="1000">
   </div>
   <div class="product-body">
@@ -154,7 +156,7 @@
         <p>Kirasfistandan şal û şepiğe, puşiden kofiye… Yöresel Kürt kıyafetlerini özenle seçilmiş bir koleksiyonda buluşturuyoruz. Şu an ön talep topluyoruz; yeterli ilgi oluştuğunda satışa başlayacağız.</p>
       </div>
       <div>
-        <h4>Kategoriler</h4>
+        <h2 class="f-head">Kategoriler</h2>
         <ul>
           <li><a href="../kirasfistan/">Kirasfistan</a></li>
           <li><a href="../sal-u-sepik/">Şal û Şepik</a></li>
@@ -163,7 +165,7 @@
         </ul>
       </div>
       <div>
-        <h4>Kurumsal</h4>
+        <h2 class="f-head">Kurumsal</h2>
         <ul>
           <li><a href="../hakkimizda/">Hakkımızda</a></li>
           <li><a href="../blog/">Blog</a></li>
@@ -172,7 +174,7 @@
         </ul>
       </div>
       <div>
-        <h4>Alışveriş</h4>
+        <h2 class="f-head">Alışveriş</h2>
         <ul>
           <li><a href="../favoriler/">Favorilerim</a></li>
           <li><a href="../#talep">Talep Bırak</a></li>

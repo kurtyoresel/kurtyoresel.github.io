@@ -92,22 +92,25 @@
       var slug = btn.getAttribute("data-slug");
       if (!slug) return;
       var list = getWishlist();
-      if (list.indexOf(slug) !== -1) btn.classList.add("active");
+      var active = list.indexOf(slug) !== -1;
+      btn.classList.toggle("active", active);
+      btn.setAttribute("aria-pressed", active ? "true" : "false");
       btn.addEventListener("click", function (ev) {
         ev.preventDefault();
         ev.stopPropagation();
         var current = getWishlist();
         var i = current.indexOf(slug);
-        if (i === -1) {
+        var nowActive = i === -1;
+        if (nowActive) {
           current.push(slug);
-          btn.classList.add("active");
           toast("Favorilere eklendi ❤");
           track("add_to_wishlist", { item_id: slug });
         } else {
           current.splice(i, 1);
-          btn.classList.remove("active");
           toast("Favorilerden çıkarıldı");
         }
+        btn.classList.toggle("active", nowActive);
+        btn.setAttribute("aria-pressed", nowActive ? "true" : "false");
         setWishlist(current);
       });
     });
@@ -152,6 +155,12 @@
       var name = btn.getAttribute("data-name") || "";
       var price = parseFloat(btn.getAttribute("data-price") || "0");
       var sizeBtn = $(".size-chip.selected");
+      var doneKey = "ky_pre_" + slug + "_" + todayKey();
+      if (read(doneKey, false)) {
+        toast("Bu ürün için bugün zaten talep bıraktınız.");
+        return;
+      }
+      store(doneKey, true);
       track("urun_talep", {
         item_id: slug,
         item_name: name,
@@ -159,12 +168,6 @@
         currency: "TRY",
         size: sizeBtn ? sizeBtn.textContent.trim() : ""
       });
-      var doneKey = "ky_pre_" + slug + "_" + todayKey();
-      if (read(doneKey, false)) {
-        toast("Bu ürün için bugün zaten talep bıraktınız.");
-        return;
-      }
-      store(doneKey, true);
       toast("Ön sipariş talebiniz kaydedildi! Site açıldığında bu ürün öncelikli olarak stoklanacak. 🎉");
     });
   });
@@ -172,8 +175,12 @@
   /* ---------- Beden seçimi ---------- */
   $all(".size-chip").forEach(function (chip) {
     chip.addEventListener("click", function () {
-      $all(".size-chip").forEach(function (c) { c.classList.remove("selected"); });
+      $all(".size-chip").forEach(function (c) {
+        c.classList.remove("selected");
+        c.setAttribute("aria-pressed", "false");
+      });
       chip.classList.add("selected");
+      chip.setAttribute("aria-pressed", "true");
     });
   });
 
@@ -234,8 +241,10 @@
         .then(function (r) { return r.json(); })
         .then(function (items) {
           var hits = items.filter(function (p) { return slugs.indexOf(p.slug) !== -1; });
+          if (!hits.length) { $("#wishlist-empty").hidden = false; return; }
           renderCards(wishGrid, hits);
-        });
+        })
+        .catch(function () { $("#wishlist-empty").hidden = false; });
     }
   }
 
@@ -248,7 +257,7 @@
       var old = p.oldPrice ? '<span class="price-old">' + formatPrice(p.oldPrice) + "</span>" : "";
       return '<article class="product-card">' +
         '<div class="product-media">' + badge +
-        '<button class="wish-btn" type="button" data-slug="' + p.slug + '" aria-label="Favorilere ekle">' + heartSvg() + "</button>" +
+        '<button class="wish-btn" type="button" data-slug="' + p.slug + '" aria-label="' + escapeHtml(p.name) + ' ürününü favorilere ekle" aria-pressed="false">' + heartSvg() + "</button>" +
         '<img src="' + img + '" alt="' + escapeHtml(p.alt || p.name) + '" loading="lazy" width="800" height="1000"></div>' +
         '<div class="product-body"><span class="p-region">' + escapeHtml(p.region || "") + "</span>" +
         '<h3><a href="' + url + '">' + escapeHtml(p.name) + "</a></h3>" +
@@ -279,13 +288,13 @@
     var selFabric = $("#f-fabric");
     var selSort = $("#f-sort");
     var countEl = $(".filter-count");
+    var originalOrder = $all(".product-card", catGrid);
 
     function applyFilters() {
       var region = selRegion ? selRegion.value : "";
       var fabric = selFabric ? selFabric.value : "";
-      var cards = $all(".product-card", catGrid);
       var visible = [];
-      cards.forEach(function (card) {
+      originalOrder.forEach(function (card) {
         var ok = (!region || card.getAttribute("data-region") === region) &&
                  (!fabric || card.getAttribute("data-fabric") === fabric);
         card.style.display = ok ? "" : "none";
@@ -297,6 +306,8 @@
           return dir * (parseFloat(a.getAttribute("data-price")) - parseFloat(b.getAttribute("data-price")));
         });
         visible.forEach(function (card) { catGrid.appendChild(card); });
+      } else {
+        originalOrder.forEach(function (card) { catGrid.appendChild(card); });
       }
       if (countEl) countEl.textContent = visible.length + " ürün gösteriliyor";
     }
