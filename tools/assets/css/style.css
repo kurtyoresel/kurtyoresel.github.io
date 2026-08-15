@@ -360,6 +360,13 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; line-height: 1
   box-shadow: var(--shadow-md);
 }
 .pd-media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.pd-credit {
+  padding: 9px 14px;
+  font-size: 0.73rem; color: var(--muted);
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+.pd-credit a { color: var(--muted); text-decoration: underline; }
 .pd-info .p-region { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold-text); }
 .pd-info h1 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); margin: 8px 0 14px; }
 .pd-price { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }

@@ -254,7 +254,7 @@
   function renderCards(grid, items) {
     grid.innerHTML = items.map(function (p) {
       var url = ROOT + "/urun/" + p.slug + "/";
-      var img = ROOT + "/images/products/" + p.slug + ".svg";
+      var img = ROOT + "/" + (p.img || "images/products/" + p.slug + ".svg");
       var badge = p.oldPrice ? '<span class="p-badge badge-sale">İndirim</span>' : '<span class="p-badge">Ön Sipariş</span>';
       var old = p.oldPrice ? '<span class="price-old">' + formatPrice(p.oldPrice) + "</span>" : "";
       return '<article class="product-card">' +

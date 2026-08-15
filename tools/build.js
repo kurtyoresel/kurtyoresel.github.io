@@ -631,7 +631,8 @@ ${content}
 
 function productCard(p, root) {
   const url = `${root}/urun/${p.slug}/`;
-  const img = `${root}/images/products/${p.slug}.${p._imgExt}`;
+  const img = `${root}/${p._img}`;
+  const cardAlt = p._photoFile && photoByFile[p._photoFile] ? photoByFile[p._photoFile].alt : (p.alt || p.name);
   const badge = p.oldPrice
     ? '<span class="p-badge badge-sale">%' + Math.round((1 - p.price / p.oldPrice) * 100) + ' İndirim</span>'
     : (p.isNew ? '<span class="p-badge badge-new">Yeni</span>' : '<span class="p-badge">Ön Sipariş</span>');
@@ -639,7 +640,7 @@ function productCard(p, root) {
   return `<article class="product-card" data-region="${esc(p.region)}" data-fabric="${esc(p.fabric)}" data-price="${p.price}">
   <div class="product-media">${badge}
     <button class="wish-btn" type="button" data-slug="${p.slug}" aria-label="${esc(p.name)} ürününü favorilere ekle" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
-    <img src="${img}" alt="${esc(p.alt || p.name)}" loading="lazy" width="800" height="1000">
+    <img src="${img}" alt="${esc(cardAlt)}" loading="lazy" width="800" height="1000">
   </div>
   <div class="product-body">
     <span class="p-region">${esc(p.region)}</span>
@@ -715,6 +716,11 @@ const CAT_PHOTOS = {
   aksesuar: { file: "hawraman-headdress.jpg", pos: "center 44%" }
 };
 
+/* Ürün → temsili fotoğraf eşlemesi (tools/assign-product-photos.js üretir) */
+const PRODUCT_PHOTOS = fs.existsSync(path.join(DATA, "product-photo-map.json"))
+  ? JSON.parse(fs.readFileSync(path.join(DATA, "product-photo-map.json"), "utf8"))
+  : {};
+
 /* Anasayfa kültür bölümü kareleri */
 const CULTURE_STRIP = [
   "kultur-mesale-ritueli.jpg", "kultur-tef-gosterisi.jpg", "sal-sepik-halay.jpg",
@@ -787,15 +793,19 @@ function build() {
     fs.copyFileSync(ogJpg, path.join(OUT, "images", "og", "og-default.jpg"));
   }
 
-  /* Ürün görselleri (fotoğraf varsa onu kullan) */
+  /* Ürün görselleri — öncelik: 1) tools/photos/<slug>.jpg (kendi fotoğrafın)
+     2) havuzdan temsili fotoğraf (product-photo-map.json)  3) üretilen SVG çizim */
   for (const p of products) {
     const photo = path.join(PHOTOS_DIR, p.slug + ".jpg");
     if (fs.existsSync(photo)) {
-      p._imgExt = "jpg";
+      p._img = `images/products/${p.slug}.jpg`;
       fs.mkdirSync(path.join(OUT, "images", "products"), { recursive: true });
       fs.copyFileSync(photo, path.join(OUT, "images", "products", p.slug + ".jpg"));
+    } else if (PRODUCT_PHOTOS[p.slug] && photoByFile[PRODUCT_PHOTOS[p.slug]]) {
+      p._photoFile = PRODUCT_PHOTOS[p.slug];
+      p._img = `assets/img/${p._photoFile}`;
     } else {
-      p._imgExt = "svg";
+      p._img = `images/products/${p.slug}.svg`;
       writeFile(`images/products/${p.slug}.svg`, productSvg(p));
     }
   }
@@ -809,7 +819,8 @@ function build() {
   const searchData = products.map(p => ({
     slug: p.slug, name: p.name, category: p.category, region: p.region,
     fabric: p.fabric, price: p.price, oldPrice: p.oldPrice || null,
-    alt: p.alt, tags: p.tags || []
+    alt: p._photoFile ? photoByFile[p._photoFile].alt : p.alt,
+    img: p._img, tags: p.tags || []
   }));
   writeFile("assets/data/urunler.json", JSON.stringify(searchData));
 
@@ -825,7 +836,7 @@ function build() {
 
   const catCards = Object.entries(CATEGORIES).map(([key, cat]) => {
     const first = byCat[key][0];
-    const img = first ? `images/products/${first.slug}.${first._imgExt}` : "";
+    const img = first ? first._img : "";
     return `<a class="category-card" href="./${key}/">
     <span class="cat-count">${byCat[key].length} ürün</span>
     <div class="cat-art"><img src="./${img}" alt="" loading="lazy" width="800" height="1000" style="width:100%;height:100%;object-fit:cover;object-position:top;"></div>
@@ -1013,8 +1024,12 @@ ${demandSection("..", true)}`;
   /* ---------- Ürün sayfaları ---------- */
   for (const p of products) {
     const cat = CATEGORIES[p.category];
-    const img = `../../images/products/${p.slug}.${p._imgExt}`;
-    const imgAbs = `${SITE_URL}/images/products/${p.slug}.${p._imgExt}`;
+    const img = `../../${p._img}`;
+    const imgAbs = `${SITE_URL}/${p._img}`;
+    const pAlt = p._photoFile ? photoByFile[p._photoFile].alt : p.alt;
+    const pCredit = p._photoFile
+      ? `<div class="pd-credit">Temsili görsel — ${photoCredit(p._photoFile)} · <a href="../../gorsel-kaynaklari/">Kaynaklar</a></div>`
+      : "";
     const related = byCat[p.category].filter(x => x.slug !== p.slug).slice(0, 4);
     const sizes = p.category === "aksesuar" ? [] : ["S", "M", "L", "XL", "XXL"];
     const specRows = [
@@ -1023,6 +1038,7 @@ ${demandSection("..", true)}`;
       ["Kumaş", p.fabric],
       ...(p.colorName ? [["Renk", p.colorName]] : []),
       ["Durum", "Ön sipariş (talep toplama aşamasında)"],
+      ...(p._photoFile ? [["Görsel", "Temsilidir; satış döneminde gerçek ürün fotoğrafları eklenecek"]] : []),
       ["Ürün Kodu", "KY-" + p.slug.split("-").map(s => s[0]).join("").toUpperCase() + "-" + String(p.price).slice(0, 2)]
     ];
 
@@ -1034,7 +1050,8 @@ ${demandSection("..", true)}`;
   <article class="product-detail" data-product-view data-slug="${p.slug}" data-name="${esc(p.name)}" data-price="${p.price}">
     <div class="pd-media">
       <button class="wish-btn" type="button" data-slug="${p.slug}" aria-label="${esc(p.name)} ürününü favorilere ekle" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.8-10-9.3C.5 8 2.4 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.6l1.4 2 1.4-2c.9-1.4 2.4-2.6 4.6-2.6 3.6 0 5.5 3.5 4 7.2C19.5 16.2 12 21 12 21z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
-      <img src="${img}" alt="${esc(p.alt)}" width="800" height="1000" fetchpriority="high">
+      <img src="${img}" alt="${esc(pAlt)}" width="800" height="1000" fetchpriority="high">
+      ${pCredit}
     </div>
     <div class="pd-info">
       <span class="p-region">${esc(p.region)} · ${cat.name}</span>
@@ -1073,7 +1090,7 @@ ${demandSection("..", true)}`;
       title: p.metaTitle.includes(SITE_NAME) ? p.metaTitle : `${p.metaTitle} | ${SITE_NAME}`,
       desc: p.metaDesc,
       canonicalPath: `/urun/${p.slug}/`,
-      ogImage: p._imgExt === "jpg" ? imgAbs : SITE_URL + "/images/og/og-default.jpg",
+      ogImage: p._img.endsWith(".svg") ? SITE_URL + "/images/og/og-default.jpg" : imgAbs,
       ogType: "product",
       current: "",
       jsonld: [
@@ -1249,7 +1266,7 @@ ${demandSection("..", true)}`
     ["Beden seçenekleri neler olacak?", "Kirasfistan ve şal û şepik takımlarında S, M, L, XL ve XXL standart bedenlerinin yanı sıra ölçüye özel dikim seçeneği sunmayı planlıyoruz."],
     ["Kargo ve teslimat nasıl olacak?", "Satış dönemine geçtiğimizde tüm Türkiye'ye kargo göndermeyi planlıyoruz. El işçiliği ürünlerde üretim süresi modele göre 2-4 hafta olacaktır."],
     ["Talep butonuna neden günde bir kez basabiliyorum?", "Talep sayılarının gerçek ilgiyi yansıtması için her ziyaretçi günde bir kez talep bırakabilir. Ertesi gün tekrar talep bırakarak desteğinizi sürdürebilirsiniz."],
-    ["Ürün görselleri gerçek mi?", "Ürün kartlarındaki görseller, üretmeyi planladığımız modelleri temsil eden özel hazırlanmış tasarım çizimleridir; satış dönemine geçtiğimizde her modelin gerçek ürün fotoğrafları eklenecektir. Sitedeki kültür fotoğrafları ise serbest lisanslı (Creative Commons) gerçek karelerdir ve kaynakları Görsel Kaynakları sayfasında listelenir."]
+    ["Ürün görselleri gerçek mi?", "Ürün kartlarındaki fotoğraflar temsilidir: geleneksel kıyafet kültürünü yansıtan, serbest lisanslı (Creative Commons) gerçek karelerden seçilmiştir; satın alınacak ürünün birebir fotoğrafı değildir. Satış dönemine geçtiğimizde her modelin kendi ürün fotoğrafı çekilip eklenecektir. Tüm fotoğraf kaynakları ve fotoğrafçı bilgileri Görsel Kaynakları sayfasında listelenir."]
   ];
   writeFile("sss/index.html", layout({
     root: "..",
