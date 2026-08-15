@@ -699,6 +699,28 @@ const BLOG_COVERS = {
   "pusi-nasil-baglanir": "sal-sepik-mavi-pusi.jpg"
 };
 
+/* Blog yazısı sonu "Kültürden Kareler" galerileri */
+const BLOG_GALLERY = {
+  "kirasfistan-nedir": ["hawrami-girls.jpg", "kultur-mesale-ritueli.jpg"],
+  "kurt-dugun-kiyafetleri": ["kultur-kadin-dans.jpg", "sal-sepik-halay.jpg"],
+  "sal-u-sepik-rehberi": ["sal-sepik-grup.jpg", "palangan-village.jpg"],
+  "pusi-nasil-baglanir": ["sal-sepik-cizgili.jpg", "hawrami-man.jpg"]
+};
+
+/* Kategori sayfası banner fotoğrafları (crop odağı ile) */
+const CAT_PHOTOS = {
+  kirasfistan: { file: "palangan-women.jpg", pos: "center 30%" },
+  "sal-u-sepik": { file: "hawrami-man.jpg", pos: "center 42%" },
+  pusi: { file: "sal-sepik-mavi-pusi.jpg", pos: "center 16%" },
+  aksesuar: { file: "hawraman-headdress.jpg", pos: "center 44%" }
+};
+
+/* Anasayfa kültür bölümü kareleri */
+const CULTURE_STRIP = [
+  "kultur-mesale-ritueli.jpg", "kultur-tef-gosterisi.jpg", "sal-sepik-halay.jpg",
+  "hawrami-girls.jpg", "senneh-kilim.jpg", "palangan-village.jpg"
+];
+
 function loadData() {
   const products = JSON.parse(fs.readFileSync(path.join(DATA, "products.json"), "utf8"));
   const blog = JSON.parse(fs.readFileSync(path.join(DATA, "blog.json"), "utf8"));
@@ -883,7 +905,7 @@ ${demandSection(".", false)}
       <div><h2 id="kultur-baslik">Kültürden Kareler</h2><p>Bu kıyafetler vitrinlerde değil, hayatın içinde yaşıyor</p></div>
     </div>
     <div class="culture-grid">
-      ${["kultur-mesale-ritueli.jpg", "kultur-tef-gosterisi.jpg", "sal-sepik-halay.jpg"].map(f => {
+      ${CULTURE_STRIP.map(f => {
         const ph = photoByFile[f];
         return `<figure class="culture-item">
         <img src="./assets/img/${f}" alt="${esc(ph.alt)}" loading="lazy" width="1280" height="853">
@@ -943,13 +965,19 @@ ${demandSection(".", false)}
     const items = byCat[key];
     const regions = [...new Set(items.map(p => p.region))].sort((a, b) => a.localeCompare(b, "tr"));
     const fabrics = [...new Set(items.map(p => p.fabric))].sort((a, b) => a.localeCompare(b, "tr"));
+    const catPhoto = CAT_PHOTOS[key];
+    const catBanner = catPhoto ? `
+  <figure class="cat-banner">
+    <img src="../assets/img/${catPhoto.file}" alt="${esc(photoByFile[catPhoto.file].alt)}" width="1280" height="549" style="object-position:${catPhoto.pos};" fetchpriority="high">
+    <figcaption class="figure-credit">${esc(photoByFile[catPhoto.file].title)} — ${photoCredit(catPhoto.file)} · <a href="../gorsel-kaynaklari/">Kaynaklar</a></figcaption>
+  </figure>` : "";
     const content = `
 <div class="container">
   <div class="page-head">
     ${breadcrumb("..", [["Anasayfa", "../"], [cat.name, null]])}
     <h1>${cat.name} <span style="font-size:0.55em;color:var(--muted);font-family:var(--font-body);font-weight:600;">(${items.length} ürün)</span></h1>
     <p class="page-intro">${esc(cat.intro)}</p>
-  </div>
+  </div>${catBanner}
   <div class="filter-bar">
     <label for="f-region">Yöre:</label>
     <select id="f-region"><option value="">Tümü</option>${regions.map(r => `<option>${esc(r)}</option>`).join("")}</select>
@@ -1116,6 +1144,13 @@ ${demandSection("..", true)}`;
   <div class="article-body">
     <p><img src="${cover}" alt="${esc(coverFile ? photoByFile[coverFile].alt : b.title)}" width="1200" height="675" style="border-radius:14px;">${coverCredit}</p>
     ${html}
+    ${(BLOG_GALLERY[b.slug] || []).length ? `<h2>Kültürden Kareler</h2>
+    <div class="article-gallery">
+      ${BLOG_GALLERY[b.slug].map(f => `<figure>
+        <img src="../../assets/img/${f}" alt="${esc(photoByFile[f].alt)}" loading="lazy" width="1280" height="960">
+        <figcaption class="figure-credit">${esc(photoByFile[f].title)} — ${photoCredit(f)}</figcaption>
+      </figure>`).join("\n      ")}
+    </div>` : ""}
     <div class="notice" style="margin-top:26px;">Bu yazıyı beğendiyseniz <a href="../../kirasfistan/">kirasfistan koleksiyonumuza</a> göz atabilir, <a href="../../#talep">buradan talep bırakarak</a> sitenin açılmasına destek olabilirsiniz.</div>
   </div>
 </div>`;
