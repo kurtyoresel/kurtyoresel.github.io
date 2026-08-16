@@ -1313,15 +1313,16 @@ ${demandSection("..", true)}`
     <p class="page-intro">Sitedeki kültür fotoğrafları Wikimedia Commons üzerinden, aşağıda belirtilen serbest lisanslarla kullanılmaktadır. Emeği geçen tüm fotoğrafçılara teşekkür ederiz. Ürün kartlarındaki görseller ise sitemize özel hazırlanmış temsili tasarım çizimleridir.</p>
   </div>
   <div class="credits-list">
-    ${PHOTOS.map(p => `<figure class="credit-item">
+    ${[...new Map(PHOTOS.map(p => [p.sourceUrl, p])).values()].map(p => `<figure class="credit-item">
       <img src="../assets/img/${p.file}" alt="${esc(p.alt)}" loading="lazy" width="640" height="427">
       <figcaption>
-        <b>${esc(p.title)}</b><br>
+        <b>${esc(p.title.replace(" (detay)", ""))}</b><br>
         Fotoğraf: ${esc(p.author)} · <a href="${p.licenseUrl}" rel="license nofollow">${esc(p.license)}</a> ·
         <a href="${p.sourceUrl}" rel="nofollow">Wikimedia Commons kaynağı</a>
       </figcaption>
     </figure>`).join("\n    ")}
   </div>
+  <p class="page-intro" style="margin-top:6px;">Not: Ürün kartlarındaki bazı görseller, yukarıdaki kaynak fotoğraflardan alınan kıyafet odaklı kesitlerdir; tüm kesitler kaynağındaki lisansla kullanılır.</p>
 </div>`
   }));
 
