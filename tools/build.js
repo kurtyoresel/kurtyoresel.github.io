@@ -10,7 +10,7 @@ const fs = require("fs");
 const path = require("path");
 
 /* ---------------- Yapılandırma ---------------- */
-const SITE_URL = "https://kurtyoresel.github.io"; // özel alan adı alınınca burayı değiştir
+const SITE_URL = "https://kurtyoresel.com"; // özel alan adı
 const SITE_NAME = "Kürt Yöresel";
 const SITE_TAGLINE = "Kirasfistan, Şal û Şepik ve Yöresel Kürt Kıyafetleri";
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
@@ -782,6 +782,7 @@ function build() {
   fs.rmSync(OUT, { recursive: true, force: true });
   fs.mkdirSync(OUT, { recursive: true });
   writeFile(".nojekyll", "");
+  writeFile("CNAME", "kurtyoresel.com\n");  // GitHub Pages özel alan adı
   copyDir(path.join(ASSETS_SRC, "css"), path.join(OUT, "assets", "css"));
   copyDir(path.join(ASSETS_SRC, "js"), path.join(OUT, "assets", "js"));
   copyDir(path.join(ASSETS_SRC, "img"), path.join(OUT, "assets", "img"));

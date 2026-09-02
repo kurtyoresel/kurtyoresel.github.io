@@ -3,4 +3,4 @@ Allow: /
 Disallow: /arama/
 Disallow: /favoriler/
 
-Sitemap: https://kurtyoresel.github.io/sitemap.xml
+Sitemap: https://kurtyoresel.com/sitemap.xml
