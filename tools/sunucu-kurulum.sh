@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Kürt Yöresel — sıfır sunucuyu yayına hazırlar (Ubuntu 24.04 LTS)
+# Kürt Yöresel — sıfır sunucuyu yayına hazırlar (Ubuntu 26.04 veya 24.04 LTS)
 # Sunucuda root olarak çalıştırılır. Nginx + SSL + güvenlik sertleştirme.
 set -euo pipefail
 
