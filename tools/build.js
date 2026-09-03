@@ -536,6 +536,7 @@ function layout(opts) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  ${GA_SNIPPET}
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(desc)}">
   <meta name="robots" content="${noindex ? "noindex, follow" : "index, follow"}">
@@ -685,6 +686,27 @@ function demandSection(root, compact) {
 /* ============================================================
    VERİ YÜKLEME + DOĞRULAMA
    ============================================================ */
+/* Google Analytics ölçüm kimliği — config.js tek kaynak, build sırasında head'e gömülür */
+const GA_ID = (function () {
+  const cfg = fs.readFileSync(path.join(ASSETS_SRC, "js", "config.js"), "utf8");
+  const i = cfg.indexOf("gaId");
+  if (i === -1) return "";
+  const a = cfg.indexOf(String.fromCharCode(34), i);
+  const b = cfg.indexOf(String.fromCharCode(34), a + 1);
+  if (a === -1 || b === -1) return "";
+  const id = cfg.slice(a + 1, b);
+  return /^G-[A-Z0-9]+$/i.test(id) ? id : "";
+})();
+const GA_SNIPPET = GA_ID ? `
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_ID}', { anonymize_ip: true });
+  </script>` : "";
+
 /* Kültür fotoğrafları (Wikimedia Commons, serbest lisanslı) */
 const PHOTOS = JSON.parse(fs.readFileSync(path.join(DATA, "photos.json"), "utf8"));
 const photoByFile = Object.fromEntries(PHOTOS.map(p => [p.file, p]));

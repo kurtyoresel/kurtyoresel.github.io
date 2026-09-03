@@ -9,19 +9,13 @@
     ? document.documentElement.getAttribute("data-root")
     : ".";
 
-  /* ---------- Google Analytics (GA4) ---------- */
-  var GA_ID = (window.KY_CONFIG && window.KY_CONFIG.gaId) || "";
+  /* ---------- Google Analytics (GA4) ----------
+     Not: gtag betiği artık her sayfanın <head> bölümüne gömülü geliyor
+     (Search Console doğrulaması ve daha erken ölçüm için).
+     Burada sadece gtag'in var olduğunu garanti ediyoruz. */
   window.dataLayer = window.dataLayer || [];
-  function gtag() { window.dataLayer.push(arguments); }
-  window.gtag = gtag;
-
-  if (GA_ID && /^G-[A-Z0-9]+$/i.test(GA_ID)) {
-    var s = document.createElement("script");
-    s.async = true;
-    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
-    document.head.appendChild(s);
-    gtag("js", new Date());
-    gtag("config", GA_ID, { anonymize_ip: true });
+  if (typeof window.gtag !== "function") {
+    window.gtag = function () { window.dataLayer.push(arguments); };
   }
 
   function track(eventName, params) {
