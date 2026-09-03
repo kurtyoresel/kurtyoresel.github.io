@@ -1,7 +1,205 @@
 [
  {
-  "terim": "Kirasfistan",
-  "tanim": "Kiras adı verilen uzun iç elbise ile fistan adı verilen üst elbisenin, bele bağlanan şûtik kuşakla tamamlandığı geleneksel kadın kıyafeti. Düğün, nişan ve kına gecelerinde giyilir; kumaşı, rengi ve işlemesi yöreye göre değişir.",
+  "terim": "Gerdanlık",
+  "tanim": "Gerdanlık, boynun ön kısmını ve göğüs üstünü kaplayacak genişlikte, çoğunlukla gümüş ya da altın kaplama parçalardan yapılan boyun takısıdır. Zincir sıraları, madeni pullar ve renkli taşlardan oluşur; düğün ve nişan gibi özel günlerde kadın elbisesinin yakası üzerine takılır. Ağırlığı nedeniyle genellikle geniş ve sağlam yakalı giysilerle kullanılır.",
+  "grup": "Aksesuar",
+  "esAnlam": "Kolye"
+ },
+ {
+  "terim": "Heybe",
+  "tanim": "Kilim dokuma tekniğiyle üretilen, omuzda taşınan çift gözlü geleneksel çanta. Geometrik desenleri ve püskül detaylarıyla tanınır.",
+  "grup": "Aksesuar"
+ },
+ {
+  "terim": "Klaş",
+  "tanim": "El örgüsü üst kısmı ve sağlam tabanıyla bilinen geleneksel ayakkabı. Pamuk ipliğinin sıkı örülmesiyle yapılır, hafif ve nefes alan yapısıyla yazın tercih edilir.",
+  "grup": "Aksesuar"
+ },
+ {
+  "terim": "Kofi",
+  "tanim": "Kadınların özel günlerde taktığı, üzeri pul, boncuk, madeni para veya sim işlemeyle süslenmiş geleneksel başlık. Genellikle kadife zemin üzerine işlenir.",
+  "grup": "Aksesuar"
+ },
+ {
+  "terim": "Oya",
+  "tanim": "Oya, başörtüsü, yazma ve yaka kenarlarına iğne, tığ ya da mekik ile işlenen ince süs şerididir. İpek veya pamuk iplikle yapılır; çoğunlukla çiçek, yaprak ve karanfil motifleri taşır. Bir yazmanın dört kenarının elde oyalanması günler sürebilir, bu nedenle oyalı örtüler çeyizin değerli parçaları arasında sayılır.",
+  "grup": "Aksesuar",
+  "esAnlam": "İğne oyası"
+ },
+ {
+  "terim": "Puşi",
+  "tanim": "Omuza atılan veya başa sarılan, kenarları püsküllü geleneksel örtü. Poşu adıyla da bilinir; pamuklu veya viskon dokumadan üretilir ve ekose desenleriyle tanınır.",
+  "grup": "Aksesuar"
+ },
+ {
+  "terim": "Şûtik",
+  "tanim": "Belin üzerine sarılan kumaş kuşak. Takımı toparlar, bel hattını belirginleştirir ve renk uyumunu tamamlar. Düğünlerde parlak ve işlemeli, gündelik kullanımda daha sade örnekleri tercih edilir.",
+  "grup": "Aksesuar"
+ },
+ {
+  "terim": "Telkâri",
+  "tanim": "Telkâri, saç teli inceliğindeki gümüş tellerin burulup kıvrılarak bir çerçeveye lehimlenmesiyle yapılan takı işçiliğidir. Küpe, gerdanlık, kemer tokası ve düğme yapımında kullanılır; Mardin'in Midyat ilçesi bu işçilikle tanınır. Yöresel kıyafetlerde çoğunlukla koyu renkli kadife üzerinde tamamlayıcı takı olarak taşınır.",
+  "grup": "Aksesuar",
+  "esAnlam": "Filigran"
+ },
+ {
+  "terim": "Yazma",
+  "tanim": "Yazma, pamuklu bez üzerine ahşap kalıpla ya da elle boyanarak desen basılan, kare biçimli başörtüsüdür. Kenarları genellikle oya ile çevrilir; günlük, bayramlık ve düğünlük kullanıma göre farklı desen ve renkler seçilir. Yöresel kadın giyiminde kadife üstlüklerin üzerine bağlanması yaygındır.",
+  "grup": "Aksesuar",
+  "esAnlam": "Baskı yazma"
+ },
+ {
+  "terim": "Elde yıkama",
+  "tanim": "Elde yıkama, kadife, saten ve işlemeli yöresel giysilerin makineye verilmeden ılık suda temizlenmesidir. Su sıcaklığı 30 dereceyi geçmemeli, giysi suda 15 dakikadan uzun bekletilmemelidir. Sim ve pul payetli parçalarda ovmak yerine bastırarak durulama yapılır; burarak sıkmak dikişleri ve işleme ipliklerini bozar.",
+  "grup": "Bakım",
+  "esAnlam": "Soğuk elde temizlik"
+ },
+ {
+  "terim": "Güve önleme",
+  "tanim": "Güve önleme, yün ve yünlü karışımlı giysilerin uzun süre saklanırken güve larvalarına karşı korunmasıdır. Giysi kaldırılmadan önce mutlaka temizlenir, çünkü ter ve yemek lekesi güveyi çeker. Sandıkta lavanta kesesi veya sedir ağacı parçası kullanılır; yılda en az iki kez, mevsim geçişlerinde havalandırma önerilir.",
+  "grup": "Bakım"
+ },
+ {
+  "terim": "Ters yüz ütüleme",
+  "tanim": "Ters yüz ütüleme, giysinin iç yüzü dışa çevrilerek ütülenmesidir; işlemeli ve parlak kumaşlarda yüzeyin parlamasını, sim ipliklerin ısıyla bozulmasını önler. Kadife ve satende ütü 110 derece (tek nokta) ayarında ve buharlı kullanılır, ütü tabanı bastırılmadan gezdirilir. Arada ince pamuklu bez kullanmak ek koruma sağlar.",
+  "grup": "Bakım"
+ },
+ {
+  "terim": "Astar",
+  "tanim": "Astar, giysinin iç yüzüne geçirilen ince ve kaygan ikinci kumaş katıdır. Dikiş paylarını ve işleme tersini örter, tenin kumaşa sürtünmesini engeller, giysinin giyilip çıkarılmasını kolaylaştırır. Kadife ya da ağır işlemeli entarilerde astar aynı zamanda etek ucunun kalıbını koruyarak dökümü düzgün tutar.",
+  "grup": "Dikiş",
+  "esAnlam": "İç kumaş"
+ },
+ {
+  "terim": "Dikiş payı",
+  "tanim": "Dikiş payı, kalıp çizgisinin dışında bırakılan ve iki parçayı birleştirmek için kullanılan fazla kumaş genişliğidir. Yaygın olarak yan dikişlerde 1,5 cm, yaka ve kol oyuntusu gibi kavisli yerlerde 0,7-1 cm bırakılır. Pay dar kalırsa dikiş kumaştan kaçar, geniş bırakılırsa giysi sonradan bollaştırılmak üzere içeride saklanabilir.",
+  "grup": "Dikiş",
+  "esAnlam": "Dikiş kenar payı"
+ },
+ {
+  "terim": "Kloş etek",
+  "tanim": "Kloş etek, kalıbı daire ya da daire diliminden kesildiği için belde dar, etek ucunda geniş dalgalar veren etek biçimidir. Büzgü olmadan genişlik verdiğinden bel çevresinde kalınlık yapmaz. Şifon, saten gibi akıcı kumaşlarda dönerken dalgalandığı için kutlama giysilerinde yaygın olarak tercih edilir.",
+  "grup": "Dikiş",
+  "esAnlam": "Godeli etek"
+ },
+ {
+  "terim": "Kol oyuntusu",
+  "tanim": "Kol oyuntusu, gövde kalıbında kolun takılacağı koltuk altı çevresindeki kavisli boşluktur. Bu kavisin derinliği ve genişliği kolun ne kadar rahat kalkacağını belirler. Dar oyuntu kolu sıkar ve kumaşı çeker, fazla derin oyuntu ise koltuk altında kırışıklık yaparak giysinin duruşunu bozar.",
+  "grup": "Dikiş",
+  "esAnlam": "Kol evi"
+ },
+ {
+  "terim": "Kupa dikişi",
+  "tanim": "Kupa dikişi, gövdeyi omuzdan ya da kol oyuntusundan etek ucuna kadar uzanan uzunlamasına dikiş hatlarıyla parçalara ayıran kesim tekniğidir. Pens yerine bu dikiş hatlarına genişlik verilip alınarak vücut hattı biçimlendirilir. Uzun dikey çizgi oluşturduğu için giysiye boy görünümü kazandırır ve prova sırasında daraltma-genişletme kolaylığı sağlar.",
+  "grup": "Dikiş",
+  "esAnlam": "Prenses dikiş"
+ },
+ {
+  "terim": "Pens",
+  "tanim": "Pens, düz kumaşı vücudun yuvarlak hatlarına oturtmak için alınan sivri uçlu, dikişle kapatılan kıvrımdır. Göğüs altına, bel hattına veya omuza yerleştirilerek fazlalık genişliği toplar. Pens alınmayan giyside kumaş bel ve göğüs çevresinde torbalanır; doğru yerleştirilmiş pens giysinin duruşunu düzeltir.",
+  "grup": "Dikiş",
+  "esAnlam": "Pili almak değil; vücut penslemesi"
+ },
+ {
+  "terim": "Prova",
+  "tanim": "Prova, ölçüye göre dikilen giysinin tamamlanmadan önce kişiye giydirilerek denenmesi aşamasıdır. Omuz oturuşu, bel hattının yeri, etek boyu, kol uzunluğu ve yaka açıklığı bu aşamada iğneyle işaretlenip düzeltilir. Ağır işlemeli giysilerde işleme yapılmadan önce prova alınması, sonradan sökme gereğini azalttığı için yaygın bir uygulamadır.",
+  "grup": "Dikiş",
+  "esAnlam": "Deneme"
+ },
+ {
+  "terim": "Roba",
+  "tanim": "Roba, giysinin omuz ve göğüs üstünü tek parça halinde saran, altına asıl beden parçalarının eklendiği yatay kesim parçasıdır. Omuz hattındaki yükü taşıdığı için gövdenin düzgün oturmasını sağlar ve altına toplanan büzgüyü düzenli dağıtır. Yöresel entari ve gömleklerde çoğunlukla göğüs altı hizasında biter, üzeri işleme veya farklı kumaşla belirginleştirilir.",
+  "grup": "Dikiş",
+  "esAnlam": "Göğüs parçası"
+ },
+ {
+  "terim": "Ütü payı",
+  "tanim": "Ütü payı, etek ve kol uçlarında içe kıvrılıp dikilmek üzere fazladan bırakılan kumaş genişliğidir. Etek ucunda genellikle 3-5 cm, kol ucunda 2-3 cm kadar bırakılır. Boy sonradan uzatılmak istendiğinde bu pay açılarak giysi birkaç santim uzatılabilir; bu nedenle çocuk giysilerinde daha bol bırakılması yaygındır.",
+  "grup": "Dikiş",
+  "esAnlam": "Baskı payı"
+ },
+ {
+  "terim": "Bayramlık",
+  "tanim": "Bayramlık, yalnızca dini bayramlarda ve özel günlerde giyilmek üzere ayrılan yeni ya da az kullanılmış giysi takımıdır. Bayram sabahı ilk kez giyilir, gün sonunda katlanıp sandığa veya dolaba kaldırılır. Çocuklar için çoğunlukla bayramdan birkaç hafta önce ısmarlama diktirilir; bu nedenle terziler bayram öncesi yoğunlaşır.",
+  "grup": "Gelenek",
+  "esAnlam": "Bayram giysisi"
+ },
+ {
+  "terim": "Çeyiz sandığı",
+  "tanim": "Çeyiz sandığı, gelinin evlilik öncesinde hazırladığı giysi, örtü ve el işlerinin saklandığı ahşap sandıktır. İçine işlemeli elbiseler, oyalı yazmalar, el örgüsü çoraplar ve yatak takımları katlanarak yerleştirilir. Düğünden önce sandığın açılıp içindekilerin komşulara ve akrabalara gösterilmesi birçok yörede yaygın bir gelenektir.",
+  "grup": "Gelenek",
+  "esAnlam": "Çeyiz"
+ },
+ {
+  "terim": "Halay",
+  "tanim": "El ele tutuşarak sıra halinde çekilen toplu halk oyunu. Kıyafet seçiminde kolların rahat hareket etmesi ve eteğin ayağa dolanmaması bu nedenle önemlidir.",
+  "grup": "Gelenek"
+ },
+ {
+  "terim": "Kına gecesi",
+  "tanim": "Düğünden önceki gece yapılan, gelinin eline kına yakıldığı kutlama. Kırmızı ve bordo tonlarındaki kıyafetler bu gecenin geleneksel rengi kabul edilir.",
+  "grup": "Gelenek"
+ },
+ {
+  "terim": "Söz kesme",
+  "tanim": "Söz kesme, iki ailenin evlilik konusunda anlaşmasını duyuran ve nişandan önce yapılan küçük törendir. Genellikle kız evinde gerçekleştirilir; gelin adayına bir yüzük veya gümüş takı takılır, bazı yörelerde koluna kırmızı kurdele bağlanır. Gelin adayı bu törende çoğunlukla yeni diktirilmiş, işlemeli bir elbise giyer.",
+  "grup": "Gelenek",
+  "esAnlam": "Söz kesimi"
+ },
+ {
+  "terim": "Aplike",
+  "tanim": "Aplike, ayrı bir kumaştan kesilen motifin ana kumaş üzerine yerleştirilip kenarından dikilerek tutturulmasıdır. Kadife, saten ya da güpür parçalar bu yöntemle elbiseye eklenir; kenarlar çoğunlukla sık zikzak dikiş veya sarma iğneyle kapatılır. Geniş yüzeyleri hızlı süslediği için etek ucu ve göğüs panolarında kullanılır.",
+  "grup": "İşleme",
+  "esAnlam": "aplikasyon"
+ },
+ {
+  "terim": "Boncuk işleme",
+  "tanim": "Boncuk işleme, cam veya plastik boncukların iğneyle tek tek kumaşa tutturulmasıyla yapılan süsleme tekniğidir. Genellikle göğüs, yaka çevresi, kol ağzı ve etek ucunda sıra ya da motif oluşturacak biçimde işlenir. Ağırlık yaptığı için ince kumaşlarda altına tela veya astar konur, temizliği çoğunlukla elde yapılır.",
+  "grup": "İşleme",
+  "esAnlam": "boncuk nakışı"
+ },
+ {
+  "terim": "Hesap işi",
+  "tanim": "Hesap işi, kumaşın atkı ve çözgü iplikleri sayılarak simetrik motifler oluşturulan bir işleme tekniğidir. Seyrek ve düzgün dokulu pamuklu ya da keten kumaşta uygulanır; desen çizilmez, iplik sayısıyla ölçülür. Gaziantep yöresinde yaygın olduğu için çoğunlukla Antep işi adıyla da anılır.",
+  "grup": "İşleme",
+  "esAnlam": "Antep işi"
+ },
+ {
+  "terim": "Pul payet",
+  "tanim": "Kumaş yüzeyine tek tek dikilen küçük parlak diskler. Işık altında hareketli bir parıltı verir; kına ve düğün gecesi kıyafetlerinde yoğun kullanılır. Dikiş sağlamlığı kalitenin en önemli göstergesidir.",
+  "grup": "İşleme"
+ },
+ {
+  "terim": "Sarma nakış",
+  "tanim": "Sarma nakış, motifin yüzeyini yan yana sık atılan düz iplik sıralarıyla tamamen doldurma tekniğidir. Yüzey pürüzsüz ve hafif kabarık göründüğü için yaprak, gonca ve yuvarlak çiçek motiflerinde tercih edilir. İpek ya da parlak floş iplikle çalışıldığında ışığı yansıtır; yaka ve kol ağzı bordürlerinde sık kullanılır.",
+  "grup": "İşleme",
+  "esAnlam": "sarma iğnesi"
+ },
+ {
+  "terim": "Sim işleme",
+  "tanim": "Metalik görünümlü ipliklerle yapılan nakış. Yaka, kol ucu ve etek kenarında şerit ya da motif oluşturacak biçimde uygulanır.",
+  "grup": "İşleme"
+ },
+ {
+  "terim": "Taş işleme",
+  "tanim": "Taş işleme, cam veya akrilik parlak taşların iğneyle dikilerek ya da ısıyla yapıştırılarak kumaşa tutturulmasıdır. Yöresel elbiselerde göğüs, bel hattı ve kol ağzında ışıltı sağlamak amacıyla sıralı motifler hâlinde uygulanır. Dikilen taşlar yıkamaya daha dayanıklıdır; yapıştırma taşlar sıcak ütü ve makinede yıkamayla dökülebilir.",
+  "grup": "İşleme"
+ },
+ {
+  "terim": "Tel kırma",
+  "tanim": "Tel kırma, yassı metal telin iğne yardımıyla kumaşa batırılıp kırılarak tutturulduğu geleneksel işleme tekniğidir. Gümüş veya altın renkli tel, seyrek dokulu kumaş üzerinde küçük parlak noktalar ve geometrik motifler oluşturur. Anadolu'da çoğunlukla baş örtüsü, yazma kenarı ve tören giysilerinde görülür.",
+  "grup": "İşleme",
+  "esAnlam": "telkırma"
+ },
+ {
+  "terim": "Cepken",
+  "tanim": "Cepken, gömlek üstüne giyilen, önü açık, bel hizasında biten kısa üst giyimdir. Genellikle kolları kol altından yırtmaçlı veya tamamen ayrık dikilir, böylece kol arkadan salınabilir. Kenarları ve göğüs hattı sıklıkla kaytan veya kordonla çevrilir; yöresel erkek giyiminde yeleğin daha süslü karşılığı sayılır.",
+  "grup": "Kıyafet",
+  "esAnlam": "Salta"
+ },
+ {
+  "terim": "Fistan",
+  "tanim": "Kirasın üzerine giyilen, takımın gösterişli katmanını oluşturan üst elbise. Sim, pul ve boncuk işlemeleri çoğunlukla bu parça üzerinde yoğunlaşır.",
   "grup": "Kıyafet"
  },
  {
@@ -10,14 +208,20 @@
   "grup": "Kıyafet"
  },
  {
-  "terim": "Fistan",
-  "tanim": "Kirasın üzerine giyilen, takımın gösterişli katmanını oluşturan üst elbise. Sim, pul ve boncuk işlemeleri çoğunlukla bu parça üzerinde yoğunlaşır.",
+  "terim": "Kirasfistan",
+  "tanim": "Kiras adı verilen uzun iç elbise ile fistan adı verilen üst elbisenin, bele bağlanan şûtik kuşakla tamamlandığı geleneksel kadın kıyafeti. Düğün, nişan ve kına gecelerinde giyilir; kumaşı, rengi ve işlemesi yöreye göre değişir.",
   "grup": "Kıyafet"
  },
  {
-  "terim": "Şûtik",
-  "tanim": "Belin üzerine sarılan kumaş kuşak. Takımı toparlar, bel hattını belirginleştirir ve renk uyumunu tamamlar. Düğünlerde parlak ve işlemeli, gündelik kullanımda daha sade örnekleri tercih edilir.",
-  "grup": "Aksesuar"
+  "terim": "Mintan",
+  "tanim": "Mintan, yakasız ya da kısa dik yakalı, önden düğmeli, bele kadar inen ince gömlek türüdür. Genellikle pamuklu veya keten benzeri hafif kumaştan dikilir ve yelek, cepken gibi üst parçaların altına giyilir. Kolları düz ve dar tutulduğu için üstteki parçanın altında kabarma yapmaz.",
+  "grup": "Kıyafet",
+  "esAnlam": "İç gömlek"
+ },
+ {
+  "terim": "Şal",
+  "tanim": "Şal û şepik takımının geniş kesimli pantolon parçası. Ağı düşük, paçaya doğru daralan yapısıyla hareket rahatlığı sağlar.",
+  "grup": "Kıyafet"
  },
  {
   "terim": "Şal û Şepik",
@@ -30,33 +234,40 @@
   "grup": "Kıyafet"
  },
  {
-  "terim": "Şal",
-  "tanim": "Şal û şepik takımının geniş kesimli pantolon parçası. Ağı düşük, paçaya doğru daralan yapısıyla hareket rahatlığı sağlar.",
-  "grup": "Kıyafet"
+  "terim": "Üçetek",
+  "tanim": "Üçetek, eteği önden ikiye yırtmalı olduğu için önde iki, arkada bir olmak üzere üç parça hâlinde görünen uzun kadın entarisidir. Yan yırtmaçlar yürürken hareketi rahatlatır, ön etekler bele sıkıştırılarak da taşınabilir. Kuşak ya da şal ile bele sarılarak giyilmesi yaygındır.",
+  "grup": "Kıyafet",
+  "esAnlam": "Üç peşli entari"
  },
  {
-  "terim": "Puşi",
-  "tanim": "Omuza atılan veya başa sarılan, kenarları püsküllü geleneksel örtü. Poşu adıyla da bilinir; pamuklu veya viskon dokumadan üretilir ve ekose desenleriyle tanınır.",
-  "grup": "Aksesuar"
+  "terim": "Güpür",
+  "tanim": "Güpür, motifleri kalın iplikle birbirine bağlanan, zemin ağı bulunmayan ya da çok seyrek olan kabartmalı dantel kumaştır. Klasik danteleden daha ağır ve dayanıklıdır. Yöresel elbiselerde yaka, kol ağzı, göğüs kısmı ve etek ucunda parça hâlinde kullanılır; altına konan ten rengi veya kontrast astar deseni belirginleştirir.",
+  "grup": "Kumaş",
+  "esAnlam": "gipür"
  },
  {
-  "terim": "Kofi",
-  "tanim": "Kadınların özel günlerde taktığı, üzeri pul, boncuk, madeni para veya sim işlemeyle süslenmiş geleneksel başlık. Genellikle kadife zemin üzerine işlenir.",
-  "grup": "Aksesuar"
- },
- {
-  "terim": "Klaş",
-  "tanim": "El örgüsü üst kısmı ve sağlam tabanıyla bilinen geleneksel ayakkabı. Pamuk ipliğinin sıkı örülmesiyle yapılır, hafif ve nefes alan yapısıyla yazın tercih edilir.",
-  "grup": "Aksesuar"
- },
- {
-  "terim": "Heybe",
-  "tanim": "Kilim dokuma tekniğiyle üretilen, omuzda taşınan çift gözlü geleneksel çanta. Geometrik desenleri ve püskül detaylarıyla tanınır.",
-  "grup": "Aksesuar"
+  "terim": "Jakar",
+  "tanim": "Deseni boyayla değil, dokuma sırasında ipliklerin örgüsüyle oluşturulan kumaş. Desen kumaşın iki yüzünde de görülebilir; dayanıklı ve dolgun bir duruşu vardır.",
+  "grup": "Kumaş"
  },
  {
   "terim": "Kadife",
   "tanim": "Yüzeyi kısa ve sık havlarla kaplı, ağır ve dökümlü kumaş. Işığı yumuşak yansıtır, koyu renklerde derinlik verir; kışlık düğün ve nişan kıyafetlerinde sık kullanılır.",
+  "grup": "Kumaş"
+ },
+ {
+  "terim": "Keten",
+  "tanim": "Keten, keten bitkisinin liflerinden dokunan, serin tutan ve nefes alan doğal kumaştır. Yüzeyi hafif düzensiz dokuludur ve yıkandıkça yumuşar; bu yüzden yazlık gömlek, geniş şalvar ve gündelik entarilerde tercih edilir. Kolay kırıştığı için tören giysilerinden çok günlük parçalarda kullanılır.",
+  "grup": "Kumaş"
+ },
+ {
+  "terim": "Krep",
+  "tanim": "Krep, yüzeyi hafif taneli ve mat görünen, akışkan dökümlü kumaştır. Bükümlü iplikten dokunduğu için kırışıklık tutmaz ve vücut hattını sertleştirmeden takip eder. Yöresel elbiselerin eteğinde ve geniş kollarında, ağır işlemenin altına taban kumaş olarak sıkça kullanılır.",
+  "grup": "Kumaş"
+ },
+ {
+  "terim": "Organze",
+  "tanim": "Organze, tülden daha sert ve dik duran, ince ama gövdeli saydam kumaştır. Dokusu hafif parlaktır; kesildiği biçimi koruduğu için kol, fırfır ve etek katlarında hacim oluşturmakta tercih edilir. Kırışığı belli ettiğinden dikiş sırasında ütü ayarı düşük tutulur.",
   "grup": "Kumaş"
  },
  {
@@ -70,33 +281,18 @@
   "grup": "Kumaş"
  },
  {
-  "terim": "Jakar",
-  "tanim": "Deseni boyayla değil, dokuma sırasında ipliklerin örgüsüyle oluşturulan kumaş. Desen kumaşın iki yüzünde de görülebilir; dayanıklı ve dolgun bir duruşu vardır.",
-  "grup": "Kumaş"
- },
- {
-  "terim": "Pul payet",
-  "tanim": "Kumaş yüzeyine tek tek dikilen küçük parlak diskler. Işık altında hareketli bir parıltı verir; kına ve düğün gecesi kıyafetlerinde yoğun kullanılır. Dikiş sağlamlığı kalitenin en önemli göstergesidir.",
-  "grup": "İşleme"
- },
- {
-  "terim": "Sim işleme",
-  "tanim": "Metalik görünümlü ipliklerle yapılan nakış. Yaka, kol ucu ve etek kenarında şerit ya da motif oluşturacak biçimde uygulanır.",
-  "grup": "İşleme"
- },
- {
   "terim": "Tiftik dokuma",
   "tanim": "Ankara keçisinin yününden elde edilen, parlak ve dayanıklı iplikle dokunan kumaş. Şal û şepik takımlarında sıkça kullanılır; sıcak tutar ve uzun ömürlüdür.",
   "grup": "Kumaş"
  },
  {
-  "terim": "Kına gecesi",
-  "tanim": "Düğünden önceki gece yapılan, gelinin eline kına yakıldığı kutlama. Kırmızı ve bordo tonlarındaki kıyafetler bu gecenin geleneksel rengi kabul edilir.",
-  "grup": "Gelenek"
+  "terim": "Tül",
+  "tanim": "Tül, ipliklerin ağ biçiminde örülmesiyle elde edilen hafif ve saydam kumaştır. Yöresel kadın giysilerinde çoğunlukla eteğin üzerine kat kat serilerek hacim verir; kol ağzı ve omuz hattında da kullanılır. Tek başına dökümü zayıf olduğundan altına genellikle saten ya da astar konur.",
+  "grup": "Kumaş"
  },
  {
-  "terim": "Halay",
-  "tanim": "El ele tutuşarak sıra halinde çekilen toplu halk oyunu. Kıyafet seçiminde kolların rahat hareket etmesi ve eteğin ayağa dolanmaması bu nedenle önemlidir.",
-  "grup": "Gelenek"
+  "terim": "Viskon",
+  "tanim": "Viskon, odun selülozundan üretilen liflerle dokunan, pamuğa benzer tuşeli yumuşak kumaştır. Dökümü akışkandır, terletmez ve boyayı canlı tutar; bu nedenle günlük entari, geniş kollu bluz ve iç elbiselerde yaygındır. Nemliyken esnediği için kesim öncesi ön yıkama yapılması yaygın bir uygulamadır.",
+  "grup": "Kumaş"
  }
 ]

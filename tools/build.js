@@ -1386,25 +1386,32 @@ ${demandSection("..", true)}`
 
   /* ---------- Terim Sözlüğü ---------- */
   {
+    const kimlik = t => t.toLocaleLowerCase("tr").replace(/[^a-zçğıöşü0-9]+/g, "-").replace(/^-|-$/g, "");
     const gruplar = {};
     for (const t of SOZLUK) (gruplar[t.grup] = gruplar[t.grup] || []).push(t);
-    const bolumler = Object.entries(gruplar).map(([grup, liste]) =>
-      `<section class="sozluk-grup">
-    <h2>${esc(grup)}</h2>
-    <dl class="sozluk">
-      ${liste.map(t => `<div class="sozluk-madde" id="${t.terim.toLocaleLowerCase("tr").replace(/[^a-zçğıöşü0-9]+/g, "-")}">
-        <dt>${esc(t.terim)}</dt>
-        <dd>${esc(t.tanim)}</dd>
-      </div>`).join(String.fromCharCode(10))}
-    </dl>
-  </section>`).join(String.fromCharCode(10));
+    for (const g of Object.keys(gruplar)) gruplar[g].sort((x, y) => x.terim.localeCompare(y.terim, "tr"));
+    const grupAdlari = Object.keys(gruplar);
+
+    const gezinme = grupAdlari.map(g =>
+      `<a class="sozluk-chip" href="#grup-${kimlik(g)}">${esc(g)} <span>${gruplar[g].length}</span></a>`
+    ).join(String.fromCharCode(10) + "      ");
+
+    const bolumler = grupAdlari.map(g => `<section class="sozluk-grup" id="grup-${kimlik(g)}">
+    <h2>${esc(g)} <span class="grup-sayi">${gruplar[g].length} terim</span></h2>
+    <div class="sozluk">
+      ${gruplar[g].map(t => `<article class="sozluk-madde" id="${kimlik(t.terim)}" data-terim="${esc((t.terim + " " + t.tanim + " " + (t.esAnlam || "")).toLocaleLowerCase("tr"))}">
+        <h3>${esc(t.terim)}${t.esAnlam ? `<em>${esc(t.esAnlam)}</em>` : ""}</h3>
+        <p>${esc(t.tanim)}</p>
+      </article>`).join(String.fromCharCode(10) + "      ")}
+    </div>
+  </section>`).join(String.fromCharCode(10) + "  ");
 
     writeFile("sozluk/index.html", layout({
       root: "..",
-      title: `Yöresel Kıyafet Terimleri Sözlüğü | ${SITE_NAME}`,
-      desc: "Kirasfistan, şûtik, kofi, şal û şepik, puşi, klaş… Yöresel kıyafet ve kumaş terimlerinin kısa ve net açıklamaları.",
+      title: `Yöresel Kıyafet Terimleri Sözlüğü (${SOZLUK.length} Terim) | ${SITE_NAME}`,
+      desc: `Kirasfistan, şûtik, kofi, kadife, jakar… Yöresel kıyafet, kumaş ve dikiş terimlerinin ${SOZLUK.length} maddelik açıklamalı sözlüğü. Aradığınız terimi anında bulun.`,
       canonicalPath: "/sozluk/",
-      current: "",
+      current: "sozluk/",
       jsonld: [
         breadcrumbJsonld([["Anasayfa", SITE_URL + "/"], ["Terimler Sözlüğü", SITE_URL + "/sozluk/"]]),
         {
@@ -1412,10 +1419,13 @@ ${demandSection("..", true)}`
           "name": "Yöresel Kıyafet Terimleri Sözlüğü",
           "url": SITE_URL + "/sozluk/",
           "inLanguage": "tr",
+          "description": "Yöresel kıyafet, kumaş, işleme ve dikim terimlerinin açıklamalı sözlüğü.",
           "hasDefinedTerm": SOZLUK.map(t => ({
             "@type": "DefinedTerm",
             "name": t.terim,
             "description": t.tanim,
+            "termCode": kimlik(t.terim),
+            "url": SITE_URL + "/sozluk/#" + kimlik(t.terim),
             "inDefinedTermSet": SITE_URL + "/sozluk/"
           }))
         }
@@ -1425,10 +1435,21 @@ ${demandSection("..", true)}`
   <div class="page-head">
     ${breadcrumb("..", [["Anasayfa", "../"], ["Terimler Sözlüğü", null]])}
     <h1>Yöresel Kıyafet Terimleri Sözlüğü</h1>
-    <p class="page-intro">Kirasfistandan şûtiğe, kadifeden jakara… Yöresel kıyafetlerde sık geçen terimlerin kısa ve net açıklamaları. Aradığınız kelimeyi tarayıcınızın arama özelliğiyle (Ctrl+F) hızlıca bulabilirsiniz.</p>
+    <p class="page-intro">Kirasfistandan şûtiğe, kadifeden jakara… Yöresel kıyafetlerde sık geçen <strong>${SOZLUK.length} terimin</strong> kısa ve net açıklaması. Aradığınız kelimeyi aşağıdaki kutuya yazarak anında bulabilirsiniz.</p>
   </div>
+
+  <div class="sozluk-arac">
+    <label class="visually-hidden" for="sozluk-ara">Terim ara</label>
+    <input type="search" id="sozluk-ara" placeholder="Terim ara… (ör. kadife, şûtik, pens)" autocomplete="off">
+    <div class="sozluk-nav">
+      ${gezinme}
+    </div>
+    <p class="sozluk-sonuc" id="sozluk-sonuc" aria-live="polite"></p>
+  </div>
+
   ${bolumler}
-  <div class="notice" style="margin-top:26px;">Koleksiyonu incelemek için <a href="../kirasfistan/">kirasfistan sayfamıza</a> göz atabilir, ayrıntılı rehberler için <a href="../blog/">blog bölümünü</a> ziyaret edebilirsiniz.</div>
+
+  <div class="notice" style="margin-top:26px;">Koleksiyonu incelemek için <a href="../kirasfistan/">kirasfistan sayfamıza</a> göz atabilir, ayrıntılı anlatımlar için <a href="../blog/">rehber yazılarımızı</a> okuyabilirsiniz.</div>
 </div>`
     }));
   }

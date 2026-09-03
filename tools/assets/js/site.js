@@ -298,6 +298,31 @@
     });
   }
 
+  /* ---------- Sözlük canlı arama ---------- */
+  var sozlukAra = $("#sozluk-ara");
+  if (sozlukAra) {
+    var maddeler = $all(".sozluk-madde");
+    var sozlukGruplar = $all(".sozluk-grup");
+    var sonucEl = $("#sozluk-sonuc");
+    sozlukAra.addEventListener("input", function () {
+      var q = sozlukAra.value.trim().toLocaleLowerCase("tr");
+      var bulunan = 0;
+      maddeler.forEach(function (m) {
+        var uyuyor = !q || (m.getAttribute("data-terim") || "").indexOf(q) !== -1;
+        m.hidden = !uyuyor;
+        if (uyuyor) bulunan++;
+      });
+      // İçinde görünen madde kalmayan grubu gizle
+      sozlukGruplar.forEach(function (g) {
+        g.hidden = !$all(".sozluk-madde:not([hidden])", g).length;
+      });
+      if (sonucEl) {
+        sonucEl.textContent = !q ? "" :
+          (bulunan ? bulunan + " terim bulundu" : "Sonuç bulunamadı — farklı bir kelime deneyin.");
+      }
+    });
+  }
+
   /* ---------- Kategori filtreleri ---------- */
   var catGrid = $("[data-filterable]");
   if (catGrid) {
