@@ -2,5 +2,5 @@
    Google Analytics ölçüm kimliğini (G-XXXXXXXXXX) aşağıya yazın.
    Boş bırakılırsa analytics yüklenmez. */
 window.KY_CONFIG = {
-  gaId: ""
+  gaId: "G-FYNEG9DDHP"
 };
