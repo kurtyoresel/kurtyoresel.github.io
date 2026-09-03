@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Yöresel Elbise Beden ve Ölçü Rehberi: Doğru Beden Nasıl Seçilir?">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6e1522"/><stop offset="0.6" stop-color="#8e1f2e"/><stop offset="1" stop-color="#a63042"/>
+    </linearGradient>
+    <g id="bm"><path d="M-8-2L0-8 8-2" fill="none" stroke="#f6e3c8" stroke-width="2.4" stroke-linecap="round"/><path d="M-8 5L0-1 8 5" fill="none" stroke="#f6e3c8" stroke-width="2.4" stroke-linecap="round"/></g>
+    <g id="bigm"><path d="M-8-2L0-8 8-2" fill="none" stroke="#f2c66d" stroke-width="2.4" stroke-linecap="round"/><path d="M-8 5L0-1 8 5" fill="none" stroke="#f2c66d" stroke-width="2.4" stroke-linecap="round"/></g>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <use href="#bm" transform="translate(588 308) scale(2.29)" opacity="0.17"/><use href="#bm" transform="translate(260 604) scale(0.91)" opacity="0.12"/><use href="#bm" transform="translate(962 356) scale(1.21)" opacity="0.19"/><use href="#bm" transform="translate(1015 522) scale(1.70)" opacity="0.17"/><use href="#bm" transform="translate(978 576) scale(1.44)" opacity="0.20"/><use href="#bm" transform="translate(299 110) scale(1.25)" opacity="0.21"/><use href="#bm" transform="translate(774 142) scale(1.13)" opacity="0.18"/><use href="#bm" transform="translate(861 132) scale(1.53)" opacity="0.22"/><use href="#bm" transform="translate(312 624) scale(1.63)" opacity="0.24"/><use href="#bm" transform="translate(446 523) scale(1.44)" opacity="0.13"/><use href="#bm" transform="translate(131 540) scale(2.29)" opacity="0.23"/><use href="#bm" transform="translate(809 312) scale(1.43)" opacity="0.14"/><use href="#bm" transform="translate(384 628) scale(1.27)" opacity="0.18"/><use href="#bm" transform="translate(1022 521) scale(1.24)" opacity="0.23"/><use href="#bm" transform="translate(578 588) scale(1.97)" opacity="0.25"/><use href="#bm" transform="translate(1076 214) scale(1.62)" opacity="0.18"/>
+  <use href="#bigm" transform="translate(600 315) scale(9)" opacity="0.9"/>
+  <use href="#bigm" transform="translate(600 315) scale(14)" opacity="0.25"/>
+  <rect y="655" width="1200" height="20" fill="#c08a1d"/>
+</svg>

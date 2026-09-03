@@ -59,12 +59,33 @@
 
   /* ---------- Mobil menü ---------- */
   var navToggle = $(".nav-toggle");
-  if (navToggle) {
-    navToggle.addEventListener("click", function () {
-      var nav = $(".main-nav");
-      if (!nav) return;
-      var open = nav.classList.toggle("open");
+  var mainNav = $(".main-nav");
+  if (navToggle && mainNav) {
+    function menuKapat() {
+      mainNav.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+    navToggle.addEventListener("click", function (ev) {
+      ev.stopPropagation();
+      var open = mainNav.classList.toggle("open");
       navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    // Dışarı tıklayınca kapat
+    document.addEventListener("click", function (ev) {
+      if (!mainNav.classList.contains("open")) return;
+      if (mainNav.contains(ev.target) || navToggle.contains(ev.target)) return;
+      menuKapat();
+    });
+    // ESC ile kapat
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape" && mainNav.classList.contains("open")) {
+        menuKapat();
+        navToggle.focus();
+      }
+    });
+    // Bir bağlantıya tıklanınca kapat
+    $all("a", mainNav).forEach(function (a) {
+      a.addEventListener("click", menuKapat);
     });
   }
 

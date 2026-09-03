@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Şûtik, Kofi ve Puşi: Yöresel Aksesuarların Kullanım Rehberi">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6e1522"/><stop offset="0.6" stop-color="#8e1f2e"/><stop offset="1" stop-color="#a63042"/>
+    </linearGradient>
+    <g id="bm"><path d="M-9 3L-4.5-3 0 3 4.5-3 9 3" fill="none" stroke="#f6e3c8" stroke-width="2.4" stroke-linecap="round"/></g>
+    <g id="bigm"><path d="M-9 3L-4.5-3 0 3 4.5-3 9 3" fill="none" stroke="#f2c66d" stroke-width="2.4" stroke-linecap="round"/></g>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <use href="#bm" transform="translate(690 347) scale(0.92)" opacity="0.26"/><use href="#bm" transform="translate(700 591) scale(1.19)" opacity="0.23"/><use href="#bm" transform="translate(652 225) scale(0.94)" opacity="0.10"/><use href="#bm" transform="translate(347 442) scale(1.35)" opacity="0.24"/><use href="#bm" transform="translate(272 221) scale(1.18)" opacity="0.14"/><use href="#bm" transform="translate(138 591) scale(1.16)" opacity="0.19"/><use href="#bm" transform="translate(1053 378) scale(1.94)" opacity="0.12"/><use href="#bm" transform="translate(700 347) scale(2.14)" opacity="0.18"/><use href="#bm" transform="translate(234 322) scale(2.34)" opacity="0.14"/><use href="#bm" transform="translate(339 225) scale(1.48)" opacity="0.12"/><use href="#bm" transform="translate(869 293) scale(0.93)" opacity="0.11"/><use href="#bm" transform="translate(163 221) scale(2.33)" opacity="0.20"/><use href="#bm" transform="translate(405 72) scale(1.06)" opacity="0.16"/><use href="#bm" transform="translate(578 226) scale(2.15)" opacity="0.26"/><use href="#bm" transform="translate(638 441) scale(1.50)" opacity="0.24"/><use href="#bm" transform="translate(123 260) scale(0.87)" opacity="0.26"/>
+  <use href="#bigm" transform="translate(600 315) scale(9)" opacity="0.9"/>
+  <use href="#bigm" transform="translate(600 315) scale(14)" opacity="0.25"/>
+  <rect y="655" width="1200" height="20" fill="#c08a1d"/>
+</svg>

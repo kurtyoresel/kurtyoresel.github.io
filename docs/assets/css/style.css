@@ -39,7 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img, svg { max-width: 100%; display: block; }
+img, svg { max-width: 100%; height: auto; display: block; }
 
 a { color: var(--brand); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -618,3 +618,113 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; line-height: 1
   *, *::before, *::after { transition: none !important; animation: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* ============================================================
+   MOBİL İYİLEŞTİRMELERİ
+   ============================================================ */
+
+/* iOS'ta yatay çevirince yazıların büyümesini engelle */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+/* Dokunma vurgusunu yumuşat */
+a, button { -webkit-tap-highlight-color: rgba(142, 31, 46, 0.12); }
+
+/* Safari için bulanıklık desteği */
+.site-header { -webkit-backdrop-filter: blur(8px); }
+
+/* Arama butonu dokunma hedefi (25px → 44px) */
+.search-form button {
+  width: 40px; height: 40px;
+  align-items: center; justify-content: center;
+  padding: 0; right: 3px;
+}
+
+/* Kalp (favori) butonu dokunma hedefi */
+.wish-btn { width: 44px; height: 44px; }
+
+@media (max-width: 800px) {
+  /* iOS Safari odaklanınca sayfayı yakınlaştırmasın: 16px şart */
+  .search-form input,
+  .filter-bar select { font-size: 16px; }
+
+  /* Yapışkan başlığı inceltip içeriğe yer aç */
+  .topbar { font-size: 0.75rem; padding: 6px 12px; }
+  .header-inner { padding: 9px 14px; gap: 8px; }
+  .logo { font-size: 1.15rem; }
+  .logo .logo-mark { width: 30px; height: 30px; }
+  .icon-btn { width: 44px; height: 44px; }
+
+  /* Menü bağlantıları tam dokunma hedefi */
+  .main-nav a { padding: 13px 14px; font-size: 1rem; }
+
+  /* Arama kutusu daha kullanışlı */
+  .search-form input { width: 118px; padding: 10px 40px 10px 14px; }
+  .search-form input:focus { width: 140px; }
+
+  /* Gövde metinleri okunabilir boyutta */
+  body { font-size: 16px; }
+  .product-body h3 { font-size: 0.95rem; }
+  .product-body .p-region { font-size: 0.72rem; }
+  .category-card p, .feature-item span, .blog-card p { font-size: 0.88rem; }
+  .figure-credit { font-size: 0.78rem; }
+  .breadcrumb { font-size: 0.85rem; }
+
+  /* Filtre çubuğu: düzenli ızgara, daha az yer */
+  .filter-bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 10px;
+    padding: 12px;
+    align-items: center;
+  }
+  .filter-bar select { width: 100%; min-height: 44px; }
+  .filter-count { grid-column: 1 / -1; margin-left: 0; text-align: center; }
+
+  /* Rozet ile kalp butonu üst üste binmesin */
+  .product-media .p-badge { font-size: 0.64rem; padding: 4px 7px; max-width: 48%; }
+  .wish-btn { width: 44px; height: 44px; top: 6px; right: 6px; }
+  .search-form button { width: 44px; height: 44px; }
+  .logo { padding: 6px 0; }
+
+  /* Ürün kartı içine nefes payı */
+  .product-body { padding: 12px 12px 14px; gap: 4px; }
+  .p-price .price-now { font-size: 1rem; }
+
+  /* Bölüm başlıkları alt alta */
+  .section-head { flex-direction: column; align-items: flex-start; gap: 8px; }
+
+  /* Tablolar taşmasın, kendi içinde kaysın */
+  .article-body table, .spec-table { display: block; overflow-x: auto; white-space: nowrap; }
+  .pd-desc table { display: block; overflow-x: auto; }
+}
+
+@media (max-width: 380px) {
+  /* Çok dar ekranlarda tek sütun daha okunaklı */
+  .product-grid, .product-grid.grid-3 { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .container { padding: 0 14px; }
+  .btn-lg { font-size: 0.98rem; padding: 14px 22px; }
+  .demand-section { padding: 36px 18px; }
+}
+
+/* Çentikli ekranlarda (iPhone) güvenli alan */
+@supports (padding: max(0px)) {
+  .header-inner, .container, .footer-inner {
+    padding-left: max(14px, env(safe-area-inset-left));
+    padding-right: max(14px, env(safe-area-inset-right));
+  }
+}
+
+/* ---------- Terim sözlüğü ---------- */
+.sozluk-grup { margin-bottom: 30px; }
+.sozluk-grup h2 { font-size: 1.35rem; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid var(--gold-soft); }
+.sozluk { display: grid; gap: 14px; }
+.sozluk-madde {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  scroll-margin-top: 100px;
+}
+.sozluk-madde dt { font-weight: 800; font-size: 1.02rem; color: var(--brand); margin-bottom: 4px; }
+.sozluk-madde dd { margin: 0; color: var(--ink-soft); font-size: 0.94rem; }

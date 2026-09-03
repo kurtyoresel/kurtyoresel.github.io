@@ -1,0 +1,486 @@
+{
+ "/": {
+  "hash": "88ef4a221f719c45",
+  "date": "2026-09-03"
+ },
+ "/kirasfistan/": {
+  "hash": "641b03d86f0ee4cb",
+  "date": "2026-09-03"
+ },
+ "/sal-u-sepik/": {
+  "hash": "0f61abc4ea00840c",
+  "date": "2026-09-03"
+ },
+ "/pusi/": {
+  "hash": "4d5540517c415c0d",
+  "date": "2026-09-03"
+ },
+ "/aksesuar/": {
+  "hash": "1aa7f11739c1e7f7",
+  "date": "2026-09-03"
+ },
+ "/blog/": {
+  "hash": "c31f9b39fadcba1c",
+  "date": "2026-09-03"
+ },
+ "/blog/kirasfistan-nedir/": {
+  "hash": "2dfd231bf811ba23",
+  "date": "2026-09-03"
+ },
+ "/blog/kurt-dugun-kiyafetleri/": {
+  "hash": "a79fa666678a6538",
+  "date": "2026-09-03"
+ },
+ "/blog/sal-u-sepik-rehberi/": {
+  "hash": "78402e15e6c9af63",
+  "date": "2026-09-03"
+ },
+ "/blog/pusi-nasil-baglanir/": {
+  "hash": "b02bdd006071c8a8",
+  "date": "2026-09-03"
+ },
+ "/blog/yoresel-aksesuar-rehberi/": {
+  "hash": "f8eb420f708693eb",
+  "date": "2026-09-03"
+ },
+ "/blog/yoresel-elbise-beden-olcu-rehberi/": {
+  "hash": "cba342b2d598896c",
+  "date": "2026-09-03"
+ },
+ "/blog/kirasfistan-bakimi-ve-yikama/": {
+  "hash": "4068a119aca30e29",
+  "date": "2026-09-03"
+ },
+ "/blog/dugun-nisan-kina-ne-giyilir/": {
+  "hash": "9acd35e98814b33e",
+  "date": "2026-09-03"
+ },
+ "/blog/yoresel-kiyafet-kumas-rehberi/": {
+  "hash": "b42b5d7dc3ec906f",
+  "date": "2026-09-03"
+ },
+ "/blog/kina-gecesi-kiyafeti-rehberi/": {
+  "hash": "041113dabfc413a3",
+  "date": "2026-09-03"
+ },
+ "/hakkimizda/": {
+  "hash": "061fece47b76ca1b",
+  "date": "2026-09-03"
+ },
+ "/iletisim/": {
+  "hash": "7380b83827371d43",
+  "date": "2026-09-03"
+ },
+ "/sss/": {
+  "hash": "ca11725c16f69bac",
+  "date": "2026-09-03"
+ },
+ "/sozluk/": {
+  "hash": "ffa961caa2d769e3",
+  "date": "2026-09-03"
+ },
+ "/gorsel-kaynaklari/": {
+  "hash": "cf3e351ab8d4a8a4",
+  "date": "2026-09-03"
+ },
+ "/urun/botan-kadife-kirasfistan-bordo-altin-sim/": {
+  "hash": "110e890c0e143506",
+  "date": "2026-09-03"
+ },
+ "/urun/serhat-saten-kirasfistan-zumrut-sim/": {
+  "hash": "12b8d1a42dd9fb2b",
+  "date": "2026-09-03"
+ },
+ "/urun/mardin-simli-sifon-kirasfistan-patlican-moru/": {
+  "hash": "a34e232098c15b31",
+  "date": "2026-09-03"
+ },
+ "/urun/hakkari-pul-payet-kirasfistan-gece-mavisi/": {
+  "hash": "8178c709cd867e68",
+  "date": "2026-09-03"
+ },
+ "/urun/diyarbakir-hardal-jakar-kirasfistan-bakir-serit/": {
+  "hash": "31f1ce4c1a9dc84c",
+  "date": "2026-09-03"
+ },
+ "/urun/cizre-kadife-kirasfistan-petrol-sim/": {
+  "hash": "54d7c3b3fc4b4a78",
+  "date": "2026-09-03"
+ },
+ "/urun/van-saten-kirasfistan-fusya-sim/": {
+  "hash": "fcd0fb4da1005c32",
+  "date": "2026-09-03"
+ },
+ "/urun/sanliurfa-pul-payet-kirasfistan-gece-siyahi/": {
+  "hash": "3c4bcb1098c69a6e",
+  "date": "2026-09-03"
+ },
+ "/urun/botan-simli-kadife-kirasfistan-nar-cicegi/": {
+  "hash": "f4e4b0846b4cd957",
+  "date": "2026-09-03"
+ },
+ "/urun/serhat-jakar-kirasfistan-cam-yesili-serit/": {
+  "hash": "d6315e4273ad08d3",
+  "date": "2026-09-03"
+ },
+ "/urun/mardin-tul-islemeli-kirasfistan-lila/": {
+  "hash": "a15b4aafaec350e9",
+  "date": "2026-09-03"
+ },
+ "/urun/hakkari-boncuk-islemeli-kirasfistan-lacivert/": {
+  "hash": "ba67982be7bc9e0f",
+  "date": "2026-09-03"
+ },
+ "/urun/diyarbakir-altin-sarisi-simli-dokuma-kirasfistan/": {
+  "hash": "4fa7b27861405162",
+  "date": "2026-09-03"
+ },
+ "/urun/cizre-saten-kirasfistan-turkuaz-boncuk/": {
+  "hash": "eebad9c1d97ecbe7",
+  "date": "2026-09-03"
+ },
+ "/urun/van-tul-payet-kirasfistan-gul-kurusu/": {
+  "hash": "6c7f3c01d05490c8",
+  "date": "2026-09-03"
+ },
+ "/urun/adiyaman-kadife-sifon-kirasfistan-antrasit/": {
+  "hash": "747c43dfbc8eaa0b",
+  "date": "2026-09-03"
+ },
+ "/urun/botan-boncuk-islemeli-kirasfistan-koyu-kirmizi/": {
+  "hash": "9f129a68e1a0cc17",
+  "date": "2026-09-03"
+ },
+ "/urun/serhat-saten-kirasfistan-adacayi-boncuk/": {
+  "hash": "856b9700dd2cf325",
+  "date": "2026-09-03"
+ },
+ "/urun/mardin-pul-payetli-kirasfistan-mor/": {
+  "hash": "cc153604889c4891",
+  "date": "2026-09-03"
+ },
+ "/urun/hakkari-kadife-kirasfistan-kobalt/": {
+  "hash": "a670fd74e5513cbc",
+  "date": "2026-09-03"
+ },
+ "/urun/diyarbakir-kehribar-jakar-kirasfistan-pul-islemeli/": {
+  "hash": "69dc21c162df8dbc",
+  "date": "2026-09-03"
+ },
+ "/urun/cizre-kadife-kirasfistan-cini-mavisi/": {
+  "hash": "0e40959b2f21cb2c",
+  "date": "2026-09-03"
+ },
+ "/urun/van-saten-kirasfistan-mercan-boncuk/": {
+  "hash": "04a7dd8cff42bf80",
+  "date": "2026-09-03"
+ },
+ "/urun/sanliurfa-sim-seritli-sifon-kirasfistan-koyu-fume/": {
+  "hash": "b1cd9a88ad36abe2",
+  "date": "2026-09-03"
+ },
+ "/urun/botan-pul-islemeli-kadife-kirasfistan-bordo/": {
+  "hash": "5b5c9f3a55ee1948",
+  "date": "2026-09-03"
+ },
+ "/urun/serhat-pul-payet-kirasfistan-zumrut-kina/": {
+  "hash": "33433b4d3f3378fd",
+  "date": "2026-09-03"
+ },
+ "/urun/mardin-gunluk-sifon-kirasfistan-leylak/": {
+  "hash": "342b0c3ea522238d",
+  "date": "2026-09-03"
+ },
+ "/urun/hakkari-sifon-kirasfistan-indigo/": {
+  "hash": "4fe28aa965336af9",
+  "date": "2026-09-03"
+ },
+ "/urun/diyarbakir-safran-sarisi-boncuk-islemeli-kirasfistan/": {
+  "hash": "d4765d2feb69a5ec",
+  "date": "2026-09-03"
+ },
+ "/urun/cizre-saten-kirasfistan-camgobegi-pul/": {
+  "hash": "a244e713a2ddbf42",
+  "date": "2026-09-03"
+ },
+ "/urun/van-pul-payet-kirasfistan-fusya/": {
+  "hash": "920b69791ca5b6a6",
+  "date": "2026-09-03"
+ },
+ "/urun/adiyaman-boncuk-islemeli-kadife-kirasfistan-siyah/": {
+  "hash": "2d7b6a188ff65fdc",
+  "date": "2026-09-03"
+ },
+ "/urun/botan-gunluk-kadife-kirasfistan-visne/": {
+  "hash": "92d824a2a1f0014c",
+  "date": "2026-09-03"
+ },
+ "/urun/serhat-jakar-kirasfistan-adacayi-gumus/": {
+  "hash": "49bf4c7862daee51",
+  "date": "2026-09-03"
+ },
+ "/urun/mardin-boncuk-islemeli-kirasfistan-murdum/": {
+  "hash": "8c3bc846ef18b4bb",
+  "date": "2026-09-03"
+ },
+ "/urun/hakkari-payet-serit-kirasfistan-safir/": {
+  "hash": "eeacabdd8f454b8c",
+  "date": "2026-09-03"
+ },
+ "/urun/diyarbakir-koyu-hardal-jakar-kirasfistan-gunluk/": {
+  "hash": "0f8d88399fd1c37b",
+  "date": "2026-09-03"
+ },
+ "/urun/cizre-kadife-kirasfistan-koyu-petrol/": {
+  "hash": "2f1404f1bf81e7bf",
+  "date": "2026-09-03"
+ },
+ "/urun/van-saten-serit-kirasfistan-gul-kurusu/": {
+  "hash": "3d1ffe3b2d9c8446",
+  "date": "2026-09-03"
+ },
+ "/urun/sanliurfa-gumus-payet-kirasfistan-antrasit/": {
+  "hash": "02f200f2d0256332",
+  "date": "2026-09-03"
+ },
+ "/urun/botan-serit-islemeli-kirasfistan-lal-kirmizisi/": {
+  "hash": "ff55719a5e7092a8",
+  "date": "2026-09-03"
+ },
+ "/urun/serhat-saten-kirasfistan-koyu-zumrut-pul/": {
+  "hash": "4e146b6c055c8b1c",
+  "date": "2026-09-03"
+ },
+ "/urun/mardin-serit-islemeli-tul-kirasfistan-erguvan/": {
+  "hash": "3da2cf9781cb6f58",
+  "date": "2026-09-03"
+ },
+ "/urun/hakkari-jakar-kirasfistan-civit-mavisi/": {
+  "hash": "66d29bb25869c658",
+  "date": "2026-09-03"
+ },
+ "/urun/diyarbakir-koyu-altin-jakar-kirasfistan-serit-islemeli/": {
+  "hash": "d6b0e217ef9985ae",
+  "date": "2026-09-03"
+ },
+ "/urun/cizre-saten-kirasfistan-turkuaz-yesili/": {
+  "hash": "8658cdcdcb539913",
+  "date": "2026-09-03"
+ },
+ "/urun/van-tul-payet-kirasfistan-mercan-kina/": {
+  "hash": "1ba50509a7b6b761",
+  "date": "2026-09-03"
+ },
+ "/urun/adiyaman-gunluk-kadife-kirasfistan-komur-grisi/": {
+  "hash": "df91bd31e8caf1e3",
+  "date": "2026-09-03"
+ },
+ "/urun/botan-simli-kadife-kirasfistan-yakut/": {
+  "hash": "87246998dac5ff31",
+  "date": "2026-09-03"
+ },
+ "/urun/serhat-jakar-kirasfistan-nefti-sal-desenli/": {
+  "hash": "dbe229ffc130b9b0",
+  "date": "2026-09-03"
+ },
+ "/urun/mardin-sim-nakisli-kirasfistan-ametist/": {
+  "hash": "68877958bdeaf991",
+  "date": "2026-09-03"
+ },
+ "/urun/hakkari-saten-kirasfistan-gece-laciverti/": {
+  "hash": "3a39227eaf4d8284",
+  "date": "2026-09-03"
+ },
+ "/urun/diyarbakir-koyu-kehribar-simli-kirasfistan-dokumlu-kol/": {
+  "hash": "71d81417618d93f6",
+  "date": "2026-09-03"
+ },
+ "/urun/cizre-saten-kirasfistan-cini-boncuk/": {
+  "hash": "8801ebe1a3971811",
+  "date": "2026-09-03"
+ },
+ "/urun/van-saten-kirasfistan-koyu-fusya/": {
+  "hash": "03ce3e07f1893f01",
+  "date": "2026-09-03"
+ },
+ "/urun/sanliurfa-gumus-seritli-sifon-kirasfistan-fume/": {
+  "hash": "1ae38a4d66835326",
+  "date": "2026-09-03"
+ },
+ "/urun/botan-boncuk-pul-kirasfistan-nar-cicegi/": {
+  "hash": "da7de3ca381494a9",
+  "date": "2026-09-03"
+ },
+ "/urun/serhat-saten-kirasfistan-koyu-cam-halay/": {
+  "hash": "42ab3ea3c3cddfaf",
+  "date": "2026-09-03"
+ },
+ "/urun/mardin-payet-seritli-kirasfistan-gece-moru/": {
+  "hash": "e942c63fdcc54163",
+  "date": "2026-09-03"
+ },
+ "/urun/hakkari-simli-tul-kirasfistan-parlament-mavisi/": {
+  "hash": "4fb7550da582608d",
+  "date": "2026-09-03"
+ },
+ "/urun/diyarbakir-bal-kehribari-jakar-kirasfistan-gumus-serit/": {
+  "hash": "d3c486620a6dd72f",
+  "date": "2026-09-03"
+ },
+ "/urun/cizre-kadife-kirasfistan-pul-kina/": {
+  "hash": "aa99f7e710f13125",
+  "date": "2026-09-03"
+ },
+ "/urun/van-saten-kirasfistan-gul-pembesi/": {
+  "hash": "352e2668466d2eb3",
+  "date": "2026-09-03"
+ },
+ "/urun/adiyaman-bakir-simli-kadife-sifon-kirasfistan-zift-siyahi/": {
+  "hash": "ca13a569b6ea236c",
+  "date": "2026-09-03"
+ },
+ "/urun/botan-klasik-kadife-kirasfistan-koyu-bordo/": {
+  "hash": "18a36ca4366ebe03",
+  "date": "2026-09-03"
+ },
+ "/urun/serhat-jakar-kirasfistan-adacayi-gul-desenli/": {
+  "hash": "4d966a80eb919f96",
+  "date": "2026-09-03"
+ },
+ "/urun/mardin-tul-detayli-kirasfistan-menekse/": {
+  "hash": "db77fb5b349c8697",
+  "date": "2026-09-03"
+ },
+ "/urun/hakkari-kadife-payet-kirasfistan-petrol/": {
+  "hash": "66cfae04e9b884a2",
+  "date": "2026-09-03"
+ },
+ "/urun/diyarbakir-zerdecal-sarisi-pul-payet-kirasfistan/": {
+  "hash": "3ce9ea1553d53198",
+  "date": "2026-09-03"
+ },
+ "/urun/cizre-kadife-kirasfistan-turkuaz-sim/": {
+  "hash": "e5c15ce0b5d394e1",
+  "date": "2026-09-03"
+ },
+ "/urun/van-tul-payet-kirasfistan-nar-cicegi/": {
+  "hash": "109f2714d06c43e1",
+  "date": "2026-09-03"
+ },
+ "/urun/sanliurfa-altin-seritli-payet-sifon-kirasfistan-koyu-antrasit/": {
+  "hash": "ac016b9aac17efa0",
+  "date": "2026-09-03"
+ },
+ "/urun/botan-dugun-kirasfistan-al-kirmizi-simli/": {
+  "hash": "582bb68326fb943c",
+  "date": "2026-09-03"
+ },
+ "/urun/serhat-simli-saten-kirasfistan-cam-yesili-dugun/": {
+  "hash": "a7be81625279904b",
+  "date": "2026-09-03"
+ },
+ "/urun/mardin-katmanli-sifon-kirasfistan-orkide/": {
+  "hash": "3395fcf58f0c344d",
+  "date": "2026-09-03"
+ },
+ "/urun/hakkari-pul-payet-kirasfistan-saks-mavisi/": {
+  "hash": "d2781adf3e4f7ad8",
+  "date": "2026-09-03"
+ },
+ "/urun/diyarbakir-eskitme-altin-simli-jakar-kirasfistan-dugun/": {
+  "hash": "83b27debf3891a03",
+  "date": "2026-09-03"
+ },
+ "/urun/cizre-saten-kirasfistan-koyu-cini/": {
+  "hash": "186ad0d3489315b6",
+  "date": "2026-09-03"
+ },
+ "/urun/van-gunluk-saten-kirasfistan-fusya-pembesi/": {
+  "hash": "ed35417c08b744be",
+  "date": "2026-09-03"
+ },
+ "/urun/adiyaman-sim-serpme-kadife-kirasfistan-gece-fumesi/": {
+  "hash": "b1d8e7932bb419ff",
+  "date": "2026-09-03"
+ },
+ "/urun/sepik-hakkari-fume-tiftik/": {
+  "hash": "c60c941ef64acd01",
+  "date": "2026-09-03"
+ },
+ "/urun/sepik-botan-antrasit-yun/": {
+  "hash": "71698aa615519e2d",
+  "date": "2026-09-03"
+ },
+ "/urun/sepik-semdinli-kahve-tiftik/": {
+  "hash": "2755b6afaebed158",
+  "date": "2026-09-03"
+ },
+ "/urun/sepik-yuksekova-krem-yun/": {
+  "hash": "414f50e34ec952c4",
+  "date": "2026-09-03"
+ },
+ "/urun/sepik-hakkari-lacivert-tiftik/": {
+  "hash": "6d0002920f98e94c",
+  "date": "2026-09-03"
+ },
+ "/urun/sepik-botan-haki-yun/": {
+  "hash": "b7aab78213621ef7",
+  "date": "2026-09-03"
+ },
+ "/urun/sepik-semdinli-gri-tiftik/": {
+  "hash": "87e7ce4eee823d70",
+  "date": "2026-09-03"
+ },
+ "/urun/sepik-yuksekova-bej-yun/": {
+  "hash": "fd686daeddc57781",
+  "date": "2026-09-03"
+ },
+ "/urun/pusi-siyah-beyaz-puskullu/": {
+  "hash": "3cee8d8af4b4bc62",
+  "date": "2026-09-03"
+ },
+ "/urun/pusi-kirmizi-beyaz-puskullu/": {
+  "hash": "83bdc08132316ff9",
+  "date": "2026-09-03"
+ },
+ "/urun/pusi-haki-viskon/": {
+  "hash": "c8ea00d054051f85",
+  "date": "2026-09-03"
+ },
+ "/urun/pusi-bordo-viskon/": {
+  "hash": "5ca88b9a4deee7cb",
+  "date": "2026-09-03"
+ },
+ "/urun/pusi-lacivert-pamuklu/": {
+  "hash": "de2acad08e8ea86c",
+  "date": "2026-09-03"
+ },
+ "/urun/pusi-fume-viskon/": {
+  "hash": "2e1dd208e6a36d89",
+  "date": "2026-09-03"
+ },
+ "/urun/aks-serhat-pullu-kofi-bordo/": {
+  "hash": "2bda706bfa951de3",
+  "date": "2026-09-03"
+ },
+ "/urun/aks-hakkari-boncuklu-kofi-zumrut/": {
+  "hash": "8e789611091b87ab",
+  "date": "2026-09-03"
+ },
+ "/urun/aks-botan-ipek-sutik-hardal/": {
+  "hash": "1826326964a5ec59",
+  "date": "2026-09-03"
+ },
+ "/urun/aks-yuksekova-yun-sutik-kiremit/": {
+  "hash": "7410608c12ef74bc",
+  "date": "2026-09-03"
+ },
+ "/urun/aks-serhat-el-orgusu-yun-corap/": {
+  "hash": "277f2c66526ef179",
+  "date": "2026-09-03"
+ },
+ "/urun/aks-mardin-kilim-heybe-kizil-kahve/": {
+  "hash": "5532a39468956196",
+  "date": "2026-09-03"
+ }
+}

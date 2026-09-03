@@ -515,6 +515,7 @@ function navLinks(root, current) {
     ["pusi/", "Puşi"],
     ["aksesuar/", "Aksesuar"],
     ["blog/", "Blog"],
+    ["sozluk/", "Sözlük"],
     ["sss/", "SSS"]
   ];
   return items.map(([href, label]) => {
@@ -559,7 +560,9 @@ function layout(opts) {
   <link rel="icon" href="${root}/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;650;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;650;700;800&family=Playfair+Display:wght@700;800&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;650;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;650;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="${root}/assets/css/style.css">
   ${jsonldTags}
 </head>
@@ -608,6 +611,7 @@ ${content}
         <ul>
           <li><a href="${root}/hakkimizda/">Hakkımızda</a></li>
           <li><a href="${root}/blog/">Blog</a></li>
+          <li><a href="${root}/sozluk/">Terimler Sözlüğü</a></li>
           <li><a href="${root}/sss/">Sıkça Sorulan Sorular</a></li>
           <li><a href="${root}/iletisim/">İletişim</a></li>
           <li><a href="${root}/gorsel-kaynaklari/">Görsel Kaynakları</a></li>
@@ -709,6 +713,7 @@ const GA_SNIPPET = GA_ID ? `
 
 /* Kültür fotoğrafları (Wikimedia Commons, serbest lisanslı) */
 const PHOTOS = JSON.parse(fs.readFileSync(path.join(DATA, "photos.json"), "utf8"));
+const SOZLUK = JSON.parse(fs.readFileSync(path.join(DATA, "sozluk.json"), "utf8"));
 const photoByFile = Object.fromEntries(PHOTOS.map(p => [p.file, p]));
 function photoCredit(file) {
   const p = photoByFile[file];
@@ -719,7 +724,13 @@ const BLOG_COVERS = {
   "kirasfistan-nedir": "kultur-kadin-dans.jpg",
   "kurt-dugun-kiyafetleri": "dugun-vintage.jpg",
   "sal-u-sepik-rehberi": "sal-sepik-ikili.jpg",
-  "pusi-nasil-baglanir": "sal-sepik-mavi-pusi.jpg"
+  "pusi-nasil-baglanir": "sal-sepik-mavi-pusi.jpg",
+  "kirasfistan-bakimi-ve-yikama": "urun-manken-vitrin.jpg",
+  "kina-gecesi-kiyafeti-rehberi": "u-td-kirmizi1.jpg",
+  "yoresel-kiyafet-kumas-rehberi": "u-kumas-toplari.jpg",
+  "yoresel-aksesuar-rehberi": "urun-kofi-altin.jpg",
+  "yoresel-elbise-beden-olcu-rehberi": "u-dortlu-kadife.jpg",
+  "dugun-nisan-kina-ne-giyilir": "sal-sepik-halay.jpg"
 };
 
 /* Blog yazısı sonu "Kültürden Kareler" galerileri */
@@ -727,7 +738,13 @@ const BLOG_GALLERY = {
   "kirasfistan-nedir": ["hawrami-girls.jpg", "kultur-mesale-ritueli.jpg"],
   "kurt-dugun-kiyafetleri": ["kultur-kadin-dans.jpg", "sal-sepik-halay.jpg"],
   "sal-u-sepik-rehberi": ["sal-sepik-grup.jpg", "palangan-village.jpg"],
-  "pusi-nasil-baglanir": ["sal-sepik-cizgili.jpg", "hawrami-man.jpg"]
+  "pusi-nasil-baglanir": ["sal-sepik-cizgili.jpg", "hawrami-man.jpg"],
+  "kirasfistan-bakimi-ve-yikama": ["u-k02-kirmizi.jpg", "u-k08-pembe.jpg"],
+  "kina-gecesi-kiyafeti-rehberi": ["u-td-kirmizi2.jpg", "kultur-kadin-dans.jpg"],
+  "yoresel-kiyafet-kumas-rehberi": ["u-k05-gri.jpg", "u-k13-siyah.jpg"],
+  "yoresel-aksesuar-rehberi": ["hawraman-headdress.jpg", "urun-klash.jpg"],
+  "yoresel-elbise-beden-olcu-rehberi": ["urun-manken-vitrin.jpg", "u-k01-beyaz.jpg"],
+  "dugun-nisan-kina-ne-giyilir": ["dugun-vintage.jpg", "u-sepik-uclu.jpg"]
 };
 
 /* Kategori sayfası banner fotoğrafları (crop odağı ile) */
@@ -979,7 +996,15 @@ ${demandSection(".", false)}
         "@context": "https://schema.org", "@type": "Organization",
         "name": SITE_NAME, "url": SITE_URL + "/",
         "logo": SITE_URL + "/favicon.svg",
-        "description": "Kirasfistan, şal û şepik ve puşi gibi yöresel Kürt kıyafetlerini buluşturan koleksiyon sitesi."
+        "description": "Kirasfistan, şal û şepik ve puşi gibi yöresel kıyafetleri bir araya getiren, ön talep toplama aşamasındaki koleksiyon sitesi.",
+        "areaServed": { "@type": "Country", "name": "Türkiye" },
+        "knowsAbout": ["Kirasfistan", "Şal û Şepik", "Puşi", "Şûtik", "Kofi", "Yöresel kıyafet", "Kadife elbise", "Geleneksel giyim"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "availableLanguage": ["Turkish"],
+          "url": SITE_URL + "/iletisim/"
+        }
       },
       {
         "@context": "https://schema.org", "@type": "WebSite",
@@ -1037,7 +1062,27 @@ ${demandSection("..", true)}`;
         {
           "@context": "https://schema.org", "@type": "CollectionPage",
           "name": cat.title, "url": SITE_URL + `/${key}/`, "description": cat.desc,
-          "isPartOf": { "@type": "WebSite", "name": SITE_NAME, "url": SITE_URL + "/" }
+          "isPartOf": { "@type": "WebSite", "name": SITE_NAME, "url": SITE_URL + "/" },
+          "mainEntity": {
+            "@type": "ItemList",
+            "numberOfItems": items.length,
+            "itemListElement": items.map((p, i) => ({
+              "@type": "ListItem",
+              "position": i + 1,
+              "item": {
+                "@type": "Product",
+                "name": p.name,
+                "url": SITE_URL + "/urun/" + p.slug + "/",
+                "image": SITE_URL + "/" + p._img,
+                "offers": {
+                  "@type": "Offer",
+                  "price": String(p.price),
+                  "priceCurrency": "TRY",
+                  "availability": "https://schema.org/PreOrder"
+                }
+              }
+            }))
+          }
         }
       ],
       content
@@ -1126,6 +1171,14 @@ ${demandSection("..", true)}`;
           "sku": "KY-" + p.slug,
           "brand": { "@type": "Brand", "name": SITE_NAME },
           "category": cat.name,
+          "material": p.fabric,
+          ...(p.colorName ? { "color": p.colorName } : {}),
+          ...(sizes.length ? { "size": sizes } : {}),
+          "additionalProperty": [
+            { "@type": "PropertyValue", "name": "Yöre", "value": p.region },
+            { "@type": "PropertyValue", "name": "Kumaş", "value": p.fabric },
+            ...(p.colorName ? [{ "@type": "PropertyValue", "name": "Renk", "value": p.colorName }] : [])
+          ],
           "offers": {
             "@type": "Offer",
             "url": SITE_URL + `/urun/${p.slug}/`,
@@ -1184,6 +1237,10 @@ ${demandSection("..", true)}`;
   <div class="article-body">
     <p><img src="${cover}" alt="${esc(coverFile ? photoByFile[coverFile].alt : b.title)}" width="1200" height="675" style="border-radius:14px;">${coverCredit}</p>
     ${html}
+    ${(b.sss || []).length ? `<h2>Sıkça Sorulan Sorular</h2>
+    <div class="faq-list">
+      ${b.sss.map(s => `<details><summary>${esc(s.soru)}</summary><div><p>${esc(s.cevap)}</p></div></details>`).join(String.fromCharCode(10))}
+    </div>` : ""}
     ${(BLOG_GALLERY[b.slug] || []).length ? `<h2>Kültürden Kareler</h2>
     <div class="article-gallery">
       ${BLOG_GALLERY[b.slug].map(f => `<figure>
@@ -1212,7 +1269,14 @@ ${demandSection("..", true)}`;
           "publisher": { "@type": "Organization", "name": SITE_NAME, "logo": { "@type": "ImageObject", "url": SITE_URL + "/favicon.svg" } },
           "mainEntityOfPage": SITE_URL + `/blog/${b.slug}/`,
           "datePublished": BUILD_DATE, "dateModified": BUILD_DATE, "inLanguage": "tr"
-        }
+        },
+        ...((b.sss || []).length ? [{
+          "@context": "https://schema.org", "@type": "FAQPage",
+          "mainEntity": b.sss.map(s => ({
+            "@type": "Question", "name": s.soru,
+            "acceptedAnswer": { "@type": "Answer", "text": s.cevap }
+          }))
+        }] : [])
       ],
       content
     }));
@@ -1319,6 +1383,55 @@ ${demandSection("..", true)}`
 </div>
 ${demandSection("..", true)}`
   }));
+
+  /* ---------- Terim Sözlüğü ---------- */
+  {
+    const gruplar = {};
+    for (const t of SOZLUK) (gruplar[t.grup] = gruplar[t.grup] || []).push(t);
+    const bolumler = Object.entries(gruplar).map(([grup, liste]) =>
+      `<section class="sozluk-grup">
+    <h2>${esc(grup)}</h2>
+    <dl class="sozluk">
+      ${liste.map(t => `<div class="sozluk-madde" id="${t.terim.toLocaleLowerCase("tr").replace(/[^a-zçğıöşü0-9]+/g, "-")}">
+        <dt>${esc(t.terim)}</dt>
+        <dd>${esc(t.tanim)}</dd>
+      </div>`).join(String.fromCharCode(10))}
+    </dl>
+  </section>`).join(String.fromCharCode(10));
+
+    writeFile("sozluk/index.html", layout({
+      root: "..",
+      title: `Yöresel Kıyafet Terimleri Sözlüğü | ${SITE_NAME}`,
+      desc: "Kirasfistan, şûtik, kofi, şal û şepik, puşi, klaş… Yöresel kıyafet ve kumaş terimlerinin kısa ve net açıklamaları.",
+      canonicalPath: "/sozluk/",
+      current: "",
+      jsonld: [
+        breadcrumbJsonld([["Anasayfa", SITE_URL + "/"], ["Terimler Sözlüğü", SITE_URL + "/sozluk/"]]),
+        {
+          "@context": "https://schema.org", "@type": "DefinedTermSet",
+          "name": "Yöresel Kıyafet Terimleri Sözlüğü",
+          "url": SITE_URL + "/sozluk/",
+          "inLanguage": "tr",
+          "hasDefinedTerm": SOZLUK.map(t => ({
+            "@type": "DefinedTerm",
+            "name": t.terim,
+            "description": t.tanim,
+            "inDefinedTermSet": SITE_URL + "/sozluk/"
+          }))
+        }
+      ],
+      content: `
+<div class="container">
+  <div class="page-head">
+    ${breadcrumb("..", [["Anasayfa", "../"], ["Terimler Sözlüğü", null]])}
+    <h1>Yöresel Kıyafet Terimleri Sözlüğü</h1>
+    <p class="page-intro">Kirasfistandan şûtiğe, kadifeden jakara… Yöresel kıyafetlerde sık geçen terimlerin kısa ve net açıklamaları. Aradığınız kelimeyi tarayıcınızın arama özelliğiyle (Ctrl+F) hızlıca bulabilirsiniz.</p>
+  </div>
+  ${bolumler}
+  <div class="notice" style="margin-top:26px;">Koleksiyonu incelemek için <a href="../kirasfistan/">kirasfistan sayfamıza</a> göz atabilir, ayrıntılı rehberler için <a href="../blog/">blog bölümünü</a> ziyaret edebilirsiniz.</div>
+</div>`
+    }));
+  }
 
   /* ---------- Görsel Kaynakları ---------- */
   writeFile("gorsel-kaynaklari/index.html", layout({
@@ -1438,7 +1551,47 @@ ${demandSection("..", true)}`
 
   /* ---------- robots.txt & sitemap.xml ---------- */
   /* Site alan kökünden yayınlandığı için robots.txt geçerlidir (kurtyoresel.github.io). */
-  writeFile("robots.txt", `User-agent: *\nAllow: /\nDisallow: /arama/\nDisallow: /favoriler/\n\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+  writeFile("robots.txt", [
+    "# Arama motorları",
+    "User-agent: *",
+    "Allow: /",
+    "Disallow: /arama/",
+    "Disallow: /favoriler/",
+    "",
+    "# Yapay zeka asistanları ve yanıt motorları — içeriğimizin alıntılanmasına izin veriyoruz",
+    "User-agent: GPTBot",
+    "Allow: /",
+    "",
+    "User-agent: OAI-SearchBot",
+    "Allow: /",
+    "",
+    "User-agent: ChatGPT-User",
+    "Allow: /",
+    "",
+    "User-agent: ClaudeBot",
+    "Allow: /",
+    "",
+    "User-agent: Claude-SearchBot",
+    "Allow: /",
+    "",
+    "User-agent: PerplexityBot",
+    "Allow: /",
+    "",
+    "User-agent: Perplexity-User",
+    "Allow: /",
+    "",
+    "User-agent: Google-Extended",
+    "Allow: /",
+    "",
+    "User-agent: Applebot-Extended",
+    "Allow: /",
+    "",
+    "User-agent: CCBot",
+    "Allow: /",
+    "",
+    "Sitemap: " + SITE_URL + "/sitemap.xml",
+    ""
+  ].join(String.fromCharCode(10)));
 
   const urls = [
     ["/", "1.0", "weekly"],
@@ -1448,13 +1601,41 @@ ${demandSection("..", true)}`
     ["/hakkimizda/", "0.5", "monthly"],
     ["/iletisim/", "0.4", "monthly"],
     ["/sss/", "0.6", "monthly"],
+    ["/sozluk/", "0.6", "monthly"],
     ["/gorsel-kaynaklari/", "0.3", "monthly"],
     ...products.map(p => [`/urun/${p.slug}/`, "0.8", "weekly"])
   ];
+  /* Kararlı lastmod: içerik değişmediyse tarih de değişmez */
+  const lastmodYolu = path.join(DATA, "lastmod.json");
+  const eskiLastmod = fs.existsSync(lastmodYolu) ? JSON.parse(fs.readFileSync(lastmodYolu, "utf8")) : {};
+  const yeniLastmod = {};
+  const crypto = require("crypto");
+  function sayfaTarihi(url, icerik) {
+    const ozet = crypto.createHash("sha1").update(icerik).digest("hex").slice(0, 16);
+    const kayit = eskiLastmod[url];
+    const tarih = (kayit && kayit.hash === ozet) ? kayit.date : BUILD_DATE;
+    yeniLastmod[url] = { hash: ozet, date: tarih };
+    return tarih;
+  }
+  function sayfaIcerik(yol) {
+    const tam = path.join(OUT, yol.replace(/^\//, ""), "index.html");
+    try { return fs.readFileSync(tam, "utf8"); } catch (e) { return yol; }
+  }
+  const urunGorsel = {};
+  for (const p of products) urunGorsel["/urun/" + p.slug + "/"] = { src: SITE_URL + "/" + p._img, alt: p._photoFile ? photoByFile[p._photoFile].alt : p.alt };
+
   writeFile("sitemap.xml",
-    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-    urls.map(([u, pr, cf]) => `  <url><loc>${SITE_URL}${u}</loc><lastmod>${BUILD_DATE}</lastmod><changefreq>${cf}</changefreq><priority>${pr}</priority></url>`).join("\n") +
-    `\n</urlset>\n`);
+    '<?xml version="1.0" encoding="UTF-8"?>' + String.fromCharCode(10) +
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + String.fromCharCode(10) +
+    urls.map(([u]) => {
+      const g = urunGorsel[u];
+      const gorselEtiketi = g
+        ? String.fromCharCode(10) + '    <image:image><image:loc>' + g.src + '</image:loc><image:title>' + esc(g.alt) + '</image:title></image:image>'
+        : "";
+      return '  <url><loc>' + SITE_URL + u + '</loc><lastmod>' + sayfaTarihi(u, sayfaIcerik(u)) + '</lastmod>' + gorselEtiketi + '</url>';
+    }).join(String.fromCharCode(10)) +
+    String.fromCharCode(10) + '</urlset>' + String.fromCharCode(10));
+  fs.writeFileSync(lastmodYolu, JSON.stringify(yeniLastmod, null, 1), "utf8");
 
   console.log(`✔ Site üretildi: ${products.length} ürün, ${blog.length} blog yazısı, ${urls.length} sitemap kaydı`);
   console.log(`  Çıktı: ${OUT}`);

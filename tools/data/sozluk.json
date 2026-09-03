@@ -1,0 +1,102 @@
+[
+ {
+  "terim": "Kirasfistan",
+  "tanim": "Kiras adı verilen uzun iç elbise ile fistan adı verilen üst elbisenin, bele bağlanan şûtik kuşakla tamamlandığı geleneksel kadın kıyafeti. Düğün, nişan ve kına gecelerinde giyilir; kumaşı, rengi ve işlemesi yöreye göre değişir.",
+  "grup": "Kıyafet"
+ },
+ {
+  "terim": "Kiras",
+  "tanim": "Kirasfistan takımının içte giyilen, boydan kesimli ve uzun kollu iç elbisesi. Genellikle düz ya da ince desenli kumaştan dikilir ve üstteki fistanın astarı gibi çalışır.",
+  "grup": "Kıyafet"
+ },
+ {
+  "terim": "Fistan",
+  "tanim": "Kirasın üzerine giyilen, takımın gösterişli katmanını oluşturan üst elbise. Sim, pul ve boncuk işlemeleri çoğunlukla bu parça üzerinde yoğunlaşır.",
+  "grup": "Kıyafet"
+ },
+ {
+  "terim": "Şûtik",
+  "tanim": "Belin üzerine sarılan kumaş kuşak. Takımı toparlar, bel hattını belirginleştirir ve renk uyumunu tamamlar. Düğünlerde parlak ve işlemeli, gündelik kullanımda daha sade örnekleri tercih edilir.",
+  "grup": "Aksesuar"
+ },
+ {
+  "terim": "Şal û Şepik",
+  "tanim": "Şepik adı verilen ceket ile şal adı verilen geniş kesim pantolondan oluşan, bele şûtik kuşak sarılarak tamamlanan geleneksel erkek takımı. Genellikle tiftik veya yün dokuma kumaştan dikilir.",
+  "grup": "Kıyafet"
+ },
+ {
+  "terim": "Şepik",
+  "tanim": "Şal û şepik takımının ceket parçası. Kısa kesimli, önü açık ya da kruvaze kapanan, kalın dokuma kumaştan dikilen üst giysidir.",
+  "grup": "Kıyafet"
+ },
+ {
+  "terim": "Şal",
+  "tanim": "Şal û şepik takımının geniş kesimli pantolon parçası. Ağı düşük, paçaya doğru daralan yapısıyla hareket rahatlığı sağlar.",
+  "grup": "Kıyafet"
+ },
+ {
+  "terim": "Puşi",
+  "tanim": "Omuza atılan veya başa sarılan, kenarları püsküllü geleneksel örtü. Poşu adıyla da bilinir; pamuklu veya viskon dokumadan üretilir ve ekose desenleriyle tanınır.",
+  "grup": "Aksesuar"
+ },
+ {
+  "terim": "Kofi",
+  "tanim": "Kadınların özel günlerde taktığı, üzeri pul, boncuk, madeni para veya sim işlemeyle süslenmiş geleneksel başlık. Genellikle kadife zemin üzerine işlenir.",
+  "grup": "Aksesuar"
+ },
+ {
+  "terim": "Klaş",
+  "tanim": "El örgüsü üst kısmı ve sağlam tabanıyla bilinen geleneksel ayakkabı. Pamuk ipliğinin sıkı örülmesiyle yapılır, hafif ve nefes alan yapısıyla yazın tercih edilir.",
+  "grup": "Aksesuar"
+ },
+ {
+  "terim": "Heybe",
+  "tanim": "Kilim dokuma tekniğiyle üretilen, omuzda taşınan çift gözlü geleneksel çanta. Geometrik desenleri ve püskül detaylarıyla tanınır.",
+  "grup": "Aksesuar"
+ },
+ {
+  "terim": "Kadife",
+  "tanim": "Yüzeyi kısa ve sık havlarla kaplı, ağır ve dökümlü kumaş. Işığı yumuşak yansıtır, koyu renklerde derinlik verir; kışlık düğün ve nişan kıyafetlerinde sık kullanılır.",
+  "grup": "Kumaş"
+ },
+ {
+  "terim": "Saten",
+  "tanim": "Parlak yüzeyli, ince ve kaygan dokulu kumaş. Işığı güçlü yansıttığı için gece davetlerinde tercih edilir; hafifliği sayesinde uzun süre rahat taşınır.",
+  "grup": "Kumaş"
+ },
+ {
+  "terim": "Şifon",
+  "tanim": "İnce, hafif ve yarı saydam kumaş. Uçuşan dökümüyle katmanlı kullanıma uygundur; yazlık davetlerde ve halay sırasında rahatlık sağlar. Genellikle astarla birlikte dikilir.",
+  "grup": "Kumaş"
+ },
+ {
+  "terim": "Jakar",
+  "tanim": "Deseni boyayla değil, dokuma sırasında ipliklerin örgüsüyle oluşturulan kumaş. Desen kumaşın iki yüzünde de görülebilir; dayanıklı ve dolgun bir duruşu vardır.",
+  "grup": "Kumaş"
+ },
+ {
+  "terim": "Pul payet",
+  "tanim": "Kumaş yüzeyine tek tek dikilen küçük parlak diskler. Işık altında hareketli bir parıltı verir; kına ve düğün gecesi kıyafetlerinde yoğun kullanılır. Dikiş sağlamlığı kalitenin en önemli göstergesidir.",
+  "grup": "İşleme"
+ },
+ {
+  "terim": "Sim işleme",
+  "tanim": "Metalik görünümlü ipliklerle yapılan nakış. Yaka, kol ucu ve etek kenarında şerit ya da motif oluşturacak biçimde uygulanır.",
+  "grup": "İşleme"
+ },
+ {
+  "terim": "Tiftik dokuma",
+  "tanim": "Ankara keçisinin yününden elde edilen, parlak ve dayanıklı iplikle dokunan kumaş. Şal û şepik takımlarında sıkça kullanılır; sıcak tutar ve uzun ömürlüdür.",
+  "grup": "Kumaş"
+ },
+ {
+  "terim": "Kına gecesi",
+  "tanim": "Düğünden önceki gece yapılan, gelinin eline kına yakıldığı kutlama. Kırmızı ve bordo tonlarındaki kıyafetler bu gecenin geleneksel rengi kabul edilir.",
+  "grup": "Gelenek"
+ },
+ {
+  "terim": "Halay",
+  "tanim": "El ele tutuşarak sıra halinde çekilen toplu halk oyunu. Kıyafet seçiminde kolların rahat hareket etmesi ve eteğin ayağa dolanmaması bu nedenle önemlidir.",
+  "grup": "Gelenek"
+ }
+]
