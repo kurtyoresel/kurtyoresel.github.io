@@ -926,7 +926,7 @@ ${demandSection(".", false)}
     <div class="section-head"><div><h2 id="neden">Neden Kürt Yöresel?</h2></div></div>
     <div class="feature-strip">
       <div class="feature-item"><div class="f-icon">🧵</div><div><b>El Emeği Üretim</b><span>Yerel atölyelerle çalışıyor, geleneksel dikiş ve işleme tekniklerini yaşatıyoruz.</span></div></div>
-      <div class="feature-item"><div class="f-icon">🗺️</div><div><b>Yöreye Sadık Desenler</b><span>Botan, Serhat, Mêrdîn… Her modelde yöresinin otantik motifleri.</span></div></div>
+      <div class="feature-item"><div class="f-icon">🗺️</div><div><b>Yöreye Sadık Desenler</b><span>Diyarbakır, Mardin, Van, Hakkari… Her modelde yöresinin otantik motifleri.</span></div></div>
       <div class="feature-item"><div class="f-icon">⭐</div><div><b>Ön Sipariş Önceliği</b><span>Talep bırakanlar satış başladığında ilk haber alan ve öncelik tanınan kişiler olacak.</span></div></div>
       <div class="feature-item"><div class="f-icon">📦</div><div><b>Türkiye'ye Kargo (Yakında)</b><span>Satış başladığında tüm Türkiye'ye özenli paketlemeyle gönderim planlıyoruz.</span></div></div>
     </div>
@@ -1407,6 +1407,34 @@ ${demandSection("..", true)}`
   <a class="btn btn-primary" href="/">Anasayfaya Dön</a>
 </div>`
   }));
+
+  /* ---------- Eski ürün adresleri için yönlendirme ---------- */
+  const eskiAdresYolu = path.join(DATA, "eski-adresler.json");
+  if (fs.existsSync(eskiAdresYolu)) {
+    const eskiler = JSON.parse(fs.readFileSync(eskiAdresYolu, "utf8"));
+    let yonlendirmeSayisi = 0;
+    for (const [eski, yeni] of Object.entries(eskiler)) {
+      const hedef = SITE_URL + "/urun/" + yeni + "/";
+      writeFile("urun/" + eski + "/index.html", [
+        '<!DOCTYPE html>',
+        '<html lang="tr">',
+        '<head>',
+        '<meta charset="utf-8">',
+        '<meta name="robots" content="noindex, follow">',
+        '<link rel="canonical" href="' + hedef + '">',
+        '<meta http-equiv="refresh" content="0; url=' + hedef + '">',
+        '<title>Yönlendiriliyor…</title>',
+        '<script>location.replace(' + JSON.stringify(hedef) + ');</script>',
+        '</head>',
+        '<body style="font-family:sans-serif;text-align:center;padding:60px 20px;">',
+        '<p>Bu ürün yeni adresine taşındı.</p>',
+        '<p><a href="' + hedef + '">Ürüne git</a></p>',
+        '</body></html>'
+      ].join(String.fromCharCode(10)));
+      yonlendirmeSayisi++;
+    }
+    console.log("  " + yonlendirmeSayisi + " eski adres yönlendirmesi üretildi");
+  }
 
   /* ---------- robots.txt & sitemap.xml ---------- */
   /* Site alan kökünden yayınlandığı için robots.txt geçerlidir (kurtyoresel.github.io). */
