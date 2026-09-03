@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Terzide Ölçü ve Prova Rehberi: Ne Söylemeli, Neye Bakmalı?">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6e1522"/><stop offset="0.6" stop-color="#8e1f2e"/><stop offset="1" stop-color="#a63042"/>
+    </linearGradient>
+    <g id="bm"><path d="M-8-2L0-8 8-2" fill="none" stroke="#f6e3c8" stroke-width="2.4" stroke-linecap="round"/><path d="M-8 5L0-1 8 5" fill="none" stroke="#f6e3c8" stroke-width="2.4" stroke-linecap="round"/></g>
+    <g id="bigm"><path d="M-8-2L0-8 8-2" fill="none" stroke="#f2c66d" stroke-width="2.4" stroke-linecap="round"/><path d="M-8 5L0-1 8 5" fill="none" stroke="#f2c66d" stroke-width="2.4" stroke-linecap="round"/></g>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <use href="#bm" transform="translate(738 114) scale(2.15)" opacity="0.12"/><use href="#bm" transform="translate(315 358) scale(1.60)" opacity="0.17"/><use href="#bm" transform="translate(1133 370) scale(1.38)" opacity="0.13"/><use href="#bm" transform="translate(509 271) scale(0.87)" opacity="0.12"/><use href="#bm" transform="translate(467 314) scale(2.37)" opacity="0.16"/><use href="#bm" transform="translate(108 131) scale(2.39)" opacity="0.15"/><use href="#bm" transform="translate(982 550) scale(1.43)" opacity="0.14"/><use href="#bm" transform="translate(302 409) scale(1.92)" opacity="0.21"/><use href="#bm" transform="translate(1130 53) scale(1.54)" opacity="0.17"/><use href="#bm" transform="translate(481 569) scale(1.05)" opacity="0.16"/><use href="#bm" transform="translate(1013 578) scale(1.89)" opacity="0.13"/><use href="#bm" transform="translate(697 221) scale(2.38)" opacity="0.19"/><use href="#bm" transform="translate(881 112) scale(1.61)" opacity="0.21"/><use href="#bm" transform="translate(1129 247) scale(1.40)" opacity="0.16"/><use href="#bm" transform="translate(241 294) scale(1.68)" opacity="0.18"/><use href="#bm" transform="translate(534 237) scale(1.47)" opacity="0.23"/>
+  <use href="#bigm" transform="translate(600 315) scale(9)" opacity="0.9"/>
+  <use href="#bigm" transform="translate(600 315) scale(14)" opacity="0.25"/>
+  <rect y="655" width="1200" height="20" fill="#c08a1d"/>
+</svg>

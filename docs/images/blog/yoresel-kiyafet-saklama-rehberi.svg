@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Yöresel Kıyafet Nasıl Saklanır? Uzun Ömürlü Dolap Rehberi">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6e1522"/><stop offset="0.6" stop-color="#8e1f2e"/><stop offset="1" stop-color="#a63042"/>
+    </linearGradient>
+    <g id="bm"><path d="M0-9L7 0 0 9-7 0Z" fill="none" stroke="#f6e3c8" stroke-width="2"/><circle r="2.4" fill="#f6e3c8"/></g>
+    <g id="bigm"><path d="M0-9L7 0 0 9-7 0Z" fill="none" stroke="#f2c66d" stroke-width="2"/><circle r="2.4" fill="#f2c66d"/></g>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <use href="#bm" transform="translate(824 258) scale(1.76)" opacity="0.23"/><use href="#bm" transform="translate(577 62) scale(2.30)" opacity="0.11"/><use href="#bm" transform="translate(875 381) scale(1.64)" opacity="0.25"/><use href="#bm" transform="translate(1030 104) scale(1.45)" opacity="0.14"/><use href="#bm" transform="translate(228 569) scale(1.04)" opacity="0.18"/><use href="#bm" transform="translate(101 254) scale(1.78)" opacity="0.17"/><use href="#bm" transform="translate(682 626) scale(2.03)" opacity="0.24"/><use href="#bm" transform="translate(484 242) scale(1.36)" opacity="0.12"/><use href="#bm" transform="translate(1144 226) scale(1.32)" opacity="0.21"/><use href="#bm" transform="translate(954 581) scale(2.07)" opacity="0.16"/><use href="#bm" transform="translate(848 421) scale(1.47)" opacity="0.24"/><use href="#bm" transform="translate(334 96) scale(2.29)" opacity="0.15"/><use href="#bm" transform="translate(1146 109) scale(1.40)" opacity="0.22"/><use href="#bm" transform="translate(473 597) scale(2.32)" opacity="0.18"/><use href="#bm" transform="translate(51 139) scale(1.66)" opacity="0.25"/><use href="#bm" transform="translate(1073 123) scale(1.56)" opacity="0.20"/>
+  <use href="#bigm" transform="translate(600 315) scale(9)" opacity="0.9"/>
+  <use href="#bigm" transform="translate(600 315) scale(14)" opacity="0.25"/>
+  <rect y="655" width="1200" height="20" fill="#c08a1d"/>
+</svg>

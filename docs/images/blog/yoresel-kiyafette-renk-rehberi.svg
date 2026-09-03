@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Yöresel Kıyafette Renk Rehberi: Hangi Renk Kime, Hangi Güne?">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6e1522"/><stop offset="0.6" stop-color="#8e1f2e"/><stop offset="1" stop-color="#a63042"/>
+    </linearGradient>
+    <g id="bm"><circle cx="0" cy="-5" r="3.2" fill="#f6e3c8"/><circle cx="5" cy="0" r="3.2" fill="#f6e3c8"/><circle cx="0" cy="5" r="3.2" fill="#f6e3c8"/><circle cx="-5" cy="0" r="3.2" fill="#f6e3c8"/><circle r="2.2" fill="#f6e3c8" opacity="0.6"/></g>
+    <g id="bigm"><circle cx="0" cy="-5" r="3.2" fill="#f2c66d"/><circle cx="5" cy="0" r="3.2" fill="#f2c66d"/><circle cx="0" cy="5" r="3.2" fill="#f2c66d"/><circle cx="-5" cy="0" r="3.2" fill="#f2c66d"/><circle r="2.2" fill="#f2c66d" opacity="0.6"/></g>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <use href="#bm" transform="translate(807 428) scale(2.22)" opacity="0.24"/><use href="#bm" transform="translate(513 553) scale(2.32)" opacity="0.24"/><use href="#bm" transform="translate(188 555) scale(1.88)" opacity="0.11"/><use href="#bm" transform="translate(570 464) scale(2.15)" opacity="0.17"/><use href="#bm" transform="translate(312 293) scale(1.32)" opacity="0.25"/><use href="#bm" transform="translate(758 147) scale(1.63)" opacity="0.13"/><use href="#bm" transform="translate(922 58) scale(1.67)" opacity="0.25"/><use href="#bm" transform="translate(623 241) scale(2.17)" opacity="0.25"/><use href="#bm" transform="translate(890 157) scale(2.09)" opacity="0.12"/><use href="#bm" transform="translate(949 97) scale(2.38)" opacity="0.10"/><use href="#bm" transform="translate(414 225) scale(2.10)" opacity="0.20"/><use href="#bm" transform="translate(805 548) scale(1.61)" opacity="0.17"/><use href="#bm" transform="translate(52 604) scale(1.18)" opacity="0.16"/><use href="#bm" transform="translate(943 476) scale(2.30)" opacity="0.20"/><use href="#bm" transform="translate(187 56) scale(2.03)" opacity="0.11"/><use href="#bm" transform="translate(1029 215) scale(1.67)" opacity="0.20"/>
+  <use href="#bigm" transform="translate(600 315) scale(9)" opacity="0.9"/>
+  <use href="#bigm" transform="translate(600 315) scale(14)" opacity="0.25"/>
+  <rect y="655" width="1200" height="20" fill="#c08a1d"/>
+</svg>

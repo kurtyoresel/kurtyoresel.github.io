@@ -730,7 +730,12 @@ const BLOG_COVERS = {
   "yoresel-kiyafet-kumas-rehberi": "u-kumas-toplari.jpg",
   "yoresel-aksesuar-rehberi": "urun-kofi-altin.jpg",
   "yoresel-elbise-beden-olcu-rehberi": "u-dortlu-kadife.jpg",
-  "dugun-nisan-kina-ne-giyilir": "sal-sepik-halay.jpg"
+  "dugun-nisan-kina-ne-giyilir": "sal-sepik-halay.jpg",
+  "kadife-elbise-secim-rehberi": "u-k01-siyah.jpg",
+  "yoresel-kiyafette-renk-rehberi": "u-k08-pembe.jpg",
+  "el-isi-mi-makine-isi-mi": "u-k05-gri.jpg",
+  "yoresel-kiyafet-saklama-rehberi": "u-k13-siyah.jpg",
+  "terzide-olcu-ve-prova-rehberi": "u-muze-manken.jpg"
 };
 
 /* Blog yazısı sonu "Kültürden Kareler" galerileri */
@@ -744,7 +749,12 @@ const BLOG_GALLERY = {
   "yoresel-kiyafet-kumas-rehberi": ["u-k05-gri.jpg", "u-k13-siyah.jpg"],
   "yoresel-aksesuar-rehberi": ["hawraman-headdress.jpg", "urun-klash.jpg"],
   "yoresel-elbise-beden-olcu-rehberi": ["urun-manken-vitrin.jpg", "u-k01-beyaz.jpg"],
-  "dugun-nisan-kina-ne-giyilir": ["dugun-vintage.jpg", "u-sepik-uclu.jpg"]
+  "dugun-nisan-kina-ne-giyilir": ["dugun-vintage.jpg", "u-sepik-uclu.jpg"],
+  "kadife-elbise-secim-rehberi": ["u-k01-kirmizi.jpg", "u-td-bordo.jpg"],
+  "yoresel-kiyafette-renk-rehberi": ["urun-elbise-renkli.jpg", "u-k08-mavi.jpg"],
+  "el-isi-mi-makine-isi-mi": ["u-k12d.jpg", "u-k02d-kirmizi.jpg"],
+  "yoresel-kiyafet-saklama-rehberi": ["u-k13-altin.jpg", "sal-sepik-cizgili.jpg"],
+  "terzide-olcu-ve-prova-rehberi": ["urun-manken-vitrin.jpg", "u-k01-beyaz.jpg"]
 };
 
 /* Kategori sayfası banner fotoğrafları (crop odağı ile) */

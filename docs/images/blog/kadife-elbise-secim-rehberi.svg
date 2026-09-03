@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Kadife Elbise Rehberi: Kalite Nasıl Anlaşılır, Nasıl Giyilir?">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6e1522"/><stop offset="0.6" stop-color="#8e1f2e"/><stop offset="1" stop-color="#a63042"/>
+    </linearGradient>
+    <g id="bm"><circle cx="0" cy="-5" r="3.2" fill="#f6e3c8"/><circle cx="5" cy="0" r="3.2" fill="#f6e3c8"/><circle cx="0" cy="5" r="3.2" fill="#f6e3c8"/><circle cx="-5" cy="0" r="3.2" fill="#f6e3c8"/><circle r="2.2" fill="#f6e3c8" opacity="0.6"/></g>
+    <g id="bigm"><circle cx="0" cy="-5" r="3.2" fill="#f2c66d"/><circle cx="5" cy="0" r="3.2" fill="#f2c66d"/><circle cx="0" cy="5" r="3.2" fill="#f2c66d"/><circle cx="-5" cy="0" r="3.2" fill="#f2c66d"/><circle r="2.2" fill="#f2c66d" opacity="0.6"/></g>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <use href="#bm" transform="translate(251 320) scale(0.96)" opacity="0.21"/><use href="#bm" transform="translate(202 502) scale(2.03)" opacity="0.17"/><use href="#bm" transform="translate(858 405) scale(1.65)" opacity="0.23"/><use href="#bm" transform="translate(834 534) scale(1.16)" opacity="0.15"/><use href="#bm" transform="translate(355 445) scale(2.30)" opacity="0.12"/><use href="#bm" transform="translate(427 168) scale(1.77)" opacity="0.22"/><use href="#bm" transform="translate(616 361) scale(1.68)" opacity="0.12"/><use href="#bm" transform="translate(771 104) scale(1.25)" opacity="0.22"/><use href="#bm" transform="translate(1049 257) scale(1.18)" opacity="0.13"/><use href="#bm" transform="translate(1093 84) scale(1.42)" opacity="0.24"/><use href="#bm" transform="translate(533 59) scale(1.96)" opacity="0.16"/><use href="#bm" transform="translate(656 156) scale(2.39)" opacity="0.15"/><use href="#bm" transform="translate(420 296) scale(1.15)" opacity="0.14"/><use href="#bm" transform="translate(241 468) scale(1.72)" opacity="0.22"/><use href="#bm" transform="translate(252 564) scale(0.90)" opacity="0.20"/><use href="#bm" transform="translate(851 573) scale(1.09)" opacity="0.10"/>
+  <use href="#bigm" transform="translate(600 315) scale(9)" opacity="0.9"/>
+  <use href="#bigm" transform="translate(600 315) scale(14)" opacity="0.25"/>
+  <rect y="655" width="1200" height="20" fill="#c08a1d"/>
+</svg>
