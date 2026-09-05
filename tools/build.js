@@ -1084,11 +1084,16 @@ ${demandSection("..", true)}`;
                 "name": p.name,
                 "url": SITE_URL + "/urun/" + p.slug + "/",
                 "image": SITE_URL + "/" + p._img,
+                "description": p.shortDesc,
+                "sku": "KY-" + p.slug,
+                "brand": { "@type": "Brand", "name": SITE_NAME },
                 "offers": {
                   "@type": "Offer",
+                  "url": SITE_URL + "/urun/" + p.slug + "/",
                   "price": String(p.price),
                   "priceCurrency": "TRY",
-                  "availability": "https://schema.org/PreOrder"
+                  "availability": "https://schema.org/PreOrder",
+                  "itemCondition": "https://schema.org/NewCondition"
                 }
               }
             }))
